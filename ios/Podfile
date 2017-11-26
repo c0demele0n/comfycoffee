@@ -1,0 +1,35 @@
+# You Podfile should look similar to this file. React Native currently does not support use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'comfycoffee' do
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'React', path: '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'BatchedBridge'
+  ]
+
+  pod 'GoogleMaps'
+  pod 'react-native-maps', path: '../node_modules/react-native-maps' #<- PATH to your node_modules/react-native-maps directory
+  pod 'react-native-google-maps', path: '../node_modules/react-native-maps' #<- PATH to your node_modules/react-native-maps directory
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+end
+
+pre_install do |installer|
+	# workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+	Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
