@@ -1,4 +1,103 @@
 {
-  "name": "comfycoffee",
-  "displayName": "comfycoffee"
+    "name": "comfycoffee",
+    "displayName": "comfycoffee",
+
+    "coffee": [
+        {
+            "id": "espresso",
+            "name": "Espresso",
+            "description":
+                "Espresso ist eine aus Mailand stammende Kaffeezubereitungsart, bei der heißes Wasser mit hohem Druck durch sehr fein gemahlenes Kaffeemehl aus gerösteten Kaffeebohnen gepresst wird.",
+            "water": 0,
+            "milk": 0,
+            "strength": 3,
+            "alk": "no",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "cappuccino",
+            "name": "Cappuccino",
+            "description":
+                "Cappuccino ist ein italienisches Kaffeegetränk, das aus einem Espresso, heißer Milch und heißem Milchschaum zubereitet wird.",
+            "water": 1,
+            "milk": 1,
+            "strength": 2,
+            "alk": "no",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "latteMacchiato",
+            "name": "Latte Macchiato",
+            "description":
+                "Latte Macchiato ist ein Warmgetränk aus Milch und Espresso, das dem Milchkaffee ähnelt, aber in der Regel mehr Milch enthält und aus stärker gerösteten Bohnen zubereitet wird.",
+            "water": 1,
+            "milk": 2,
+            "strength": 1,
+            "alk": "no",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "milchkaffee",
+            "name": "Milchkaffee",
+            "description":
+                "Milchkaffee ist ein Kaffee mit einem hohen Anteil Milch oder Milchschaum, der in verschiedenen Ländern vor allem morgens getrunken wird.",
+            "water": 2,
+            "milk": 2,
+            "strength": 1,
+            "alk": "no",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "mokka",
+            "name": "Mokka",
+            "description":
+                "Unter Mokka oder Türkischem Kaffee versteht man einen Kaffee, der auf ursprüngliche Art durch Aufgießen von Wasser in einem mit staubfein gemahlenem Kaffeepulver gefüllten Kännchen (Ibrik) im Sandbett in der Glut einer Feuerstelle oder auf einer heißen Kochplatte hergestellt wird.",
+            "water": 2,
+            "milk": 0,
+            "strength": 2,
+            "alk": "no",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "eiskaffee",
+            "name": "Eiskaffee",
+            "description":
+                "Ein Eiskaffee ist ein aus Kaffee und weiteren Zutaten zubereitetes Kaltgetränk, wobei sich die Zubereitung in unterschiedlichen Ländern deutlich unterscheidet.",
+            "water": 1,
+            "milk": 1,
+            "strength": 1,
+            "alk": "no",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "pharisaer",
+            "name": "Pharisäer",
+            "description":
+                "Ein Pharisäer ist ein alkoholisches Heißgetränk aus gesüßtem Kaffee, braunem Rum und einer Haube aus Schlagsahne, das traditionell in einer Tasse, einem Becher oder Glas serviert wird.",
+            "water": 2,
+            "milk": 0,
+            "strength": 1,
+            "alk": "yes",
+            "image": "",
+            "text": "more detailed info"
+        },
+        {
+            "id": "irishcoffee",
+            "name": "Irish Coffee",
+            "description":
+                "Irish Coffee, in Irland selbst auch Caife Gaelach respektive Gaelic Coffee genannt, ist ein gesüßter Kaffee mit irischem Whiskey und einer Haube aus leicht geschlagener aber noch flüssiger Sahne.",
+            "water": 1,
+            "milk": 1,
+            "strength": 1,
+            "alk": "yes",
+            "image": "",
+            "text": "more detailed info"
+        }
+    ]
 }
