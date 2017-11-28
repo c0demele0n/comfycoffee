@@ -1,7 +1,8 @@
 import React from 'react'
-import { StyleSheet, View, Button, Text } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import BottomNavigation, { Tab } from 'react-native-material-bottom-navigation'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import { colors, iconSizes } from '../styles'
 
 export default class BottomNavigationContainer extends React.Component {
     render() {
@@ -9,8 +10,8 @@ export default class BottomNavigationContainer extends React.Component {
         return (
             <View style={styles.view}>
                 <BottomNavigation
-                    labelColor="#933F00"
-                    activeLabelColor="white"
+                    labelColor={colors.primary}
+                    activeLabelColor={colors.white}
                     rippleColor="white"
                     style={{
                         height: 56,
@@ -23,21 +24,39 @@ export default class BottomNavigationContainer extends React.Component {
                     activeTab={this.props.activeTab}
                 >
                     <Tab
-                        barBackgroundColor="#933F00"
+                        barBackgroundColor={colors.primary}
                         label="Karte"
-                        icon={<Icon size={24} color="white" name="place" />}
+                        icon={
+                            <Icon
+                                size={iconSizes.m}
+                                color={colors.white}
+                                name="place"
+                            />
+                        }
                         onPress={() => navigate('Map')}
                     />
                     <Tab
-                        barBackgroundColor="#933F00" //"rgba(147, 63, 0, 0.3)"
+                        barBackgroundColor={colors.primary}
                         label="Liste"
-                        icon={<Icon size={24} color="white" name="list" />}
+                        icon={
+                            <Icon
+                                size={iconSizes.m}
+                                color={colors.white}
+                                name="list"
+                            />
+                        }
                         onPress={() => navigate('List')}
                     />
                     <Tab
-                        barBackgroundColor="#933F00" //"rgba(147, 63, 0, 0.3)"
+                        barBackgroundColor={colors.primary}
                         label="Lexikon"
-                        icon={<Icon size={24} color="white" name="book" />}
+                        icon={
+                            <Icon
+                                size={iconSizes.m}
+                                color={colors.white}
+                                name="book"
+                            />
+                        }
                         onPress={() => navigate('Lexikon')}
                     />
                 </BottomNavigation>

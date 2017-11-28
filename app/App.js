@@ -1,12 +1,11 @@
 import React from 'react'
-import { Platform, StyleSheet, Text, View, Button } from 'react-native'
 import { StackNavigator } from 'react-navigation'
+import HomeScreen from './components/HomeScreen'
 import MapScreen from './components/MapScreen'
 import ListScreen from './components/ListScreen'
 import DetailLocationScreen from './components/DetailLocationScreen'
 import LexikonScreen from './components/LexikonScreen'
 import DetailLexikonScreen from './components/DetailLexikonScreen'
-import HomeScreen from './components/HomeScreen'
 
 export default (App = StackNavigator({
     Home: {

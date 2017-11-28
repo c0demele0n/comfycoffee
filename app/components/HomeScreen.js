@@ -1,25 +1,20 @@
 import React from 'react'
-import { View, Button, Text } from 'react-native'
-import BottomNavigation, { Tab } from 'react-native-material-bottom-navigation'
-import Icon from 'react-native-vector-icons/MaterialIcons'
-import BottomNavigationContainer from './BottomNavigationContainer'
+import { StyleSheet, View, Button } from 'react-native'
 
 export default class HomeScreen extends React.Component {
     render() {
         const { navigate } = this.props.navigation
         return (
-            <View>
-                <Text>Hello, Chat App!</Text>
-                <Button
-                    onPress={() => navigate('Map')}
-                    title="Chat with Lucy"
-                />
-
-                <BottomNavigationContainer
-                    navigation={this.props.navigation}
-                    activeTab={0}
-                />
+            <View style={styles.view}>
+                <Button onPress={() => navigate('Map')} title="Karte" />
+                <Button onPress={() => navigate('Lexikon')} title="Lexikon" />
             </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    view: {
+        flex: 1
+    }
+})

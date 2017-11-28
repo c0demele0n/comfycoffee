@@ -1,35 +1,23 @@
 import React from 'react'
-import { AppRegistry, StyleSheet, Dimensions, Text, View } from 'react-native'
-import BottomNavigation, { Tab } from 'react-native-material-bottom-navigation'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import { StyleSheet, View, Button } from 'react-native'
 import BottomNavigationContainer from './BottomNavigationContainer'
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
-
-const { width, height } = Dimensions.get('window')
-
-const ASPECT_RATIO = width / height
-const LATITUDE = 37.78825
-const LONGITUDE = -122.4324
-const LATITUDE_DELTA = 0.0922
-const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO
+import RNGooglePlaces from 'react-native-google-places'
 
 export default class MapScreen extends React.Component {
+    componentDidMount() {
+        RNGooglePlaces.getCurrentPlace()
+            .then(results => console.log(results))
+            .catch(error => console.log(error.message))
+    }
+
     render() {
         const { navigate } = this.props.navigation
         return (
-            <View style={{ flex: 1 }}>
-                <View style={styles.container}>
-                    <MapView
-                        provider={PROVIDER_GOOGLE}
-                        style={styles.map}
-                        initialRegion={{
-                            latitude: LATITUDE,
-                            longitude: LONGITUDE,
-                            latitudeDelta: LATITUDE_DELTA,
-                            longitudeDelta: LONGITUDE_DELTA
-                        }}
-                    />
-                </View>
+            <View style={styles.view}>
+                <Button
+                    onPress={() => navigate('DetailLocation')}
+                    title="DetailLocation"
+                />
                 <BottomNavigationContainer
                     navigation={this.props.navigation}
                     activeTab={0}
@@ -40,16 +28,7 @@ export default class MapScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        ...StyleSheet.absoluteFillObject,
-        justifyContent: 'flex-end',
-        alignItems: 'center'
-    },
-    map: {
-        ...StyleSheet.absoluteFillObject
+    view: {
+        flex: 1
     }
 })
-
-MapScreen.propTypes = {
-    provider: MapView.ProviderPropType
-}

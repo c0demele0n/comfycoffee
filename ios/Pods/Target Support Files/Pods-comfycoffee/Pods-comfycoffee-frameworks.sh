@@ -100,21 +100,6 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/react-native-google-maps/react_native_google_maps.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/react-native-maps/react_native_maps.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/react-native-google-maps/react_native_google_maps.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/react-native-maps/react_native_maps.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
-fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
