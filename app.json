@@ -2,7 +2,7 @@
     "name": "comfycoffee",
     "displayName": "comfycoffee",
 
-    "coffee": [
+    "coffees": [
         {
             "id": "espresso",
             "name": "Espresso",
@@ -24,7 +24,7 @@
             "milk": 1,
             "strength": 2,
             "alk": "no",
-            "image": "",
+            "image": "../assets/cappuccino.png",
             "text": "more detailed info"
         },
         {
