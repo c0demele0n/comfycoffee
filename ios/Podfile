@@ -1,6 +1,5 @@
-# You Podfile should look similar to this file. React Native currently does not support use_frameworks!
+# React Native currently does not support use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
-# use_frameworks!
 
 platform :ios, '8.0'
 
@@ -21,13 +20,8 @@ target 'comfycoffee' do
     'BatchedBridge'
   ]
 
-  # pod 'GoogleMaps'
-  # pod 'react-native-maps', path: '../node_modules/react-native-maps' #<- PATH to your node_modules/react-native-maps directory
-  # pod 'react-native-google-maps', path: '../node_modules/react-native-maps' #<- PATH to your node_modules/react-native-maps directory
-
-  pod 'GooglePlaces'
-  pod 'GooglePlacePicker'
   pod 'GoogleMaps'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
 
 end
