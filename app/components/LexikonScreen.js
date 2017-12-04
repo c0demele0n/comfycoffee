@@ -11,6 +11,7 @@ import {
 import BottomNavigationContainer from './BottomNavigationContainer'
 import { coffees } from '../../app.json'
 import { colors, iconSizes, fontSizes } from '../styles'
+import { Accelerometer, Gyroscope } from 'react-native-sensors'
 
 export default class LexikonScreen extends React.Component {
     render() {
@@ -31,7 +32,11 @@ export default class LexikonScreen extends React.Component {
                     {coffees.map((coffee, index) => (
                         <TouchableHighlight
                             id={coffee.id}
-                            onPress={() => navigate('DetailLexikon')}
+                            onPress={() =>
+                                navigate('DetailLexikon', {
+                                    coffee: coffee
+                                })
+                            }
                         >
                             <View
                                 style={
