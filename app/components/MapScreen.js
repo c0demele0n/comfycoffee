@@ -1,5 +1,14 @@
 import React from 'react'
-import { StyleSheet, View, Button, Text, Alert } from 'react-native'
+import {
+    StyleSheet,
+    View,
+    ScrollView,
+    TouchableHighlight,
+    Image,
+    Button,
+    Text,
+    Alert
+} from 'react-native'
 import BottomNavigationContainer from './BottomNavigationContainer'
 // import Permissions from 'react-native-permissions'
 import { getPlaces } from '../api'
@@ -9,8 +18,6 @@ export default class MapScreen extends React.Component {
         super(props)
 
         this.state = {
-            lat: 49.634871,
-            long: 8.345122,
             places: []
         }
     }
@@ -40,23 +47,29 @@ export default class MapScreen extends React.Component {
 
     render() {
         const { navigate } = this.props.navigation
-        const { lat, long, places } = this.state
+        const { places } = this.state
 
         return (
             <View style={styles.view}>
-                <Text>lat: {lat}</Text>
-                <Text>long: {long}</Text>
+                <ScrollView contentContainerStyle={styles.scrollView}>
+                    {places.map(place => (
+                        <TouchableHighlight
+                            key={place.id}
+                            onPress={() => navigate('DetailLocation')}
+                        >
+                            <View style={styles.outer}>
+                                <Text>
+                                    Name: {place.name}
+                                    {'\n'}
+                                    Adresse: {place.vicinity}
+                                    {'\n'}
+                                    Rating: {place.rating}
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                    ))}
+                </ScrollView>
 
-                {places.map((place, index) => (
-                    <Text key={place.id}>
-                        {index}. {place.name}
-                    </Text>
-                ))}
-
-                <Button
-                    onPress={() => navigate('DetailLocation')}
-                    title="DetailLocation"
-                />
                 <BottomNavigationContainer
                     navigation={this.props.navigation}
                     activeTab={0}
@@ -69,5 +82,13 @@ export default class MapScreen extends React.Component {
 const styles = StyleSheet.create({
     view: {
         flex: 1
+    },
+    scrollView: {
+        paddingBottom: 56
+    },
+    outer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        height: 120
     }
 })
