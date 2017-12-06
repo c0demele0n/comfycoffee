@@ -66,9 +66,6 @@ const styles = StyleSheet.create({
         backgroundColor: colors.secondary,
         paddingVertical: 20
     },
-    scrollView: {
-        paddingBottom: 56
-    },
     outer: {
         flexDirection: 'row',
         justifyContent: 'space-around',

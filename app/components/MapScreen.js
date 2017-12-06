@@ -11,6 +11,7 @@ import {
 } from 'react-native'
 // import Permissions from 'react-native-permissions'
 import { getPlaces } from '../api'
+import { colors } from '../styles'
 
 export default class MapScreen extends React.Component {
     constructor(props) {
@@ -75,10 +76,8 @@ export default class MapScreen extends React.Component {
 
 const styles = StyleSheet.create({
     view: {
-        flex: 1
-    },
-    scrollView: {
-        paddingBottom: 56
+        flex: 1,
+        backgroundColor: colors.secondary
     },
     outer: {
         flexDirection: 'row',

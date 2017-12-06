@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
+import { colors } from '../styles'
 
 export default class LocationFeedbackScreen extends React.Component {
     render() {
@@ -10,6 +11,7 @@ export default class LocationFeedbackScreen extends React.Component {
 
 const styles = StyleSheet.create({
     view: {
-        flex: 1
+        flex: 1,
+        backgroundColor: colors.secondary
     }
 })

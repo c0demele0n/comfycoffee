@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, View, Button } from 'react-native'
+import { colors } from '../styles'
 
 export default class ListScreen extends React.Component {
     render() {
@@ -17,6 +18,7 @@ export default class ListScreen extends React.Component {
 
 const styles = StyleSheet.create({
     view: {
-        flex: 1
+        flex: 1,
+        backgroundColor: colors.secondary
     }
 })
