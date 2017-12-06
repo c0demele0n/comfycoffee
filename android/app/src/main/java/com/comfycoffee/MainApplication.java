@@ -23,11 +23,7 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new RNSensorsPackage(),
-            new VectorIconsPackage()
-      );
+      return Arrays.<ReactPackage>asList(new MainReactPackage(), new RNSensorsPackage(), new VectorIconsPackage());
     }
 
     @Override

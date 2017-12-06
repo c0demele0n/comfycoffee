@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 const tabBarOptions = {
     activeTintColor: colors.white,
     inactiveTintColor: colors.white,
+    inactiveBackgroundColor: colors.lightbrownopaque,
     style: { backgroundColor: colors.lightbrown }
 }
 

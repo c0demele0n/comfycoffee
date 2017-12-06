@@ -2,6 +2,7 @@ export const colors = {
     primary: 'rgb(147, 63, 0)', // #933F00
     secondary: 'rgba(147, 63, 0, 0.3)',
     lightbrown: 'rgb(213, 120, 52)', //#D57834
+    lightbrownopaque: 'rgb(236, 152, 90)', // #ec985a
     red: 'rgb(143, 0, 10)', //#8F000A
     yellow: 'rgb(147, 95, 0)', //#935F00
     black: 'rgb(0, 0, 0)', // #000

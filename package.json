@@ -13,7 +13,6 @@
         "react-native-material-bottom-navigation": "^0.6.1",
         "react-native-permissions": "^1.0.3",
         "react-native-sensors": "^2.4.1",
-        "react-native-svg": "^6.0.1-rc.0",
         "react-native-vector-icons": "^4.4.2",
         "react-navigation": "^1.0.0-beta.21"
     },

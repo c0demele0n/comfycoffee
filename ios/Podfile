@@ -25,12 +25,6 @@ target 'comfycoffee' do
 
   pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
 
-
-
-  pod 'RNSVG', :path => '../node_modules/react-native-svg'
-
-
   pod 'RNSensors', :path => '../node_modules/react-native-sensors'
-
 
 end

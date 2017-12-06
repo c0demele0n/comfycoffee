@@ -1,0 +1,22 @@
+{
+  "name": "RNSensors",
+  "version": "2.4.1",
+  "summary": "A developer friendly approach for sensors in react-native",
+  "description": "A developer friendly approach for sensors in react-native",
+  "homepage": "https://github.com/react-native-sensors/react-native-sensors#readme",
+  "license": "",
+  "authors": "",
+  "source": {
+    "git": "https://github.com/react-native-sensors/react-native-sensors.git"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "ios/*.{h,m}",
+  "preserve_paths": "*.js",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}
