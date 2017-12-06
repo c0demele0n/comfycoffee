@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyleSheet, View, Button } from 'react-native'
-import BottomNavigationContainer from './BottomNavigationContainer'
 
 export default class ListScreen extends React.Component {
     render() {
@@ -10,10 +9,6 @@ export default class ListScreen extends React.Component {
                 <Button
                     onPress={() => navigate('DetailLocation')}
                     title="DetailLocation"
-                />
-                <BottomNavigationContainer
-                    navigation={this.props.navigation}
-                    activeTab={1}
                 />
             </View>
         )

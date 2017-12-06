@@ -9,7 +9,6 @@ import {
     Text,
     Alert
 } from 'react-native'
-import BottomNavigationContainer from './BottomNavigationContainer'
 // import Permissions from 'react-native-permissions'
 import { getPlaces } from '../api'
 
@@ -69,11 +68,6 @@ export default class MapScreen extends React.Component {
                         </TouchableHighlight>
                     ))}
                 </ScrollView>
-
-                <BottomNavigationContainer
-                    navigation={this.props.navigation}
-                    activeTab={0}
-                />
             </View>
         )
     }

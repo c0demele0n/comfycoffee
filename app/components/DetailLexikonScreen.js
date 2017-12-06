@@ -2,12 +2,14 @@ import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
 export default class DetailLexikonScreen extends React.Component {
+    static navigationOptions = ({ navigation }) => ({
+        title: navigation.state.params.coffee.name
+    })
     render() {
-        const { state } = this.props.navigation
-        var coffee = state.params ? state.params.coffee : '<undefined>'
+        const { name } = this.props.navigation.state.params.coffee
         return (
             <View style={styles.view}>
-                <Text>{coffee.name}</Text>
+                <Text>{name}</Text>
             </View>
         )
     }

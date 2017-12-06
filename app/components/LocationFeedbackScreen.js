@@ -1,8 +1,9 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
-export default class DetailLocationScreen extends React.Component {
+export default class LocationFeedbackScreen extends React.Component {
     render() {
+        const { navigate } = this.props.navigation
         return <View style={styles.view} />
     }
 }

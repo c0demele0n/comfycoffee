@@ -8,7 +8,6 @@ import {
     Text,
     ScrollView
 } from 'react-native'
-import BottomNavigationContainer from './BottomNavigationContainer'
 import { coffees } from '../../app.json'
 import { colors, iconSizes, fontSizes } from '../styles'
 import { Accelerometer, Gyroscope } from 'react-native-sensors'
@@ -31,7 +30,7 @@ export default class LexikonScreen extends React.Component {
                 <ScrollView contentContainerStyle={styles.scrollView}>
                     {coffees.map((coffee, index) => (
                         <TouchableHighlight
-                            id={coffee.id}
+                            key={coffee.id}
                             onPress={() =>
                                 navigate('DetailLexikon', {
                                     coffee: coffee
@@ -55,10 +54,6 @@ export default class LexikonScreen extends React.Component {
                         </TouchableHighlight>
                     ))}
                 </ScrollView>
-                <BottomNavigationContainer
-                    navigation={this.props.navigation}
-                    activeTab={2}
-                />
             </View>
         )
     }

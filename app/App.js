@@ -1,27 +1,53 @@
 import React from 'react'
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator, TabNavigator } from 'react-navigation'
 import HomeScreen from './components/HomeScreen'
-import MapScreen from './components/MapScreen'
-import ListScreen from './components/ListScreen'
-import DetailLocationScreen from './components/DetailLocationScreen'
 import LexikonScreen from './components/LexikonScreen'
 import DetailLexikonScreen from './components/DetailLexikonScreen'
+import MapScreen from './components/MapScreen'
+import ListScreen from './components/ListScreen'
+import LocationInfosScreen from './components/LocationInfosScreen'
+import LocationFeedbackScreen from './components/LocationFeedbackScreen'
+import { colors } from './styles'
+
+const tabBarOptions = {
+    activeTintColor: colors.white,
+    inactiveTintColor: colors.white,
+    inactiveBackgroundColor: colors.secondary,
+    style: { backgroundColor: colors.primary }
+}
+
+const LocationNavigator = TabNavigator(
+    {
+        Karte: { screen: MapScreen },
+        Liste: { screen: ListScreen }
+    },
+    {
+        swipeEnabled: false,
+        tabBarOptions: tabBarOptions
+    }
+)
+
+const DetailLocationNavigator = TabNavigator(
+    {
+        Infos: { screen: LocationInfosScreen },
+        Bewertungen: { screen: LocationFeedbackScreen }
+    },
+    {
+        tabBarOptions: tabBarOptions
+    }
+)
 
 export default (App = StackNavigator({
     Home: {
         screen: HomeScreen,
         navigationOptions: { title: 'ComfyCoffee' }
     },
-    Map: {
-        screen: MapScreen,
-        navigationOptions: { title: 'Karte' }
-    },
-    List: {
-        screen: ListScreen,
-        navigationOptions: { title: 'Liste' }
+    Location: {
+        screen: LocationNavigator,
+        navigationOptions: { title: 'Cafés in der Nähe' }
     },
     DetailLocation: {
-        screen: DetailLocationScreen,
+        screen: DetailLocationNavigator,
         navigationOptions: { title: 'Café' }
     },
     Lexikon: {
@@ -29,7 +55,6 @@ export default (App = StackNavigator({
         navigationOptions: { title: 'Lexikon' }
     },
     DetailLexikon: {
-        screen: DetailLexikonScreen,
-        navigationOptions: { title: 'Kaffee' }
+        screen: DetailLexikonScreen
     }
 }))
