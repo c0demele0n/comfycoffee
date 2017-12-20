@@ -1,13 +1,18 @@
 import React from 'react'
-import { StyleSheet, View, Button } from 'react-native'
+import { StyleSheet, View, ScrollView } from 'react-native'
+import LocationItem from './LocationItem'
 import { colors } from '../styles'
 
 export default class MapScreen extends React.Component {
     render() {
-        const { navigate } = this.props.navigation
+        const { navigate, state } = this.props.navigation
+        const { places } = state.params
+
         return (
             <View style={styles.view}>
-                <Button onPress={() => navigate('DetailLocation')} title="DetailLocation" />
+                <ScrollView>
+                    <LocationItem place={places[0]} navigate={navigate} />
+                </ScrollView>
             </View>
         )
     }

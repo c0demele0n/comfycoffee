@@ -1,10 +1,77 @@
 import React from 'react'
-import { StyleSheet, View, Button, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, View, Button, TouchableOpacity, Image, Alert } from 'react-native'
+import Permissions from 'react-native-permissions'
+import { getPlaces, getPlace, getPhoto } from '../api'
 import { colors } from '../styles'
 
-import { getPlace } from '../api'
-
 export default class HomeScreen extends React.Component {
+    async fetchPlaces(position) {
+        const { navigate } = this.props.navigation
+        const rawPlaces = position
+            ? await getPlaces(position.coords.latitude, position.coords.longitude)
+            : await getPlaces()
+
+        const places = rawPlaces.map(place => {
+            const { opening_hours, photos } = place
+
+            place.isOpen = false
+            place.photo = 'https://via.placeholder.com/160x160'
+
+            if (opening_hours) {
+                place.isOpen = opening_hours.open_now ? 'gerade geöffnet' : 'gerade geschlossen'
+            }
+
+            if (photos) {
+                place.photo = getPhoto(photos)
+            }
+
+            return place
+        })
+
+        console.log(places)
+
+        navigate('Location', { places })
+    }
+
+    async getCurrentPosition() {
+        const self = this
+        console.log('get current position')
+
+        async function success(position) {
+            console.log('got current position')
+            self.fetchPlaces(position)
+        }
+
+        async function error(error) {
+            console.log(error.message)
+            self.fetchPlaces()
+        }
+
+        const options = {
+            timeout: 5000
+        }
+
+        navigator.geolocation.getCurrentPosition(success, error, options)
+        // TODO: solve "Unable to fetch location" error
+    }
+
+    async checkPermission() {
+        const permission = await Permissions.check('location', 'always')
+        console.log(permission)
+
+        if (permission == 'authorized' || permission == 'denied') {
+            this.getCurrentPosition()
+        } else {
+            Alert.alert('Can we access your location?', 'We need access so we can show you nearby places.', [
+                {
+                    text: 'No way',
+                    style: 'cancel'
+                },
+                { text: 'Open Settings', onPress: Permissions.openSettings }
+            ])
+        }
+    }
+
     async goToDetail() {
         const { navigate } = this.props.navigation
         const placeDetails = await getPlace()
@@ -13,11 +80,16 @@ export default class HomeScreen extends React.Component {
             place: placeDetails
         })
     }
+
     render() {
         const { navigate } = this.props.navigation
         return (
             <View style={styles.view}>
-                <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigate('Karte')} title="Karte">
+                <TouchableOpacity
+                    style={styles.touchableOpacity}
+                    onPress={this.checkPermission.bind(this)}
+                    title="Karte"
+                >
                     <Image style={styles.imageMarker} source={require('../assets/kaffeemarker.png')} />
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -31,7 +103,7 @@ export default class HomeScreen extends React.Component {
                 >
                     <Image style={styles.imageBook} source={require('../assets/books.png')} />
                 </TouchableOpacity>
-                <Button onPress={this.goToDetail.bind(this)} title="DetailLocation" />
+                {/* <Button onPress={this.goToDetail.bind(this)} title="DetailLocation" /> */}
             </View>
         )
     }
