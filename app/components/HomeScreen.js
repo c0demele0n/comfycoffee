@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Button } from 'react-native'
+import { StyleSheet, View, Button, TouchableOpacity, Image } from 'react-native'
 import { colors } from '../styles'
 
 export default class HomeScreen extends React.Component {
@@ -7,8 +7,20 @@ export default class HomeScreen extends React.Component {
         const { navigate } = this.props.navigation
         return (
             <View style={styles.view}>
-                <Button onPress={() => navigate('Karte')} title="Karte" />
-                <Button onPress={() => navigate('Lexikon')} title="Lexikon" />
+                <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigate('Karte')} title="Karte">
+                    <Image style={styles.imageMarker} source={require('../assets/kaffeemarker.png')} />
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.touchableOpacity}
+                    onPress={() =>
+                        navigate('Lexikon', {
+                            lexikon: true
+                        })
+                    }
+                    title="Lexikon"
+                >
+                    <Image style={styles.imageBook} source={require('../assets/books.png')} />
+                </TouchableOpacity>
             </View>
         )
     }
@@ -17,6 +29,19 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
     view: {
         flex: 1,
-        backgroundColor: colors.secondary
+        backgroundColor: colors.secondary,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    imageMarker: {
+        width: 170,
+        height: 170,
+        marginBottom: 50
+    },
+    imageBook: {
+        width: 130,
+        height: 130,
+        marginBottom: 20
     }
 })

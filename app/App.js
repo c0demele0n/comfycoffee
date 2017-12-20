@@ -1,5 +1,5 @@
 import React from 'react'
-import { StackNavigator, TabNavigator } from 'react-navigation'
+import { StackNavigator, TabNavigator, NavigationActions } from 'react-navigation'
 import HomeScreen from './components/HomeScreen'
 import LexikonScreen from './components/LexikonScreen'
 import DetailLexikonScreen from './components/DetailLexikonScreen'
@@ -9,6 +9,18 @@ import LocationInfosScreen from './components/LocationInfosScreen'
 import LocationFeedbackScreen from './components/LocationFeedbackScreen'
 import { colors, iconSizes } from './styles'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+
+function getCurrentRouteName(navigationState) {
+    if (!navigationState) {
+        return null
+    }
+    const route = navigationState.routes[navigationState.index]
+    // dive into nested navigators
+    if (route.routes) {
+        return getCurrentRouteName(route)
+    }
+    return route.routeName
+}
 
 const tabBarOptions = {
     activeTintColor: colors.white,
@@ -22,21 +34,13 @@ const LocationNavigator = TabNavigator(
         Karte: {
             screen: MapScreen,
             navigationOptions: {
-                tabBarIcon: () => (
-                    <Icon
-                        size={iconSizes.m}
-                        color={colors.white}
-                        name="place"
-                    />
-                )
+                tabBarIcon: () => <Icon size={iconSizes.m} color={colors.white} name="place" />
             }
         },
         Liste: {
             screen: ListScreen,
             navigationOptions: {
-                tabBarIcon: () => (
-                    <Icon size={iconSizes.m} color={colors.white} name="list" />
-                )
+                tabBarIcon: () => <Icon size={iconSizes.m} color={colors.white} name="list" />
             }
         }
     },
@@ -51,21 +55,13 @@ const DetailLocationNavigator = TabNavigator(
         Infos: {
             screen: LocationInfosScreen,
             navigationOptions: {
-                tabBarIcon: () => (
-                    <Icon
-                        size={iconSizes.m}
-                        color={colors.white}
-                        name="free-breakfast"
-                    />
-                )
+                tabBarIcon: () => <Icon size={iconSizes.m} color={colors.white} name="free-breakfast" />
             }
         },
         Bewertungen: {
             screen: LocationFeedbackScreen,
             navigationOptions: {
-                tabBarIcon: () => (
-                    <Icon size={iconSizes.m} color={colors.white} name="star" />
-                )
+                tabBarIcon: () => <Icon size={iconSizes.m} color={colors.white} name="star" />
             }
         }
     },
@@ -74,7 +70,7 @@ const DetailLocationNavigator = TabNavigator(
     }
 )
 
-export default (App = StackNavigator(
+const Navigator = StackNavigator(
     {
         Home: {
             screen: HomeScreen,
@@ -104,4 +100,17 @@ export default (App = StackNavigator(
             }
         }
     }
-))
+)
+
+export default class App extends React.Component {
+    render() {
+        return (
+            <Navigator
+                onNavigationStateChange={(prevState, currentState) => {
+                    this.setState({ ...this.state, route_index: currentState.index })
+                }}
+                screenProps={this.state}
+            />
+        )
+    }
+}

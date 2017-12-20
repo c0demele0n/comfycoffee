@@ -13,7 +13,8 @@
             "strength": 3,
             "alk": "no",
             "image": "",
-            "text": "more detailed info"
+            "text":
+                "Das Verfahren ergibt einen konzentrierten Kaffee, auf dem sich eine dichte, haselnussbraune Schaumschicht – die Crema – befindet, die zu seinem Aroma beiträgt. Durch die starke Röstung enthält das Kaffeemehl für Espresso weniger Koffein als die gleiche Menge Kaffeemehl, das für Filterkaffee verwendet wird. Entsprechend ist bei den typischen Portionsgrößen auch die Koffeinmenge pro Tasse Espresso geringer als pro Tasse Filterkaffee. Die Konzentration von Koffein ist höher, da bei der Zubereitung weniger Wasser verwendet wird (typischerweise 25 ml Wasser beim Espresso, jedoch 125 ml beim Filterkaffee). Dazu kommt, dass Koffein aufgrund seiner überwiegenden Fettlöslichkeit während der ca. 25 Sekunden dauernden Espressobereitung weniger ausgewaschen wird als beim längeren Stehen im Kaffeefilter oder bei anderen Zubereitungsarten, bei denen minutenlanger Kontakt zwischen Kaffeemehl und Wasser besteht."
         },
         {
             "id": "cappuccino",
