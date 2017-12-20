@@ -7,19 +7,24 @@ function handleError(error) {
     return null
 }
 
-export async function getPlaces(
-    lat = 49.634871,
-    long = 8.345122,
-    radius = 10000, // in m
-    type = 'cafe'
-) {
+export async function getPlaces(lat = 49.634871, long = 8.345122) {
     const encodedURI = window.encodeURI(
-        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${
-            lat
-        },${long}&radius=${radius}&type=${type}&key=${apiKey}`
+        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${long}&rankby=distance&type=cafe&key=${apiKey}`
+    )
+    const places = await axios.get(encodedURI).catch(handleError)
+    return places.data.results
+}
+
+export async function getPlace(id = 'ChIJrTLr-GyuEmsRBfy61i59si0') {
+    const encodedURI = window.encodeURI(
+        `https://maps.googleapis.com/maps/api/place/details/json?placeid=${id}&key=${apiKey}`
     )
 
-    const places = await axios.get(encodedURI).catch(handleError)
+    const place = await axios.get(encodedURI).catch(handleError)
+    return place.data.result
+}
 
-    return places.data.results
+export function getPhoto(photos, width = 160) {
+    const ref = photos[0].photo_reference
+    return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${width}&photoreference=${ref}&key=${apiKey}`
 }

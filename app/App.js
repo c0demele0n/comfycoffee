@@ -55,12 +55,14 @@ const DetailLocationNavigator = TabNavigator(
         Infos: {
             screen: LocationInfosScreen,
             navigationOptions: {
+                tabBarLabel: 'Infos',
                 tabBarIcon: () => <Icon size={iconSizes.m} color={colors.white} name="free-breakfast" />
             }
         },
         Bewertungen: {
             screen: LocationFeedbackScreen,
             navigationOptions: {
+                tabBarLabel: 'Bewertungen',
                 tabBarIcon: () => <Icon size={iconSizes.m} color={colors.white} name="star" />
             }
         }
@@ -81,8 +83,7 @@ const Navigator = StackNavigator(
             navigationOptions: { title: 'Cafés in der Nähe' }
         },
         DetailLocation: {
-            screen: DetailLocationNavigator,
-            navigationOptions: { title: 'Café' }
+            screen: DetailLocationNavigator
         },
         Lexikon: {
             screen: LexikonScreen,

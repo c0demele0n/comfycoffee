@@ -2,7 +2,17 @@ import React from 'react'
 import { StyleSheet, View, Button, TouchableOpacity, Image } from 'react-native'
 import { colors } from '../styles'
 
+import { getPlace } from '../api'
+
 export default class HomeScreen extends React.Component {
+    async goToDetail() {
+        const { navigate } = this.props.navigation
+        const placeDetails = await getPlace()
+
+        navigate('DetailLocation', {
+            place: placeDetails
+        })
+    }
     render() {
         const { navigate } = this.props.navigation
         return (
@@ -21,6 +31,7 @@ export default class HomeScreen extends React.Component {
                 >
                     <Image style={styles.imageBook} source={require('../assets/books.png')} />
                 </TouchableOpacity>
+                <Button onPress={this.goToDetail.bind(this)} title="DetailLocation" />
             </View>
         )
     }
