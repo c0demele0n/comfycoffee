@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPEvent.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPEvent.h

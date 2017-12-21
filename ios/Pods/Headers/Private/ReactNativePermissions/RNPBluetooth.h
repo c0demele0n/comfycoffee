@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPBluetooth.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPBluetooth.h

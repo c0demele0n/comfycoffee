@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPNotification.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPNotification.h

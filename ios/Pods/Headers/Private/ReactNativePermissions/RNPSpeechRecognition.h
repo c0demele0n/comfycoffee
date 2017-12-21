@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPSpeechRecognition.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPSpeechRecognition.h

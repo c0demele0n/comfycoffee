@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPAudioVideo.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPAudioVideo.h

@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/RCTConvert+RNPStatus.h
+../../../../../node_modules/react-native-permissions/ios/RCTConvert+RNPStatus.h

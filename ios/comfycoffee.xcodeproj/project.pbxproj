@@ -58,6 +58,7 @@
 		B6C3071C1FC8626800CA63FE /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6C306ED1FC8626700CA63FE /* SimpleLineIcons.ttf */; };
 		B6C3071D1FC8626800CA63FE /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6C306EE1FC8626700CA63FE /* MaterialIcons.ttf */; };
 		B6C307241FC8642800CA63FE /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C307231FC863DF00CA63FE /* libRNVectorIcons.a */; };
+		B6D59E441FEB048800DCF81B /* AirGoogleMaps in Resources */ = {isa = PBXBuildFile; fileRef = B6D59E431FEB048800DCF81B /* AirGoogleMaps */; };
 		C6EA7167967847B3B5823AE3 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82693ED420F04783A6768AE2 /* SimpleLineIcons.ttf */; };
 		D3E0FB3E2096499090D68EBC /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2771FA18E9C04742B02CC876 /* Octicons.ttf */; };
 		D7CA9D89CF1E4D85B590578B /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59A3AD32A057407983E38216 /* MaterialCommunityIcons.ttf */; };
@@ -390,6 +391,7 @@
 		B6C3071E1FC863DF00CA63FE /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		B6C307271FC8644200CA63FE /* libreact-native-google-maps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-google-maps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C307281FC8644200CA63FE /* libreact-native-maps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-maps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D59E431FEB048800DCF81B /* AirGoogleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirGoogleMaps; path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps"; sourceTree = "<group>"; };
 		BD2E2C015ADE42E5A6AF728A /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		C1CEF146F4DC457C8A352635 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		CDD5B8C8204A424A989898A0 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
@@ -646,6 +648,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B6D59E431FEB048800DCF81B /* AirGoogleMaps */,
 				B6C306E31FC8626700CA63FE /* Fonts */,
 				13B07FAE1A68108700A75B9A /* comfycoffee */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -1196,6 +1199,7 @@
 				B6C307181FC8626800CA63FE /* Ionicons.ttf in Resources */,
 				B6C3071C1FC8626800CA63FE /* SimpleLineIcons.ttf in Resources */,
 				B6C307131FC8626800CA63FE /* Octicons.ttf in Resources */,
+				B6D59E441FEB048800DCF81B /* AirGoogleMaps in Resources */,
 				B6C307141FC8626800CA63FE /* Feather.ttf in Resources */,
 				B6C307191FC8626800CA63FE /* FontAwesome.ttf in Resources */,
 				B6C307151FC8626800CA63FE /* Entypo.ttf in Resources */,
@@ -1280,7 +1284,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-comfycoffee/Pods-comfycoffee-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
@@ -1453,7 +1457,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\ndsf$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps/**",
+				);
 				INFOPLIST_FILE = comfycoffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1472,7 +1479,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\ndsf$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps\n\n$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps/**",
+				);
 				INFOPLIST_FILE = comfycoffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/ReactNativePermissions.h
+../../../../../node_modules/react-native-permissions/ios/ReactNativePermissions.h

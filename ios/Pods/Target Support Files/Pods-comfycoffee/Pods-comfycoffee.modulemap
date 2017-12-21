@@ -1,6 +1,0 @@
-framework module Pods_comfycoffee {
-  umbrella header "Pods-comfycoffee-umbrella.h"
-
-  export *
-  module * { export * }
-}

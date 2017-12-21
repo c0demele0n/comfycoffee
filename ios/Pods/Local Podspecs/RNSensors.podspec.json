@@ -1,11 +1,15 @@
 {
   "name": "RNSensors",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "summary": "A developer friendly approach for sensors in react-native",
   "description": "A developer friendly approach for sensors in react-native",
   "homepage": "https://github.com/react-native-sensors/react-native-sensors#readme",
-  "license": "",
-  "authors": "",
+  "license": "MIT",
+  "authors": {
+    "name": "Daniel Schmidt",
+    "email": "danielmschmidt92@gmail.com",
+    "url": "danielmschmidt.de"
+  },
   "source": {
     "git": "https://github.com/react-native-sensors/react-native-sensors.git"
   },

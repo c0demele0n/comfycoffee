@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPPhoto.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPPhoto.h

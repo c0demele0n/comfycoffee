@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'comfycoffee' do
-  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/yoga.podspec'
   pod 'React', path: '../node_modules/react-native', :subspecs => [
     'Core',
     'RCTActionSheet',
@@ -20,11 +20,22 @@ target 'comfycoffee' do
     'BatchedBridge'
   ]
 
-  pod 'GoogleMaps'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
 
-  pod 'RNSensors', :path => '../node_modules/react-native-sensors'
+  pod 'RNSensors', :path => '../node_modules/react-native-sensors', :homepage => ''
 
+  pod 'GoogleMaps'
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', path: '../node_modules/react-native-maps/'
+end
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+      if target.name == "react-native-google-maps"
+          target.build_configurations.each do |config|
+              config.build_settings['CLANG_ENABLE_MODULES'] = 'No'
+          end
+      end
+  end
 end

@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPLocation.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPLocation.h

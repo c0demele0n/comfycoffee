@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native-permissions/permissions/RNPContacts.h
+../../../../../node_modules/react-native-permissions/ios/Permissions/RNPContacts.h
