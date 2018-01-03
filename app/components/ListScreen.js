@@ -11,7 +11,9 @@ export default class ListScreen extends React.Component {
         return (
             <View style={styles.view}>
                 <ScrollView>
-                    {places.map(place => <LocationItem key={place.id} place={place} navigate={navigate} />)}
+                    {places.map(place => (
+                        <LocationItem key={place.id} place={place} navigate={navigate} divider="true" />
+                    ))}
                 </ScrollView>
             </View>
         )

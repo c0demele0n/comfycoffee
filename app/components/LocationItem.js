@@ -18,41 +18,44 @@ export default class Location extends React.Component {
     }
 
     render() {
-        const { name, vicinity, rating, isOpen, photo, distance } = this.props.place
+        const { place, divider } = this.props
+        const { name, vicinity, rating, isOpen, photo, distance } = place
 
         return (
-            <View style={styles.outer}>
-                <View style={styles.infoWrap}>
-                    <Image style={styles.image} source={{ uri: photo }} />
-                    <View>
-                        <Text style={styles.text}>{name}</Text>
-                        <Text style={styles.text}>{vicinity}</Text>
+            <View style={styles.view}>
+                <View style={styles.outer}>
+                    <View style={styles.infoWrap}>
+                        <Image style={styles.image} source={{ uri: photo }} />
+                        <View>
+                            <Text style={styles.text}>{name}</Text>
+                            <Text style={styles.text}>{vicinity}</Text>
 
-                        {rating && (
-                            <View style={styles.rating}>
-                                <StarRating
-                                    disabled={true}
-                                    maxStars={5}
-                                    rating={rating}
-                                    selectedStar={rating => this.onStarRatingPress(rating)}
-                                    starColor={colors.yellow}
-                                    starSize={20}
-                                    buttonStyle={{ marginRight: 5 }}
-                                />
-                            </View>
-                        )}
+                            {rating && (
+                                <View style={styles.rating}>
+                                    <StarRating
+                                        disabled={true}
+                                        maxStars={5}
+                                        rating={rating}
+                                        selectedStar={rating => this.onStarRatingPress(rating)}
+                                        starColor={colors.yellow}
+                                        starSize={20}
+                                        buttonStyle={{ marginRight: 5 }}
+                                    />
+                                </View>
+                            )}
 
-                        {isOpen && (
-                            <View style={styles.openingHours}>
-                                <Icon
-                                    style={styles.openingHoursIcon}
-                                    size={iconSizes.s}
-                                    color={isOpen == 'gerade geschlossen' ? colors.red : colors.green}
-                                    name="watch-later"
-                                />
-                                <Text>{isOpen}</Text>
-                            </View>
-                        )}
+                            {isOpen && (
+                                <View style={styles.openingHours}>
+                                    <Icon
+                                        style={styles.openingHoursIcon}
+                                        size={iconSizes.s}
+                                        color={isOpen == 'gerade geschlossen' ? colors.red : colors.green}
+                                        name="watch-later"
+                                    />
+                                    <Text>{isOpen}</Text>
+                                </View>
+                            )}
+                        </View>
                     </View>
                 </View>
                 <View style={styles.bottomRow}>
@@ -65,6 +68,7 @@ export default class Location extends React.Component {
                         />
                         <Text>{distance} km</Text>
                     </View>
+
                     <View style={styles.callToAction}>
                         <Button
                             style={styles.callToActionButton}
@@ -84,17 +88,21 @@ export default class Location extends React.Component {
                             color={colors.primary}
                         />
                     </View>
-                </View>
 
-                <View style={styles.divider} />
+                    {divider && <View style={styles.divider} />}
+                </View>
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    view: {
+        backgroundColor: colors.white
+    },
     outer: {
-        padding: 8
+        padding: 8,
+        backgroundColor: colors.secondary
     },
     infoWrap: {
         flexDirection: 'row'
