@@ -7,19 +7,39 @@ import { colors } from '../styles'
 export default class MapScreen extends React.Component {
     render() {
         const { navigate, state } = this.props.navigation
-        const { places } = state.params
+        const { places, latitude, longitude } = state.params
+
+        const markers = places.map(place => {
+            const { id, name, geometry } = place
+            const { lat, lng } = geometry.location
+
+            return {
+                position: {
+                    latitude: lat,
+                    longitude: lng
+                },
+                title: name,
+                id
+            }
+        })
+
+        console.log(markers)
 
         return (
             <MapView
                 provider={PROVIDER_GOOGLE}
                 style={styles.view}
                 initialRegion={{
-                    latitude: 37.78825,
-                    longitude: -122.4324,
+                    latitude: latitude,
+                    longitude: longitude,
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421
                 }}
-            />
+            >
+                {markers.map(marker => (
+                    <MapView.Marker key={marker.id} coordinate={marker.position} title={marker.title} />
+                ))}
+            </MapView>
             //             <View style={styles.view}>
             //                 <ScrollView>
             //                     <LocationItem place={places[0]} navigate={navigate} />

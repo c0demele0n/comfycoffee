@@ -7,7 +7,7 @@ function handleError(error) {
     return null
 }
 
-export async function getPlaces(lat = 49.634871, long = 8.345122) {
+export async function getPlaces(lat, long) {
     const encodedURI = window.encodeURI(
         `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${long}&rankby=distance&type=cafe&key=${apiKey}`
     )

@@ -7,10 +7,11 @@ import { colors } from '../styles'
 export default class HomeScreen extends React.Component {
     async fetchPlaces(position) {
         const { navigate } = this.props.navigation
-        const rawPlaces = position
-            ? await getPlaces(position.coords.latitude, position.coords.longitude)
-            : await getPlaces()
 
+        const latitude = position ? position.coords.latitude : 49.634871
+        const longitude = position ? position.coords.longitude : 8.345122
+
+        const rawPlaces = await getPlaces(latitude, longitude)
         const places = rawPlaces.map(place => {
             const { opening_hours, photos } = place
 
@@ -30,7 +31,7 @@ export default class HomeScreen extends React.Component {
 
         console.log(places)
 
-        navigate('Location', { places })
+        navigate('Location', { places, latitude, longitude })
     }
 
     async getCurrentPosition() {
