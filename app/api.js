@@ -28,3 +28,24 @@ export function getPhoto(photos, width = 160) {
     const ref = photos[0].photo_reference
     return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${width}&photoreference=${ref}&key=${apiKey}`
 }
+
+export function calculateDistance(latitude, longitude, destination) {
+    const radius = 6371 //km
+    const currentPositionlatRad = toRadians(latitude)
+    const destinationLatRad = toRadians(destination.geometry.location.lat)
+    const deltaLat = toRadians(destination.geometry.location.lat - latitude)
+    const deltaLon = toRadians(destination.geometry.location.lng - longitude)
+
+    const a =
+        Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
+        Math.cos(currentPositionlatRad) * Math.cos(destinationLatRad) * Math.sin(deltaLon / 2) * Math.sin(deltaLon / 2)
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+
+    const distance = radius * c
+    return Math.round(distance * Math.pow(10, 2)) / Math.pow(10, 2)
+}
+
+toRadians = function(degree) {
+    return degree * (Math.PI / 180)
+}

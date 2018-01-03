@@ -8,16 +8,17 @@ import { colors, iconSizes } from '../styles'
 export default class Location extends React.Component {
     async goToDetail() {
         const { place, navigate } = this.props
-        const { place_id } = place
+        const { place_id, distance } = place
         const placeDetails = await getPlace(place_id)
-
+        placeDetails.distance = distance
+        console.log(placeDetails)
         navigate('DetailLocation', {
             place: placeDetails
         })
     }
 
     render() {
-        const { name, vicinity, rating, isOpen, photo } = this.props.place
+        const { name, vicinity, rating, isOpen, photo, distance } = this.props.place
 
         return (
             <View style={styles.outer}>
@@ -54,23 +55,35 @@ export default class Location extends React.Component {
                         )}
                     </View>
                 </View>
-
-                <View style={styles.callToAction}>
-                    <Button
-                        style={styles.callToActionButton}
-                        onPress={this.goToDetail.bind(this)}
-                        title="Details"
-                        color={colors.primary}
-                    />
-                    <Text>&nbsp;&nbsp;&nbsp;</Text>
-                    <Button
-                        style={styles.callToActionButton}
-                        onPress={() =>
-                            Linking.openURL(`https://maps.google.com/?daddr=${name},${vicinity}&directionsmode=walking`)
-                        }
-                        title="Route"
-                        color={colors.primary}
-                    />
+                <View style={styles.bottomRow}>
+                    <View style={styles.directionsWalk}>
+                        <Icon
+                            style={styles.directionsWalkIcon}
+                            size={iconSizes.s}
+                            color={colors.darkblue}
+                            name="directions-walk"
+                        />
+                        <Text>{distance} km</Text>
+                    </View>
+                    <View style={styles.callToAction}>
+                        <Button
+                            style={styles.callToActionButton}
+                            onPress={this.goToDetail.bind(this)}
+                            title="Details"
+                            color={colors.primary}
+                        />
+                        <Text>&nbsp;&nbsp;&nbsp;</Text>
+                        <Button
+                            style={styles.callToActionButton}
+                            onPress={() =>
+                                Linking.openURL(
+                                    `https://maps.google.com/?daddr=${name},${vicinity}&directionsmode=walking`
+                                )
+                            }
+                            title="Route"
+                            color={colors.primary}
+                        />
+                    </View>
                 </View>
 
                 <View style={styles.divider} />
@@ -118,5 +131,18 @@ const styles = StyleSheet.create({
         paddingTop: 8,
         borderBottomColor: colors.primary,
         borderBottomWidth: 1
+    },
+    directionsWalk: {
+        marginLeft: 8,
+        marginTop: 15,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    directionsWalkIcon: {
+        marginRight: 5
+    },
+    bottomRow: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     }
 })

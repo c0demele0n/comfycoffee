@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, View, Button, TouchableOpacity, Image, Alert } from 'react-native'
 import Permissions from 'react-native-permissions'
-import { getPlaces, getPlace, getPhoto } from '../api'
+import { getPlaces, getPlace, getPhoto, calculateDistance } from '../api'
 import { colors } from '../styles'
 
 export default class HomeScreen extends React.Component {
@@ -25,6 +25,8 @@ export default class HomeScreen extends React.Component {
             if (photos) {
                 place.photo = getPhoto(photos)
             }
+
+            place.distance = calculateDistance(latitude, longitude, place)
 
             return place
         })

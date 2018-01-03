@@ -50,7 +50,11 @@ export default class LocationFeedbackScreen extends React.Component {
         return (
             <View style={styles.view}>
                 <ScrollView style={styles.content}>
-                    {reviews.map(review => <Review key={review.time} review={review} />)}
+                    {reviews ? (
+                        reviews.map(review => <Review key={review.time} review={review} />)
+                    ) : (
+                        <Text>Keine Bewertungen vorhanden</Text>
+                    )}
                 </ScrollView>
             </View>
         )

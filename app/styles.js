@@ -7,7 +7,9 @@ export const colors = {
     yellow: 'rgb(255, 255, 150)', //#935F00
     green: 'rgb(0, 150, 0)',
     black: 'rgb(0, 0, 0)', // #000
-    white: 'rgb(255, 255, 255)' // #fff
+    white: 'rgb(255, 255, 255)', // #fff
+    lightblue: 'rgb(0, 91, 81)', //005B51
+    darkblue: 'rgb(9, 40, 98)' //092862
 }
 
 export const fontSizes = {

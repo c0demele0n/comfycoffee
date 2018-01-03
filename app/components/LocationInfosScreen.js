@@ -37,7 +37,8 @@ export default class LocationInfoScreen extends React.Component {
             formatted_address,
             formatted_phone_number,
             rating,
-            website
+            website,
+            distance
         } = this.props.navigation.state.params.place
         const { isOpen, photo } = this.state
 
@@ -63,7 +64,15 @@ export default class LocationInfoScreen extends React.Component {
                                 <Text>{isOpen}</Text>
                             </View>
                         )}
-
+                        <View style={styles.directionsWalk}>
+                            <Icon
+                                style={styles.directionsWalkIcon}
+                                size={iconSizes.s}
+                                color={colors.darkblue}
+                                name="directions-walk"
+                            />
+                            <Text>{distance} km</Text>
+                        </View>
                         {rating && (
                             <View style={styles.rating}>
                                 <View style={styles.stars}>
@@ -137,5 +146,13 @@ const styles = StyleSheet.create({
     },
     paragraph: {
         marginBottom: 10
+    },
+    directionsWalk: {
+        marginTop: 10,
+        flexDirection: 'row',
+        justifyContent: 'flex-start'
+    },
+    directionsWalkIcon: {
+        marginRight: 5
     }
 })
