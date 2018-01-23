@@ -106,8 +106,7 @@ const styles = StyleSheet.create({
     view: {
         flex: 1,
         justifyContent: 'space-between',
-        backgroundColor: colors.secondary,
-        paddingVertical: 20
+        backgroundColor: colors.secondary
     },
     outer: {
         flexDirection: 'row',

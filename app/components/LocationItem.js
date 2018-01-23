@@ -21,13 +21,16 @@ export default class Location extends React.Component {
         const { place, divider } = this.props
         const { name, vicinity, rating, isOpen, photo, distance } = place
 
+        const maxLen = 35
+        const finalName = name.length > maxLen ? name.substring(0, maxLen - 1) + '...' : name;
+
         return (
             <View style={styles.view}>
                 <View style={styles.outer}>
                     <View style={styles.infoWrap}>
                         <Image style={styles.image} source={{ uri: photo }} />
                         <View>
-                            <Text style={styles.text}>{name}</Text>
+                            <Text style={styles.text}>{finalName}</Text>
                             <Text style={styles.text}>{vicinity}</Text>
 
                             {rating && (
@@ -57,39 +60,39 @@ export default class Location extends React.Component {
                             )}
                         </View>
                     </View>
-                </View>
-                <View style={styles.bottomRow}>
-                    <View style={styles.directionsWalk}>
-                        <Icon
-                            style={styles.directionsWalkIcon}
-                            size={iconSizes.s}
-                            color={colors.darkblue}
-                            name="directions-walk"
-                        />
-                        <Text>{distance} km</Text>
+                    <View style={styles.bottomRow}>
+                        <View style={styles.directionsWalk}>
+                            <Icon
+                                style={styles.directionsWalkIcon}
+                                size={iconSizes.s}
+                                color={colors.darkblue}
+                                name="directions-walk"
+                            />
+                            <Text>{distance} km</Text>
+                        </View>
+
+                        <View style={styles.callToAction}>
+                            <Button
+                                style={styles.callToActionButton}
+                                onPress={this.goToDetail.bind(this)}
+                                title="Details"
+                                color={colors.primary}
+                            />
+                            <Text>&nbsp;&nbsp;&nbsp;</Text>
+                            <Button
+                                style={styles.callToActionButton}
+                                onPress={() =>
+                                    Linking.openURL(
+                                        `https://maps.google.com/?daddr=${name},${vicinity}&directionsmode=walking`
+                                    )
+                                }
+                                title="Route"
+                                color={colors.primary}
+                            />
+                        </View>
                     </View>
 
-                    <View style={styles.callToAction}>
-                        <Button
-                            style={styles.callToActionButton}
-                            onPress={this.goToDetail.bind(this)}
-                            title="Details"
-                            color={colors.primary}
-                        />
-                        <Text>&nbsp;&nbsp;&nbsp;</Text>
-                        <Button
-                            style={styles.callToActionButton}
-                            onPress={() =>
-                                Linking.openURL(
-                                    `https://maps.google.com/?daddr=${name},${vicinity}&directionsmode=walking`
-                                )
-                            }
-                            title="Route"
-                            color={colors.primary}
-                        />
-                    </View>
-
-                    {divider && <View style={styles.divider} />}
+                        {divider && <View style={styles.divider} />}
                 </View>
             </View>
         )
