@@ -1,0 +1,285 @@
+\chapter{Einleitung}
+\label{einleitung}
+Idee & Vision
+
+\section{Ziel}
+Finde Geheimtipps für lokale Cafés im Umkreis
+Lerne neue Kaffeesorten und Zubereitungsarten kennen
+
+\section{USP}
+Anzeige lokaler Cafés und damit nachhaltige Unterstützung der lokalen Kaffeewirtschaft gegen die großen Ketten
+
+
+
+\chapter{Konzeption}
+\label{konzeption}
+Personas Screenshots Prototyp, Personas wie in der Präsi, Flow Chart, Anforderungsanalyse, Design
+
+\section{Zielgruppe}
+Primäre Zielgruppe
+Kaffeeliebhaber, z.B. Studenten, Arbeitnehmer
+„Support your locals“-Mentalität
+
+Sekundäre Zielgruppe
+Urlauber
+Touristen
+
+\section{Personas}
+\subsection{Primärpersona}
+Person
+Laura Wagner
+25 Jahre, ledig
+Studium Sozialpädagogik
+Smartphone: Samsung Galaxy A5 (Android)
+Mentalität
+Extrovertiert, spontan
+Geht gerne mit Freunden im kleinen Café um die Ecke was trinken, will aber auch andere Cafés entdecken
+Legt Wert auf Fairtrade- und Biowaren, gemütliche und individuelle Cafés, kurze Wege
+Technikaffin (Mobil, Social Media)
+
+\subsection{Sekundärpersona}
+Person
+Roland Reisenweber
+42 Jahre, verheiratet
+Journalist bei Frankfurter Allgmeine
+Weniger technikaffin, iPhone
+Mentalität
+Extrovertiert, offen für neues
+Arbeitet gerne an öffentlichen Orten
+Soziales Bewusstsein
+Ist gerne mit seiner Frau auf Reisen (innerhalb der EU)
+Will regionale Kulturen kennenlernen
+
+
+\section{Anforderungsanalyse}
+\subsection{Muss-Anforderungen}
+Muss-Anforderungen auf das Nötigste heruntergebrochen, um die App sinnvoll bedienen zu können
+
+Lokale Cafés in der Nähe anzeigen
+Kartenansicht in Google Maps
+Listenansicht
+Standortdaten via Google API
+Kaffeelexikon
+Einträge über Zubereitungsarten
+Schüttelfunktion für Zufallswahl einer Zubereitungsart
+
+\subsection{Soll-Anforderungen}
+Navigation zu ausgewähltem Café über Google Maps
+Listenansicht mit den wichtigsten Standortinformationen
+Detailseite mit mehr Infos über das Café (Mehr Infos: Abhängig von Google API)
+
+\subsection{Kann-Anforderungen}
+Mehr Daten über zusätzliche APIs
+Eigene Standortbewertungen durch die App
+Eigene Standorte vorschlagen
+Erweitertes Lexikon
+Profil
+
+=> Anforderungen formulieren, Anforderungen in kleine Pakete unterteilen
+
+
+\section{Ablaufplan}
+=> Aufwandsschätzung schwierig (Erfahrung fehlt)
+Erfahrung: React Native, Cross Plattform, allg. App-Entwicklung
+
+\section{Flow Chart}
+\section{Wireframes}
+\section{Mockups}
+\section{Prototyp}
+Mockups aus Wireframes
+Interaktiver Prototyp aus Flowchart und Mockups
+
+
+
+
+\chapter{Entwicklung}
+\label{entwicklung}
+
+
+\section{React-Native \& Module}
+Entwickelt von Facebook
+Große Community
+Cross-Plattform
+Entwicklung in JavaScript
+Vorteile:
+Zugriff auf native Komponenten
+bessere Performance als hybride Frameworks
+Nachteile:
+Noch nicht sehr etabliert
+Anpassungen für Android / iOS
+
+
+\section{Setup}
+React Native: Quick Start, Native Code: create-react-native-app
+npm / yarn
+Node.js
+Android Studio
+Xcode
+Visual Studio Code als Editor
+Simulator oder Smartphone
+Git \& Bitbucket
+Trello
+
+=> Viele Tools für kleine App, Projektmanagement-tool zu aufwändig für Projektgröße
+
+
+
+\section{Arbeitsaufteilung}
+Zusammen angefangen
+
+\subsection{Gemeinsam}
+Grundgerüst, Navigation, Karte
+Grundgerüst gebaut mit Navigation und Seitenstruktur
+Anschließend: Jeder in andere Richtung weiter gearbeitet
+Karte: Aufteilung in Android und iOS
+Undokumentierte Module: Google Maps Karte
+
+=> Tabs und Bottom Navigation, Undokumentierte Module aus der Community
+
+
+\subsection{Katharina}
+Lexikon, Detailseite Kaffee, Bewegungssensor
+
+=> Integration Bewegungssensor und Navigation, Native UI Komponenten
+
+\subsection{Thomas}
+Geolocation, Liste, Detailansicht Café
+Google Places API
+Google Maps API
+
+=> API-Anbindung, Native UI Komponenten
+
+
+
+\section{Hands-on}
+Praktischer Teil, was lief gut, was nicht
+
+\subsection{Entwicklungsumgebung}
+VS Code
+Simulatoren
+Einbindung in Android Studio \& XCode
+
+
+
+!!! Learnings: hier passend, aber anders formulieren !!!
+Brücke zwischen Web- und mobiler Entwicklung: Brücke zwischen Web- und mobiler Entwicklung (einfacher Einstieg)
+Umständliches Debugging (Simulator -> kein CSS debugging)
+Native Abhängigkeiten trotz Cross-Plattform (Libraries einbinden, Environment konfigurieren)
+Viele aber unausgereifte Module zur Verfügung – nicht immer ganz ausgereift oder gut dokumentiert
+
+
+\subsection{Module}
+Map, Accelerator
+
+
+
+\section{Vorstellung der App}
+Screenshots: Startseite, Map, List, Detail Café, Bewertungen, Lexikon, Alert, Lexikon Detail
+
+??? Beide Plattformen
+
+
+\section{Readme}
+
+
+
+
+
+
+\chapter{Ausblick}
+\label{ausblick}
+...
+
+
+\section{Testkonzept}
+
+Usability Test
+10 – 20 Versuchsteilnehmer aus der Zielgruppe
+Beobachtung
+Thinking Aloud
+
+Interview und A/B-Test als Teil des Usability-Tests
+
+
+Interview
+Halb-strukturiert
+offene Fragen -> allgemein zur App
+geschlossene Fragen ->   A/B-Test
+
+A/B-Test
+Analyse Schüttelfunktion
+Vorschlag Kaffeesorte
+Bezahlfunktion
+
+
+
+\section{Marketing}
+Produktpolitik
+App
+Web-App
+Preispolitik
+Kostenfreier Download
+Eigenes Café als Top-Café (Anzeige)
+Userdaten / In-App Werbung?
+Cafédaten
+Distributionspolitik
+App-Stores
+Browser
+Kommunikationspolitik
+Landing-Page / Social Pages
+Werbung in Cafés
+Influencer
+Social Media Werbung
+Zeitung
+Blog
+Coffee of the Week, Location of the Week, Kaffee-Trends
+Kaffee-Reporter (Gesicht für die App)
+"Support your Locals" - Communities
+
+Retention Marketing
+Gutschein für das Café durch die App
+Cafébesitzer müssen zustimmen
+Gamification
+Punkte bei Besuch neuer Cafés
+Top10 bei jeweiligem Café
+Auf den Seltenheitsgrad von Kaffeesorten aufmerksam machen
+Kaffee-Trends
+Lexikoneinträge durch Cafébesuch freischalten
+Zeitliche Limitierung
+
+=> Marketing: Eigenes Themengebiet mit vielen Facetten
+
+
+
+
+
+
+\chapter{Fazit}
+\label{fazit}
+
+
+\section{Lessons Learned}
+Erste Schritte mit React Native und Cross-Plattform-Entwicklung
+Umgang mit APIs
+Umsetzung der nativen Designs
+Ansprechen von Hardwareschnittstellen
+Herausforderungen bei der Benutzung weniger etablierter Frameworks
+Technische Konzeption: Anforderungen und Implementierung <-> Produktkonzeption (König): Zielgruppe, Marktanlyse, etc.
+
+
+
+
+\section{React Native}
+Brücke zwischen Web- und mobiler Entwicklung: Brücke zwischen Web- und mobiler Entwicklung (einfacher Einstieg)
+Umständliches Debugging (Simulator -> kein CSS debugging)
+Native Abhängigkeiten trotz Cross-Plattform (Libraries einbinden, Environment konfigurieren)
+Viele aber unausgereifte Module zur Verfügung – nicht immer ganz ausgereift oder gut dokumentiert
+
+
+\section{Cross-Plattform vs. Nativ}
+Angelehnt an Webentwicklung
+Gute Designmöglichkeiten
+Hardwarezugriff
+Für ComfyCoffee nativ zu aufwändig
+
+=> Cross-Plattform Entwicklung lieber als native Entwicklung
