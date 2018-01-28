@@ -97,7 +97,8 @@ Interaktiver Prototyp aus Flowchart und Mockups
 
 
 \section{React Native}
-Das technische Kernelement des Projekts stellt das \emph{React Native} Framework dar.
+Nach kurzer Diskussion und dem Abwägen von Vor- und Nachteilen entschieden wir uns das \emph{React Native} Framework zu benutzen.
+React Native stellt somit das technische Kernelement des Projekts dar.
 Als ein von \emph{Facebook} entwickeltes und verwaltetes Repository erfreut es sich mit über 58.000 Sternen auf \emph{GitHub} großer Beliebtheit.
 Demnach steht bereits eine große Community hinter dem Cross-Plattform-Framework.
 Die Entwicklung mit React Native erfolgt fast ausschließlich über JavaScript.
@@ -107,17 +108,26 @@ Darüber hinaus benötigen die nativen Komponenten meist noch Anpassungen per Ha
 
 
 \section{Setup}
-React Native: Quick Start, Native Code: create-react-native-app
-npm / yarn
-Node.js
-Android Studio
-Xcode
-Visual Studio Code als Editor
-Simulator oder Smartphone
-Git \& Bitbucket
-Trello
-
-=> Viele Tools für kleine App, Projektmanagement-tool zu aufwändig für Projektgröße
+Um React Native einem Projekt hinzuzufügen stehen zwei Möglichkeiten zur Verfügung.
+Eine davon ist der \emph{Quick Start}, welcher nach erfolgreichem Ausführen einen QR-Code anzeigt.
+Über das Smartphone kann der Code gescannt und die App aufgerufen werden.
+Vor- und Nachteil gleichermaßen ist, dass die Entwicklungsumgebungen \emph{Android Studio} für Android und \emph{Xcode} für iOS nicht installiert sein müssen.
+Allerdings ist es somit auch nicht möglich, selbsterstellte React Native Module hinzuzufügen.
+Demnach entschieden wir uns für die zweite Variante, um zusätzlich Zugriff auf eigene Module zu haben.
+Hierbei wird React Native über die Kommandozeile und den Befehl 'create-react-native-app' initialisiert.
+\\
+Grundvoraussetzungen hierbei sind eine funktionierende Version von \emph{Node.js} sowie das Facebook Tool \emph{Watchman}.
+Für die Verwaltung von Abhängikeiten wird bei der Installation von React Native der Paketmanager \emph{Yarn} hinzugefügt, der Zugriff auf die über den \emph{Node Package Manager (npm)} bereitgestellten Module ermöglicht.
+Zusätzlich müssen die beiden Entwicklungsumgebungen Android Studio und Xcode zum Kompilieren des nativen Codes bereit stehen.
+Testing und Debugging der App kann somit entweder über die in Android Studio und Xcode integrierten Simulatoren erfolgen oder aber direkt über ein verbundenes Smartphone.
+\\
+Unsere Wahl für einen Code Editor fiel auf \emph{Visual Studio Code} von Microsoft, da es einen einfachen Einstieg bietet und sowohl für Windows als auch für Mac verfügbar ist.
+Als Versionierungssystem benutzten wir Bitbucket, welches die Verwaltung von Git-Repositories ermöglicht.
+Des Weiteren richteten wir ein \emph{Trello-Board} ein, auf dem das Projektmanagement abgebildeten werden sollte.
+\\
+\underline{Learnings:}
+Obwohl die Konzeption unserer App auf einen eher geringen Umfang schließen lässt wurden doch sehr viele Tools benötigt, um eine Entwicklung zu ermöglichen.
+Für diese Projektgröße stellte sich auch das Projektmanagementtool Trello als zu aufwändig in der Pflege heraus.
 
 
 
