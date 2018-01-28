@@ -132,31 +132,50 @@ Für diese Projektgröße stellte sich auch das Projektmanagementtool Trello als
 
 
 \section{Arbeitsaufteilung}
-Zusammen angefangen
+Die Aufteilung der anstehenden Aufgaben sahen wir als notwendig an, um die geplanten Deadlines einhalten zu können.
+Unumgänglich war allerdings eine gemeinsame Code-Basis, in die zusätzliche Funktionalitäten unabhängig voneinander integriert werden konnten.
+Hierzu legten wir durch \emph{Pair Programming} zusammen eine geeignete Grundlage.
 
 \subsection{Gemeinsam}
-Grundgerüst, Navigation, Karte
-Grundgerüst gebaut mit Navigation und Seitenstruktur
-Anschließend: Jeder in andere Richtung weiter gearbeitet
-Karte: Aufteilung in Android und iOS
-Undokumentierte Module: Google Maps Karte
-
-=> Tabs und Bottom Navigation, Undokumentierte Module aus der Community
-
+Das Fundament besteht aus dem Grundgerüst der App sowie der Navigation durch diese.
+Dabei besteht das Navigationskonzept aus einer übergeordneten \emph{Stack Navigation} sowie mehreren kontextabhängigen, verschachtelten \emph{Tab/Bottom Navigations}.
+Eine dem Flow Chart entsprechende Seitenstruktur ermöglicht es, Seiteninhalte isoliert zu bearbeiten.
+Die Implementierung der Karte wurde ebenfalls gemeinsam gelöst, allerdings nach Betriebssystemen getrennt.
+Sobald der Rahmen der App aufgebaut war arbeiteten wir an unterschiedlichen Funktionalitäten weiter.
+\\
+\underline{Learnings:}
+Bereits in diesem frühen Stadium konnten wir einige Aha-Momente für uns entdecken.
+Die Tabs und Bottom Navigation, so wie in unseren MockUps skizziert, ließ sich nur teilweise realisieren.
+Eine weitere Recherche ergab, dass der Aufbau der Navigation in React Native eine andere Lösung für diesen Fall vorgab und wir die Implementierung entsprechend anpassen mussten.
+Darüber hinaus stießen wir mit dem React Native Modul für die Google Maps Karte (react-native-maps) bereits auf ein undokumentiertes Modul aus der Community, welchem noch weitere folgen sollten.
 
 \subsection{Katharina}
-Lexikon, Detailseite Kaffee, Bewegungssensor
-
-=> Integration Bewegungssensor und Navigation, Native UI Komponenten
+Die Umsetzung der Inhalte des Lexikons und der Lexikon-Detailansicht sowie die Integration des Bewegungssensors übernahm Katharina Garrecht.
+Hierbei implementierte sie die im Prototypen definierten Elemente sowohl für die Übersichtsseite als auch für das Template der Kaffee-Detailseite.
+Die Detailseiten werden dabei mit in einer JSON Datei hinterlegten Inhalten gespeist.
+Auf der Übersichtsseite selbst ist der Bewegungssensor aktiv, welcher bei Erkennung einer Schüttelgeste zufällig eine der zur Verfügung stehenden Kaffee-Zubereitsungsarten auswählt und vorschlägt.
+\\
+\underline{Learnings:}
+Die Integration des Bewegungssensors in die bestehende Navigation brachte einige Stolpersteine mit sich, die nur durch lange Recherchen und Umwege überwunden werden konnten.
+Auch die Einarbeitung in native UI Komponenten der jeweiligen Betriebssysteme war für die Umsetzung dieser Funktionalitäten notwendig.
 
 \subsection{Thomas}
-Geolocation, Liste, Detailansicht Café
-Google Places API
-Google Maps API
+Die Darstellung der Listenansicht aller nahen Cafés sowie die Detailansicht einzelner Cafés fiel in den Aufgabenbereich von Thomas Wedler.
+Ebenso Teil dieses Bereichs war die Implementierung der Geolocation zur Ermittlung des aktuellen Standorts.
+Über diese Geokoordinaten werden bei Bedarf die \emph{Google Places API} und auch die \emph{Google Maps API} angesprochen.
+Das Ergebnis ist situationsabhängig entweder eine Liste aller umliegenden Cafés mit rudimentären Informationen zu diesen oder aber ein ausführliches Objekt mit zahlreichen Detailinformationen über ein einzelnes Café.
+\\
+\underline{Learnings:}
+Für die Umsetzung der benötigen Funktionalitäten war eine intensive Einarbeitung in das Ecosystem sowie die bereitgestellten Schnittstellen der Google APIs unumgänglich.
+Ebenfalls hier mussten native UI Komponenten der jeweiligen Betriebssysteme korrekt identifiziert und implementiert werden.
 
-=> API-Anbindung, Native UI Komponenten
 
 
+
+
+
+
+??? brauchen wir das? teilweise schon in Setup beschrieben ???
 
 \section{Hands-on}
 Praktischer Teil, was lief gut, was nicht
@@ -166,24 +185,81 @@ VS Code
 Simulatoren
 Einbindung in Android Studio \& XCode
 
-
-
 !!! Learnings: hier passend, aber anders formulieren !!!
 Brücke zwischen Web- und mobiler Entwicklung: Brücke zwischen Web- und mobiler Entwicklung (einfacher Einstieg)
 Umständliches Debugging (Simulator -> kein CSS debugging)
 Native Abhängigkeiten trotz Cross-Plattform (Libraries einbinden, Environment konfigurieren)
 Viele aber unausgereifte Module zur Verfügung – nicht immer ganz ausgereift oder gut dokumentiert
 
-
 \subsection{Module}
-Map, Accelerator
+axios: Erleichterung der Kommunikation mit APIs
+react-native-maps: Google Maps Karte für Kartenansicht
+react-native-permissions: Abfrage von Berechtigungen für Geolocation Zugriff
+react-native-sensors: Schnittstelle für Accelerator (Bewegungssensor)
+react-native-star-rating: Komponente zur visuellen Darstellung der Gesamtbewertung einzelner Cafés
+react-native-vector-icons: Icon Bibliothek
+react-navigation: Community Modul für ein alternatives Navigationskonzept
+
+unused:
+react-native-material-bottom-navigation: Bottom Navigation im Material Design für Android -> nicht benötigt, da stattdessen Tab Navigation
+react-native-stars: Alternative zu react-native-star-rating -> wird nicht benötigt
+react-native-google-places-autocomplete: Autocomplete für Google Places in der Nähe -> Nicht genug Funktionalitäten -> react-native-maps
+
+??? eventuell Module auflisten, beschreiben und vor Arbeitsaufteilung packen ???
+
+
+
 
 
 
 \section{Vorstellung der App}
-Screenshots: Startseite, Map, List, Detail Café, Bewertungen, Lexikon, Alert, Lexikon Detail
-
 ??? Beide Plattformen ???
+??? Text und Bild nebeneinander ???
+
+Startseite:
+Der Einstiegspunkt der App.
+Von dort aus ist die Navigation zur Umkreissuche oder zum Lexikon möglich.
+(screenshot)
+\\
+Kartenansicht:
+Hier werden auf einer interaktiven Google Maps Karte alle sich in der Nähe befindlichen Cafés einschließlich der aktuelle Standort angezeigt.
+Die hierfür benötigen Informationen werden über die entsprechenden Google APIs bezogen.
+Ein Klick auf einen Marker öffnet ein \emph{Bottom Sheet}, in welchem die wichtigsten Informationen über das ausgewählte Café wie etwa Entfernung, Bewertung, Öffnungszeiten oder Adresse angezeigt werden.
+Innerhalb dieses Sheets stehen Buttons zur Navigation auf die Detailseite des Cafés oder direkt zu Google Maps mit dem Café als hinterlegtem Ziel zur Verfügung.
+Des Weiteren erreicht man von hier aus über die Tab Navigation in Android sowie die Bottom Navigation in iOS die Listenansicht der angezeigten Cafés.
+(screenshot)
+\\
+Listenansicht:
+Die bereits in der Kartenansicht dargestellten Standorte der Cafés werden hier in einer übersichtlichen Liste gezeigt.
+Jeder Listeneintrag enthält die gleichen Informationen und Interaktionsmöglichkeiten wie das Bottom Sheet aus der Karte, da es sich hierbei technisch um eine eigens konstruierte React Native Komponente handelt.
+(screenshot)
+\\
+Infos Café:
+Diese Seite zeigt die bereits im Bottom Sheet vorhandenen Informationen über das ausgewählte Café.
+Außerdem sind weitere Details wie Telefonnummer, Internetadresse oder auch Bilder des Cafés - soweit über die Google API bereit gestellt - verfügbar.
+Auch hier erreicht man über einen Button das Café als Zieladresse direkt in Google Maps.
+Darüber hinaus enthält die Tab Navigation respektive Bottom Navigation einen Link zur Bewertungsseite des Cafés.
+(screenshot)
+\\
+Bewertungen Café:
+Alle über die Google API verfügbaren Bewertungen des ausgewählten Cafés werden hier in einer Liste angezeigt.
+Dabei erhält man Infos wie den Wert der abgegebenen Bewertung, den Zeitraum, den Berwertungsext sowie den Namen des Re­zen­senten.
+(screenshot)
+\\
+Lexikon:
+Die Übersichtsseite des Lexikons zeigt alle in der App hinterlegten Zubereitungsarten mit Namen und Icon.
+Ein Klick auf eines dieser Elemente führt auf die zugehörige Detailseite.
+Außerdem ist dies die einzige Seite, auf der der Bewegungssensor aktiv ist.
+Wird eine Schüttelgeste ausgeführt, so erhält man eine zufällig ausgewählte Zubereitungsart in einem Alert angezeigt.
+Von diesem aus kann man ebenfalls entweder direkt zur vorgeschlagenen Detailseite gelangen oder den Alert wieder entfernen.
+(screenshot)
+\\
+Lexikon Detailansicht:
+Hat man sich für eine Zubereitungsart entschieden erscheint das Template dieser Seite gefüllt mit den passenden Informationen.
+Dazu gehören der Name, das Icon, eine Beschreibung des Ablaufs sowie einige Attribute wie Stärke des Getränks oder Menge des benötigten Wassers.
+Diese Informationen sind an die jeweils ausgewählte Zubereitungsart angepasst.
+(screenshot)
+
 
 
 \section{Readme}
