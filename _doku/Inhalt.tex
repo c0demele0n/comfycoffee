@@ -1,86 +1,120 @@
 \chapter{Einleitung}
 \label{einleitung}
 Idee & Vision
+Starbucks, wohin das Auge blickt - das bedeutet Massenabfertigung an der Kasse, Kaffee mit Zusatz- und Konservierungsstoffen, Steuervermeidungstaktiken, angeblich ungerecht behandelte Mitarbeiter und unklare Fairness im Kaffeeanbau. Die kleinen, gemütlichen Kaffees verschwinden Aufgrund des hohen Konkurrenzdrucks von billigeren Anbietern immer mehr aus dem Stadtbild. Fair gehandelter Kaffee und exotische Sorten werden immer seltener angeboten.
 
 \section{Ziel}
-Finde Geheimtipps für lokale Cafés im Umkreis
-Lerne neue Kaffeesorten und Zubereitungsarten kennen
+Unser Ziel war es daher, kleinen lokalen Cafés wieder mehr Aufmerksamkeit zu schenken. Unsere App \emph{comfycoffee}, die dies umsetzt, verfolgt daher vor allem zwei große Ziele:
+\begin{itemize}
+	\item Finde Geheimtipps für lokale Cafés im Umkreis
+	\item Lerne neue Kaffeesorten und Zubereitungsarten kennen
+\end{itemize}
+Comfycoffee soll auf kleine lokale Cafés aufmerksam machen und im Idealfall deren Kundenstamm erhöhen. Kaffeeliebhaber können die großen Ketten mit ihrem ``0815''-Kaffee umgehen, lokale Cafés entdecken und neue Erfahrungen machen. Zusätzlich ist die App als Lexikon nutzbar, indem sie den Nutzer über Kaffeesorten informiert. 
 
-\section{USP}
-Anzeige lokaler Cafés und damit nachhaltige Unterstützung der lokalen Kaffeewirtschaft gegen die großen Ketten
+\section{Unique Selling Proposition (USP)}
+Der USP von comfycoffee betont die oben genannten Ziele:
 
+\emph{``Anzeige lokaler Cafés und damit nachhaltige Unterstützung der lokalen Kaffeewirtschaft gegen die großen Ketten''}
 
+Durch das Bekanntmachen kleiner Cafés kann deren Umsatz erhöht werden, so dass sie sich eher gegen große Ketten wie Starbucks und Co. behaupten können.
 
 \chapter{Konzeption}
 \label{konzeption}
-Personas Screenshots Prototyp, Personas wie in der Präsi, Flow Chart, Anforderungsanalyse, Design
+In der Konzeptionsphase wurden die Zielgruppen von comfycoffee herausgearbeitet und analysiert. Personas aus der Zielgruppe repräsentieren potentielle Nutzer der App. Anschließend wurden die Anforderungen an die App definiert und das Design entworfen.
 
 \section{Zielgruppe}
-Primäre Zielgruppe
-Kaffeeliebhaber, z.B. Studenten, Arbeitnehmer
-„Support your locals“-Mentalität
+Die Zielgruppe für comfycoffee besteht aus Menschen, die gerne Kaffee trinken und dabei offen für neues sind. 
 
-Sekundäre Zielgruppe
-Urlauber
-Touristen
+Die primäre Zielgruppe besteht aus Kaffeeliebhabern, wie z.B. Studenten oder Arbeitnehmern. Sie genießen die Atmosphäre der kleinen Kaffees, legen Wert auf Fair-Trade und besitzen eine ``Support your locals''-Mentalität. Das bedeutet, sie unterstützen und schätzen lokale Angebote.
+
+Die sekundäre Zielgruppe sind Urlauber und Touristen, die zu Besuch in einer fremden Stadt sind und lokale Geheimtipps entdecken wollen.
 
 \section{Personas}
 \subsection{Primärpersona}
-Person
-Laura Wagner
-25 Jahre, ledig
-Studium Sozialpädagogik
-Smartphone: Samsung Galaxy A5 (Android)
-Mentalität
-Extrovertiert, spontan
-Geht gerne mit Freunden im kleinen Café um die Ecke was trinken, will aber auch andere Cafés entdecken
-Legt Wert auf Fairtrade- und Biowaren, gemütliche und individuelle Cafés, kurze Wege
-Technikaffin (Mobil, Social Media)
+Laura Wagner vertritt die primäre Zielgruppe. Sie...
+\begin{itemize}
+	\item ...ist 25 Jahre alt
+	\item ...ledig
+	\item ...studiert Sozialpädagogik
+	\item ...ist extrovertiert und spontan
+	\item ...geht gerne mit Freunden im kleinen Café um die Ecke was trinken, will aber auch andere Cafés entdecken
+	\item ...legt Wert auf Fairtrade- und Biowaren, gemütliche und individuelle Cafés, kurze Wege
+	\item ...ist technikaffin, d. h. sie bewegt sich mit ihrem Smartphone (Samsung Galaxy A5 (Android)) souverän in den Sozialen Medien
+\end{itemize}
 
+\begin{figure}[h]
+    \centering
+		\includegraphics{Bilder/laura.eps}
+		\caption{Primärpersona Laura Wagner}
+\end{figure}
+ 
 \subsection{Sekundärpersona}
-Person
-Roland Reisenweber
-42 Jahre, verheiratet
-Journalist bei Frankfurter Allgmeine
-Weniger technikaffin, iPhone
-Mentalität
-Extrovertiert, offen für neues
-Arbeitet gerne an öffentlichen Orten
-Soziales Bewusstsein
-Ist gerne mit seiner Frau auf Reisen (innerhalb der EU)
-Will regionale Kulturen kennenlernen
+Roland Reisenweber vertritt die sekundäre Zielgruppe. Er...
+\begin{itemize}
+	\item ...ist 42 Jahre alt
+	\item ...verheiratet
+	\item ...arbeitet als Journalist bei Frankfurter Allgemeine
+	\item ...ist extrovertiert und offen für Neues
+	\item ...arbeitet gerne an öffentlichen Orten
+	\item ...besitzt ein ausgeprägtes soziales Bewusstsein
+	\item ...ist gerne mit seiner Frau auf Reisen (innerhalb der EU)
+	\item ...will regionale Kulturen kennenlernen
+	\item ...ist weniger technikaffin, d. h. er nutzt sein iPhone nur zum telefonieren
+\end{itemize}
 
+\begin{figure}[h]
+    \centering
+		\includegraphics{Bilder/roland.eps}
+		\caption{Sekundärpersona Roland Reisenweber}
+\end{figure}
 
 \section{Anforderungsanalyse}
-\subsection{Muss-Anforderungen}
-Muss-Anforderungen auf das Nötigste heruntergebrochen, um die App sinnvoll bedienen zu können
+In der Anforderungsanalyse haben wir die Muss-, Soll- und Kann-Anforderungen von comfycoffee definiert. Dabei war die Herausforderung, die Anforderungen exakt zu formulieren und in Pakete zu unterteilen, die klein genug waren, um sie in der im Ablaufplan definierten Zeit abzuarbeiten (vgl. Kapitel \ref{sec:ablaufplan}).
 
-Lokale Cafés in der Nähe anzeigen
-Kartenansicht in Google Maps
-Listenansicht
-Standortdaten via Google API
-Kaffeelexikon
-Einträge über Zubereitungsarten
-Schüttelfunktion für Zufallswahl einer Zubereitungsart
+\subsection{Muss-Anforderungen}
+Die Muss-Anforderungen wurden auf das Nötigste heruntergebrochen, um die App sinnvoll bedienen zu können. Vorgabe war, den Bewegungssensor (Gyroskop) und GPS zu benutzen. Daraus ergaben sich die folgenden Muss-Anforderungen:
+
+\begin{itemize}
+	\item Lokale Cafés in der Nähe anzeigen
+	\item Kartenansicht in Google Maps
+	\item Listenansicht
+	\item Standortdaten via Google API
+	\item Kaffeelexikon
+	\item Einträge über Zubereitungsarten
+	\item Schüttelfunktion (Benutzung des Bewegungssensors) für Zufallswahl einer Zubereitungsart
+\end{itemize}
 
 \subsection{Soll-Anforderungen}
-Navigation zu ausgewähltem Café über Google Maps
-Listenansicht mit den wichtigsten Standortinformationen
-Detailseite mit mehr Infos über das Café (Mehr Infos: Abhängig von Google API)
+Die Soll-Anforderungen erweitern den Funktionsumfang der App um nützliche Inhalte. Diese waren:
+
+\begin{itemize}
+	\item Navigation zu ausgewähltem Café über die App \emph{Google Maps}
+	\item Listenansicht mit den wichtigsten Standortinformationen
+	\item Detailseite mit mehr Infos über das Café (die Informationen sind abhängig davon, was die Google API zur Verfügung stellt)
+\end{itemize}
 
 \subsection{Kann-Anforderungen}
-Mehr Daten über zusätzliche APIs
-Eigene Standortbewertungen durch die App
-Eigene Standorte vorschlagen
-Erweitertes Lexikon
-Profil
+Die Kann-Anforderungen ergänzen die App durch weitere Informationen und Features, die der Nutzer nicht zwingend erwartet, aber als angenehm empfindet. Die Kann-Anforderungen waren:
 
-=> Anforderungen formulieren, Anforderungen in kleine Pakete unterteilen
-
+\begin{itemize}
+	\item Mehr Daten über zusätzliche APIs
+	\item Eigene Bewertungen der Cafés durch die App
+	\item Eigene Standorte vorschlagen
+	\item Erweitertes Lexikon (z. B. mit Kaffeesorten, etc.)
+	\item Profil des Nutzers anlegen
+\end{itemize}
 
 \section{Ablaufplan}
-=> Aufwandsschätzung schwierig (Erfahrung fehlt)
-Erfahrung: React Native, Cross Plattform, allg. App-Entwicklung
+\label{sec:ablaufplan}
+Anschließend wurde ein Ablaufplan ausgearbeitet und festgelegt. Dabei sollte die Designphase mit Wireframes, FlowCharts, Mockups und einem interaktiven Prototyp bis zum 22.11.2017 abgeschlossen sein. Für die Einarbeitung in das Entwicklungsframework, React Native (vgl. Kapitel \ref{sec:reactnative}), wurde eine Woche eingeplant. Bis zum 29.11.2017 sollte eine ``Hello World''-Anwendung laufen, um die Grundzüge des Frameworks zu beherrschen. Zwei Wochen, also bis zum 13.12.2017, waren für die Muss-Anforderungen, eine Woche für die Soll-Anforderungen (bis 20.12.2017) geplant. Die Kann-Anforderungen sollten im Januar 2018 abgeschlossen sein. Das folgende Diagramm veranschaulicht den Ablauf.
+
+\begin{figure}[h]
+    \centering
+		\includegraphics{Bilder/ablaufplan.png}
+		\caption{Ablaufplan der Konzeption und Entwicklung von comfycoffee}
+\end{figure}
+
+Die Aufwandsschätzung zu Beginn gestaltete sich als schwierig, da keine Erfahrung mit React Native und der Cross-Plattform-Entwicklung bzw. allgemein der App-Entwicklung vorhanden war.
 
 \section{Flow Chart}
 \section{Wireframes}
@@ -97,6 +131,7 @@ Interaktiver Prototyp aus Flowchart und Mockups
 
 
 \section{React Native}
+\label{sec:reactnative}
 Nach kurzer Diskussion und dem Abwägen von Vor- und Nachteilen entschieden wir uns das \emph{React Native} Framework zu benutzen.
 React Native stellt somit das technische Kernelement des Projekts dar.
 Als ein von \emph{Facebook} entwickeltes und verwaltetes Repository erfreut es sich mit über 58.000 Sternen auf \emph{GitHub} großer Beliebtheit.
