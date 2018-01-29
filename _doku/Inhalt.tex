@@ -8,7 +8,7 @@ Unser Bestreben war es daher, kleinen lokalen Cafés wieder mehr Aufmerksamkeit 
 	\item Finde Geheimtipps für lokale Cafés im Umkreis
 	\item Lerne neue Kaffeesorten und Zubereitungsarten kennen
 \end{itemize}
-Comfycoffee soll auf kleine lokale Cafés aufmerksam machen und im Idealfall deren Kundenstamm erhöhen. Kaffeeliebhaber können die großen Ketten mit ihrem ``0815''-Kaffee umgehen, lokale Cafés entdecken und neue Erfahrungen machen. Zusätzlich ist die App als Lexikon nutzbar, indem sie den Nutzer über Kaffeesorten informiert. 
+Comfycoffee soll auf kleine lokale Cafés aufmerksam machen und im Idealfall deren Kundenstamm erhöhen. Kaffeeliebhaber können die großen Ketten mit ihrem ``0815''-Kaffee umgehen, lokale Cafés entdecken und neue Erfahrungen machen. Zusätzlich ist die App als Lexikon nutzbar, indem sie den Nutzer über Kaffeesorten informiert.
 
 \section{Unique Selling Proposition (USP)}
 Der USP von comfycoffee betont die oben genannten Ziele:
@@ -24,7 +24,7 @@ Durch das Bekanntmachen kleiner Cafés kann deren Umsatz erhöht werden, so dass
 In der Konzeptionsphase wurden die Zielgruppen von comfycoffee herausgearbeitet und analysiert. Personas aus der Zielgruppe repräsentieren potentielle Nutzer der App. Anschließend wurden die Anforderungen an die App definiert und das Design entworfen.
 
 \section{Zielgruppe}
-Die Zielgruppe für comfycoffee besteht aus Menschen, die gerne Kaffee trinken und dabei offen für neues sind. 
+Die Zielgruppe für comfycoffee besteht aus Menschen, die gerne Kaffee trinken und dabei offen für neues sind.
 
 Die primäre Zielgruppe besteht aus Kaffeeliebhabern, wie z.B. Studenten oder Arbeitnehmern. Sie genießen die Atmosphäre der kleinen Kaffees, legen Wert auf Fair-Trade und besitzen eine ``Support your locals''-Mentalität. Das bedeutet, sie unterstützen und schätzen lokale Angebote.
 
@@ -50,7 +50,7 @@ Laura Wagner vertritt die primäre Zielgruppe. Sie...
 		\includegraphics{Bilder/laura.eps}
 		\caption{Primärpersona Laura Wagner}
 \end{figure}
- 
+
 \subsection{Sekundärpersona}
 Roland Reisenweber vertritt die sekundäre Zielgruppe. Er...
 \begin{itemize}
@@ -121,7 +121,7 @@ Anschließend wurde ein Ablaufplan ausgearbeitet und festgelegt. Dabei sollte di
 Die Aufwandsschätzung zu Beginn gestaltete sich als schwierig, da keine Erfahrung mit React Native und der Cross-Plattform-Entwicklung bzw. allgemein der App-Entwicklung vorhanden war.
 
 \section{Flow Chart}
-Das Flow Chart stellt die Navigation durch die App und die verschiedenen Views dar. Von der Startseite aus kann der Nutzer wählen, ob er die Karte mit den Cafés in der Nähe oder das Kaffee-Lexikon aufrufen will. 
+Das Flow Chart stellt die Navigation durch die App und die verschiedenen Views dar. Von der Startseite aus kann der Nutzer wählen, ob er die Karte mit den Cafés in der Nähe oder das Kaffee-Lexikon aufrufen will.
 
 In der Karte befindet sich eine Bottom Navigation Bar, mit der von der Karte zur Listenansicht und zurück gewechselt werden kann. Klickt der Nutzer in der Karte auf einen Marker oder in der Liste auf einen Eintrag, so wird er auf die Detailseite des jeweiligen Café geleitet. Dort erhält er Informationen wie Adresse, Öffnungszeiten und Bewertungen des Cafés. Über einen Button wird die Navigation zu dem Café in Google Maps geöffnet. Das Navigationskonzept wurde in der Entwicklung abgeändert, um den Design-Guidelines von Android und iOS zu entsprechen. Aus der Bottom Navigation Bar wurde in Android eine Tab Bar. Weiterhin wird auf der Detailseite eine Tab bzw. Bottom Navigation Bar angezeigt, um von der Seite des Cafés zu den Bewertungen zu wechseln.
 
@@ -149,8 +149,19 @@ Anhand der Mockups und des Flow Charts wurde in Axure ein interaktiver Prototyp 
 		\caption{Ansicht der Detailseite eines Kaffees im interaktiven Prototyp von comfycoffee}
 \end{figure}
 
+
+
+
+
+
 \chapter{Entwicklung}
 \label{entwicklung}
+Mit dem Abschluss der Konzeptionsphase begann die technische Umsetzung der App.
+Nachdem ein passendes Framework zur Entwicklung der App auf mehreren Plattformen gefunden wurde konnte eine sinnolle Projektstruktur mit allen benötigten Bibliotheken angelegt werden.
+Die Implementierung einiger Freatures wurde dabei parallel durchgeführt.
+Weiterhin wird in diesem Kapitel der aktuelle Stand der App beschrieben.
+Eine Readme inklusive Installationsanleitung schließt die technische Seite des Projekts ab.
+
 
 
 \section{React Native}
@@ -163,6 +174,7 @@ Die Entwicklung mit React Native erfolgt fast ausschließlich über JavaScript.
 Als Cross-Plattform-Framework ermöglicht React Native den Zugriff auf native Komponenten via JavaScript und profitiert somit von einer besseren Performance als hybride Frameworks.
 Allerdings erscheint es trotz seiner Popularität technisch noch nicht sehr etabliert.
 Darüber hinaus benötigen die nativen Komponenten meist noch Anpassungen per Hand für Android und iOS.
+
 
 
 \section{Setup}
@@ -186,6 +198,31 @@ Des Weiteren richteten wir ein \emph{Trello-Board} ein, auf dem das Projektmanag
 \underline{Learnings:}
 Obwohl die Konzeption unserer App auf einen eher geringen Umfang schließen lässt wurden doch sehr viele Tools benötigt, um eine Entwicklung zu ermöglichen.
 Für diese Projektgröße stellte sich auch das Projektmanagementtool Trello als zu aufwändig in der Pflege heraus.
+
+
+
+\section{Module}
+Für die Implementierung einiger Funktionalitäten stehen bereits zahlreiche Komponenten und Pakete aus der Community zu Verfügung.
+Zusätzlich zu den bereits in React Native integrieren Modulen werden folgende in der App verwendet:
+\begin{itemize}
+	\item axios: erleichtert die Kommunikation mit beliebigen APIs, da es entsprechende Hilfmethoden zur Verfügung stellt.
+	\item react-native-maps: eine benutzerdefinierte React Native Komponente, welche die Integration einer Google Maps Karte ermöglicht. Leider ein sehr undokumentiertes Module, welches große Probleme bei der Integration aufwirft.
+	\item react-native-permissions: bietet eine Schnittstelle zur Abfrage von unterschiedlichen Berechtigungen, beispielsweise dem Zugriff auf den aktuellen Standort.
+	\item react-native-sensors: ermöglicht den direkten Zugriff auf den Bewegungssensor des entsprechenden Endgeräts - leider ein ebenfalls eher undokumentiertes Modul.
+	\item react-native-star-rating: die visuelle Darstellung eines Werts (wie beispielsweise einer Bewertung) in Form von Sternen verpackt in einer React Native Komponente.
+	\item react-native-vector-icons: eine Sammlung thematisch geordneter Icon-Bibliotheken, welche nach dem Import direkt zur Verfügung stehen.
+	\item react-navigation: ein alternatives Navigationskonzept als React Native Modul aus der Community. Dieses ersetzt das in React Native integrierte Konzept und ermöglicht eine einfache Implementierung diverser Navigationselemente.
+\end{itemize}
+Während der Entwicklung wurden einige zusätzliche Module eingebunden, welche allerdings nicht den gewünschten Anforderungen entsprachen:
+\begin{itemize}
+	\item react-native-material-bottom-navigation: die ebenfalls in den Material Design Guidelines vertretene Bottom Navigation für Android verpackt in einer React Native Komponente. In dieser App wird allerdings die Navigation in Android über Tabs bevorzugt.
+	\item react-native-stars: eine Alternative zu dem verwendeten react-native-star-rating Modul. Da dieses Modul weniger Konfigurationsmöglichkeiten bietet als sein Pendant ist es obsolet.
+	\item react-native-google-places-autocomplete: die reduzierte Variante des react-native-maps Moduls. Allerdings ist der Funktionsumfang deutlich zu gering, so bietet es lediglich autocomplete für die Google Places API.
+\end{itemize}
+Durch die zahlreichen verfügbaren Komponenten lässt sich eine React Native App sehr stark modularisieren.
+Es können bei Bedarf die jeweils benötigen Funktionalitäten isoliert angefordert und eingebunden werden.
+Einzig undokumentierte und redundante Module stellen einen zusätzlichen Aufwand dar.
+Diese müssen zunächst herausgefiltert und getestet werden, um die beste Lösung zu finden.
 
 
 
@@ -229,47 +266,6 @@ Ebenfalls hier mussten native UI Komponenten der jeweiligen Betriebssysteme korr
 
 
 
-
-
-
-
-??? brauchen wir das? teilweise schon in Setup beschrieben ???
-
-\section{Hands-on}
-Praktischer Teil, was lief gut, was nicht
-
-\subsection{Entwicklungsumgebung}
-VS Code
-Simulatoren
-Einbindung in Android Studio \& XCode
-
-!!! Learnings: hier passend, aber anders formulieren !!!
-Brücke zwischen Web- und mobiler Entwicklung: Brücke zwischen Web- und mobiler Entwicklung (einfacher Einstieg)
-Umständliches Debugging (Simulator -> kein CSS debugging)
-Native Abhängigkeiten trotz Cross-Plattform (Libraries einbinden, Environment konfigurieren)
-Viele aber unausgereifte Module zur Verfügung - nicht immer ganz ausgereift oder gut dokumentiert
-
-\subsection{Module}
-axios: Erleichterung der Kommunikation mit APIs
-react-native-maps: Google Maps Karte für Kartenansicht
-react-native-permissions: Abfrage von Berechtigungen für Geolocation Zugriff
-react-native-sensors: Schnittstelle für Accelerator (Bewegungssensor)
-react-native-star-rating: Komponente zur visuellen Darstellung der Gesamtbewertung einzelner Cafés
-react-native-vector-icons: Icon Bibliothek
-react-navigation: Community Modul für ein alternatives Navigationskonzept
-
-unused:
-react-native-material-bottom-navigation: Bottom Navigation im Material Design für Android -> nicht benötigt, da stattdessen Tab Navigation
-react-native-stars: Alternative zu react-native-star-rating -> wird nicht benötigt
-react-native-google-places-autocomplete: Autocomplete für Google Places in der Nähe -> Nicht genug Funktionalitäten -> react-native-maps
-
-??? eventuell Module auflisten, beschreiben und vor Arbeitsaufteilung packen ???
-
-
-
-
-
-
 \section{Vorstellung der App}
 ??? Beide Plattformen ???
 ??? Text und Bild nebeneinander ???
@@ -277,50 +273,127 @@ react-native-google-places-autocomplete: Autocomplete für Google Places in der 
 Startseite:
 Der Einstiegspunkt der App.
 Von dort aus ist die Navigation zur Umkreissuche oder zum Lexikon möglich.
-(screenshot)
-\\
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-startseite.png}
+		\caption{Startseite der App}
+\end{figure}
+
+
 Kartenansicht:
 Hier werden auf einer interaktiven Google Maps Karte alle sich in der Nähe befindlichen Cafés einschließlich der aktuelle Standort angezeigt.
 Die hierfür benötigen Informationen werden über die entsprechenden Google APIs bezogen.
 Ein Klick auf einen Marker öffnet ein \emph{Bottom Sheet}, in welchem die wichtigsten Informationen über das ausgewählte Café wie etwa Entfernung, Bewertung, Öffnungszeiten oder Adresse angezeigt werden.
 Innerhalb dieses Sheets stehen Buttons zur Navigation auf die Detailseite des Cafés oder direkt zu Google Maps mit dem Café als hinterlegtem Ziel zur Verfügung.
 Des Weiteren erreicht man von hier aus über die Tab Navigation in Android sowie die Bottom Navigation in iOS die Listenansicht der angezeigten Cafés.
-(screenshot)
-\\
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-karte.png}
+		\caption{Kartenansicht der App}
+\end{figure}
+
+
 Listenansicht:
 Die bereits in der Kartenansicht dargestellten Standorte der Cafés werden hier in einer übersichtlichen Liste gezeigt.
 Jeder Listeneintrag enthält die gleichen Informationen und Interaktionsmöglichkeiten wie das Bottom Sheet aus der Karte, da es sich hierbei technisch um eine eigens konstruierte React Native Komponente handelt.
-(screenshot)
-\\
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-liste.png}
+		\caption{Listenansicht der App}
+\end{figure}
+
+
 Infos Café:
 Diese Seite zeigt die bereits im Bottom Sheet vorhandenen Informationen über das ausgewählte Café.
 Außerdem sind weitere Details wie Telefonnummer, Internetadresse oder auch Bilder des Cafés - soweit über die Google API bereit gestellt - verfügbar.
 Auch hier erreicht man über einen Button das Café als Zieladresse direkt in Google Maps.
 Darüber hinaus enthält die Tab Navigation respektive Bottom Navigation einen Link zur Bewertungsseite des Cafés.
-(screenshot)
-\\
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-info.png}
+		\caption{Infoseite eines Cafés der App}
+\end{figure}
+
+
 Bewertungen Café:
 Alle über die Google API verfügbaren Bewertungen des ausgewählten Cafés werden hier in einer Liste angezeigt.
 Dabei erhält man Infos wie den Wert der abgegebenen Bewertung, den Zeitraum, den Berwertungsext sowie den Namen des Re­zen­senten.
-(screenshot)
-\\
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-bewertungen.png}
+		\caption{Bewertungsseite eines Cafés der App}
+\end{figure}
+
+
 Lexikon:
 Die Übersichtsseite des Lexikons zeigt alle in der App hinterlegten Zubereitungsarten mit Namen und Icon.
 Ein Klick auf eines dieser Elemente führt auf die zugehörige Detailseite.
 Außerdem ist dies die einzige Seite, auf der der Bewegungssensor aktiv ist.
 Wird eine Schüttelgeste ausgeführt, so erhält man eine zufällig ausgewählte Zubereitungsart in einem Alert angezeigt.
 Von diesem aus kann man ebenfalls entweder direkt zur vorgeschlagenen Detailseite gelangen oder den Alert wieder entfernen.
-(screenshot)
-\\
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon.png}
+		\caption{Lexikonseite der App}
+\end{figure}
+
+
 Lexikon Detailansicht:
 Hat man sich für eine Zubereitungsart entschieden erscheint das Template dieser Seite gefüllt mit den passenden Informationen.
 Dazu gehören der Name, das Icon, eine Beschreibung des Ablaufs sowie einige Attribute wie Stärke des Getränks oder Menge des benötigten Wassers.
 Diese Informationen sind an die jeweils ausgewählte Zubereitungsart angepasst.
-(screenshot)
+
+\begin{figure}[H]
+    \centering
+		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon-detail.png}
+		\caption{Detailansicht eines Lexikoneintrags der App}
+\end{figure}
+
 
 
 
 \section{Readme}
+comfycoffee ist eine Cross-Plattform App zur Anzeige lokaler Cafés und damit nachhaltiger Unterstützung der lokalen Kaffeewirtschaft.
+Das Repository ist öffentlich und unter folgendem Link erreichbar: https://bitbucket.org/codemeleon/comfycoffee
+Weitere Informationen können der offiziellen React Native Dokumentation entnommen werden.
+
+\subsection{Voraussetzungen}
+Um an dem Projekt zu arbeiten müssen folgende Tools installiert sein:
+
+\begin{itemize}
+	\item node.js (v8.6.0 wird empfohlen)
+	\item npm (v5.3.0 wird empfohlen)
+	\item Watchman
+	\item Xcode: (für iOS Builds - nur für MacOS)
+	\item Android Studio: (for Anrdoid Builds)
+	\item git
+\end{itemize}
+
+Es wird die Verwendung von \emph{Visual Studio Code (VS Code)} als Code Editor empfohlen.
+Das VS Code Plugin \emph{Prettier - Code formatter} sorgt hierbei für einen sauber formatierten Code.
+
+
+\subsection{Testing und Debugging}
+Das Testing und Debugging kann über die in Android Studio und Xcode integrierten Simulatoren erfolgen.
+Eine weitere Möglichkeit ist die direkte Verbindung zu einem Smartphone/iPhone über USB.
+Wird ein derartiges Endgerät erkannt erfolgt die Kompilierung direkt auf das Gerät.
+
+Relevante Befehle in der Kommandozeile sind hierbei:
+react-native run-andoid
+react-native run-ios
+
+Hilfreiche Freatures wie JavaScript Debugging im Browser oder LiveReload können direkt im Simulator oder auf dem Endgerät aktiviert werden.
+
+
+\subsection{Lizenz}
+Das Projekt ist lizensiert unter der MIT Lizenz.
+
 
 
 
@@ -359,7 +432,7 @@ Eine weitere Idee wäre, die App für einen geringen Preis in die App-Stores zu 
 Die App wird in den App-Stores sowie über den Browser (Web-App) zur Verfügung gestellt.
 
 \subsection{Kommunikationspolitik}
-Eine dedizierte Landing-Page ist die erste Anlaufstelle für comfycoffee. Weitere Social Pages dienen eben diesem Zweck. Durch Social Media Werbung, besonders in ``Support your Locals''-Communities und durch Influencer, soll die Bekanntheit der App gesteigert werden. 
+Eine dedizierte Landing-Page ist die erste Anlaufstelle für comfycoffee. Weitere Social Pages dienen eben diesem Zweck. Durch Social Media Werbung, besonders in ``Support your Locals''-Communities und durch Influencer, soll die Bekanntheit der App gesteigert werden.
 
 Ein eigener Blog soll die Nutzer informieren und neue NUtzer gewinnen. Ein ``Kaffee-Reporter'' fungiert als Gesicht für die App und stellt Themen wie der ``Coffee of the Week'', die ``Location of the Week'' oder aktuelle Kaffee-Trends vor.
 
