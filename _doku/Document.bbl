@@ -1,0 +1,345 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{A. Solanas, C. Patsakis, et al.}%
+}{%
+{A. Solanas, C. Patsakis, et al.}%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+solanas}
+\APACinsertmetastar {%
+solanas}%
+\begin{APACrefauthors}%
+{A. Solanas, C. Patsakis, et al.}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Smart health: A context-aware health paradigm within
+  smart cities} {Smart health: A context-aware health paradigm within smart
+  cities}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{52}{8}{74-81}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Bitkom e.V.}%
+}{%
+{Bitkom e.V.}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+bitkom}
+\APACinsertmetastar {%
+bitkom}%
+\begin{APACrefauthors}%
+{Bitkom e.V.}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Gesundheit in der digitalen Stadt: was heutzutage bereits
+  technologisch möglich wäre}.} {{Gesundheit in der digitalen Stadt: was
+  heutzutage bereits technologisch möglich wäre}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{http://www.digitalestadt.org/bitkom/org/Digitale-Stadt/Digitale-Stadt/Gesundheit/index-2.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Bundesministerium für Gesundheit}%
+}{%
+{Bundesministerium für Gesundheit}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+bmg}
+\APACinsertmetastar {%
+bmg}%
+\begin{APACrefauthors}%
+{Bundesministerium für Gesundheit}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{E-Health-Gesetz}.} {{E-Health-Gesetz}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/e/e-health-gesetz.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{CIBEK Gruppe}%
+}{%
+{CIBEK Gruppe}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+cibek}
+\APACinsertmetastar {%
+cibek}%
+\begin{APACrefauthors}%
+{CIBEK Gruppe}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{meinPAUL-Lösungsplattform}.} {{meinPAUL-Lösungsplattform}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{https://cibek.de/index.php/geschaeftsbereiche/meinpaul.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Companion2Go GbR}%
+}{%
+{Companion2Go GbR}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+companion2go}
+\APACinsertmetastar {%
+companion2go}%
+\begin{APACrefauthors}%
+{Companion2Go GbR}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Finde deinen Companion für Events oder Reisen}.} {{Finde
+  deinen Companion für Events oder Reisen}.}
+\newblock
+\begin{APACrefURL} [{29.01.2018}]\url{{https://companion2go.de/}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Gesellschaft für Telematikanwendungen der Gesundheitskarte mbH}%
+}{%
+{Gesellschaft für Telematikanwendungen der Gesundheitskarte mbH}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+gematik}
+\APACinsertmetastar {%
+gematik}%
+\begin{APACrefauthors}%
+{Gesellschaft für Telematikanwendungen der Gesundheitskarte mbH}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{Wir vernetzen das Gesundheitswesen. Sicher.}} {{Wir vernetzen
+  das Gesundheitswesen. Sicher.}}
+\newblock
+\begin{APACrefURL} [{29.01.2018 \newline}]\url{{https://www.gematik.de/}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+John%
+}{%
+John%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+john}
+\APACinsertmetastar {%
+john}%
+\begin{APACrefauthors}%
+John, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {{MyRehab: Telemedizinplattform für Therapieunterstützung}.}
+  {{MyRehab: Telemedizinplattform für Therapieunterstützung}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{https://cdn1.scrvt.com/fokus/7b605a8d5466572a/824d4cb72a5651ecae8f39c8d63bf215/MyRehab.pdf}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Pillo Health}%
+}{%
+{Pillo Health}%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+pillo}
+\APACinsertmetastar {%
+pillo}%
+\begin{APACrefauthors}%
+{Pillo Health}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {{Pillo: Your Personal Home Health Robot}.} {{Pillo: Your
+  Personal Home Health Robot}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{https://www.indiegogo.com/projects/pillo-your-personal-home-health-robot-family-technology}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{THaW}%
+}{%
+{THaW}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+thaw}
+\APACinsertmetastar {%
+thaw}%
+\begin{APACrefauthors}%
+{THaW}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{Trustworthy Health & Wellness}.} {{Trustworthy Health &
+  Wellness}.}
+\newblock
+\begin{APACrefURL} [{29.01.2018 \newline}]\url{{https://thaw.org/}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tropf%
+}{%
+Tropf%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+tropf-apps}
+\APACinsertmetastar {%
+tropf-apps}%
+\begin{APACrefauthors}%
+Tropf, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {{Fast jeder Zweite nutzt Gesundheits-Apps}.} {{Fast jeder
+  Zweite nutzt Gesundheits-Apps}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{http://www.digitalestadt.org/bitkom/org/Presse/Presseinformation/Fast-jeder-Zweite-nutzt-Gesundheits-Apps.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tropf%
+}{%
+Tropf%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+tropf-wachstum}
+\APACinsertmetastar {%
+tropf-wachstum}%
+\begin{APACrefauthors}%
+Tropf, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {{Markt für Digital Health mit großem Wachstumspotenzial}.}
+  {{Markt für Digital Health mit großem Wachstumspotenzial}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{http://www.digitalestadt.org/bitkom/org/Presse/Presseinformation/Markt-fuer-Digital-Health-mit-grossem-Wachstumspotenzial.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tropf%
+}{%
+Tropf%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {3}}}}}]{%
+tropf-zukunft}
+\APACinsertmetastar {%
+tropf-zukunft}%
+\begin{APACrefauthors}%
+Tropf, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017{\protect \BCnt {3}}}{}{}.
+\newblock
+\APACrefbtitle {{Ärzte sind offen für die digitale Zukunft der Medizin}.}
+  {{Ärzte sind offen für die digitale Zukunft der Medizin}.}
+\newblock
+\begin{APACrefURL}
+  [{29.01.2018}]\url{{http://www.digitalestadt.org/bitkom/org/Presse/Presseinformation/Aerzte-sind-offen-fuer-die-digitale-Zukunft-der-Medizin.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of Illinois Board of Trustees}%
+}{%
+{University of Illinois Board of Trustees}%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+sharps}
+\APACinsertmetastar {%
+sharps}%
+\begin{APACrefauthors}%
+{University of Illinois Board of Trustees}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+\APACrefbtitle {{Strategic Health IT Advanced Research Projects on Security}.}
+  {{Strategic Health IT Advanced Research Projects on Security}.}
+\newblock
+\begin{APACrefURL} [{29.01.2018}]\url{{http://sharps.org/}} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Willaredt%
+}{%
+Willaredt%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+willaredt}
+\APACinsertmetastar {%
+willaredt}%
+\begin{APACrefauthors}%
+Willaredt, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Indoor-Navigation}.} {{Indoor-Navigation}.}
+\newblock
+\begin{APACrefURL} [{29.01.2018
+  \newline}]\url{{https://www.fokus.fraunhofer.de/go/indoor-navigation}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

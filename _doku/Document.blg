@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Document.aux
+A level-1 auxiliary file: Deckblatt.aux
+A level-1 auxiliary file: Inhalt/Einleitung.aux
+A level-1 auxiliary file: Inhalt/Kapitel.aux
+A level-1 auxiliary file: Inhalt/Zusammenfassung.aux
+The style file: apacite.bst
+A level-1 auxiliary file: Erklaerung.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Bibliographie.bib
+Warning--entry type for "bitkom" isn't style-file defined
+--line 19 of file Bibliographie.bib
+Warning--entry type for "cibek" isn't style-file defined
+--line 26 of file Bibliographie.bib
+Warning--entry type for "pillo" isn't style-file defined
+--line 33 of file Bibliographie.bib
+Warning--entry type for "willaredt" isn't style-file defined
+--line 40 of file Bibliographie.bib
+Warning--entry type for "john" isn't style-file defined
+--line 47 of file Bibliographie.bib
+Warning--entry type for "companion2go" isn't style-file defined
+--line 54 of file Bibliographie.bib
+Warning--entry type for "tropf-zukunft" isn't style-file defined
+--line 61 of file Bibliographie.bib
+Warning--entry type for "tropf-wachstum" isn't style-file defined
+--line 68 of file Bibliographie.bib
+Warning--entry type for "tropf-apps" isn't style-file defined
+--line 75 of file Bibliographie.bib
+Warning--entry type for "bmg" isn't style-file defined
+--line 82 of file Bibliographie.bib
+Warning--entry type for "thaw" isn't style-file defined
+--line 89 of file Bibliographie.bib
+Warning--entry type for "sharps" isn't style-file defined
+--line 96 of file Bibliographie.bib
+Warning--entry type for "gematik" isn't style-file defined
+--line 103 of file Bibliographie.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 14 entries,
+            6951 wiz_defined-function locations,
+            1338 strings with 12827 characters,
+and the built_in function-call counts, 24072 in all, are:
+= -- 3540
+> -- 142
+< -- 886
++ -- 772
+- -- 48
+* -- 1215
+:= -- 3661
+add.period$ -- 56
+call.type$ -- 14
+change.case$ -- 262
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 442
+empty$ -- 946
+format.name$ -- 196
+if$ -- 5088
+int.to.chr$ -- 0
+int.to.str$ -- 48
+missing$ -- 0
+newline$ -- 311
+num.names$ -- 112
+pop$ -- 285
+preamble$ -- 1
+purify$ -- 56
+quote$ -- 0
+skip$ -- 2408
+stack$ -- 0
+substring$ -- 838
+swap$ -- 215
+text.length$ -- 37
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 2056
+warning$ -- 0
+while$ -- 70
+width$ -- 0
+write$ -- 338
+(There were 13 warnings)

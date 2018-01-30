@@ -1,0 +1,38 @@
+% Zeilenabstand 1,5 Zeilen -----------------------------------------------------
+\onehalfspacing
+
+% Seitenr�nder -----------------------------------------------------------------
+\setlength{\topskip}{\ht\strutbox} % behebt Warnung von geometry
+% \geometry{paper=a4paper,left=25mm,right=45mm,bottom=30mm}
+\geometry{paper=a4paper,left=30mm,right=25mm,bottom=30mm}
+
+%Kopfzeile
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{\textit{\small{\nouppercase{\titel \ - \untertitel }}}}
+% \fancyhead[R]{\includegraphics[width=0.1\textwidth]{Bilder/hci-logo.jpg}}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[R]{\small{\pagemark}}
+\renewcommand*{\chapterpagestyle}{fancy}
+
+\renewcommand*{\chapterheadstartvskip}{\vspace{-1\baselineskip}} %Abstand vor Section
+\renewcommand*{\chapterheadendvskip}{\vspace{\baselineskip}} %Abstand nach Section
+\setlength{\headsep}{25pt} %Abstand Kopfzeile Textkrper
+
+% sonstige typographische Einstellungen ----------------------------------------
+\titlespacing*{\section}
+{0pt}{0.75\baselineskip}{0.25\baselineskip}
+\titlespacing*{\subsection}
+{0pt}{0.5\baselineskip}{0pt}
+
+% erzeugt ein wenig mehr Platz hinter einem Punkt
+\frenchspacing
+
+% Schusterjungen und Hurenkinder vermeiden
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+% Fu�noten fortlaufend durchnummerieren
+\counterwithout{footnote}{chapter}

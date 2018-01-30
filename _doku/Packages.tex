@@ -1,0 +1,104 @@
+% Seitenstil
+\usepackage{fancyhdr}
+
+% Anpassung an Landessprache ---------------------------------------------------
+\usepackage[ngerman]{babel}
+
+% Umlaute ----------------------------------------------------------------------
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{textcomp} % Euro-Zeichen etc.
+
+% Schrift ----------------------------------------------------------------------
+\usepackage{lmodern} % bessere Fonts
+\usepackage{relsize} % Schriftgr��e relativ festlegen
+\newcommand{\mysub}[1]{\raisebox{-0.5ex}{\scriptsize{#1}}}
+
+\usepackage{titlesec}
+
+%Formeln
+\usepackage{nicefrac}
+
+% Grafiken ---------------------------------------------------------------------
+% Einbinden von JPG-Grafiken erm�glichen
+\usepackage[dvips,final]{graphicx}
+% hier liegen die Bilder des Dokuments
+\graphicspath{{Bilder/}}
+
+% Befehle aus AMSTeX f�r mathematische Symbole z.B. \boldsymbol \mathbb --------
+\usepackage{amsmath,amsfonts}
+
+% f�r Index-Ausgabe mit \printindex --------------------------------------------
+\usepackage{makeidx}
+
+% Einfache Definition der Zeilenabst�nde und Seitenr�nder etc. -----------------
+\usepackage{setspace}
+\usepackage{geometry}
+
+% URL verlinken, lange URLs umbrechen etc. -------------------------------------
+\usepackage{url}
+
+% PDF-Optionen -----------------------------------------------------------------
+\usepackage[
+    bookmarks,
+    bookmarksopen=true,
+    colorlinks=true,
+    % diese Farbdefinitionen zeichnen Links im PDF farblich aus
+        linkcolor=black, % einfache interne Verknüpfungen
+        anchorcolor=black,% Ankertext
+        citecolor=blue, % Verweise auf Literaturverzeichniseinträge im Text
+        filecolor=magenta, % Verknüpfungen, die lokale Dateien öffnen
+        menucolor=red, % Acrobat-Menüpunkte
+        urlcolor=blue,
+% diese Farbdefinitionen sollten f�r den Druck verwendet werden (alles schwarz)
+    %linkcolor=black, % einfache interne Verkn�pfungen
+    %anchorcolor=black, % Ankertext
+    %citecolor=black, % Verweise auf Literaturverzeichniseintr�ge im Text
+    %filecolor=black, % Verkn�pfungen, die lokale Dateien �ffnen
+    %menucolor=black, % Acrobat-Men�punkte
+    %urlcolor=black,
+    %backref,
+    plainpages=false, % zur korrekten Erstellung der Bookmarks
+    pdfpagelabels, % zur korrekten Erstellung der Bookmarks
+    hypertexnames=false, % zur korrekten Erstellung der Bookmarks
+    linktocpage % Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
+]{hyperref}
+
+% Befehle, die Umlaute ausgeben, f�hren zu Fehlern, wenn sie hyperref als Optionen �bergeben werden
+\hypersetup{
+    pdftitle={\titel},
+    pdfauthor={\autor},
+    pdfcreator={\autor},
+    pdfsubject={\titel},
+    pdfkeywords={\titel},
+}
+
+% fortlaufendes Durchnummerieren der Fu�noten ----------------------------------
+\usepackage{chngcntr}
+
+% f�r lange Tabellen -----------------------------------------------------------
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{lscape}
+
+% Spaltendefinition rechtsb�ndig mit definierter Breite ------------------------
+\newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
+
+% Formatierung von Listen �ndern -----------------------------------------------
+\usepackage{paralist}
+
+% bei der Definition eigener Befehle ben�tigt
+\usepackage{ifthen}
+
+% definiert u.a. die Befehle \todo und \listoftodos
+\usepackage{todonotes}
+
+% sorgt daf�r, dass Leerzeichen hinter parameterlosen Makros nicht als Makroendezeichen interpretiert werden
+\usepackage{xspace}
+
+% APA-Zitierregeln laden
+\usepackage{apacite}
+
+\usepackage{caption}
