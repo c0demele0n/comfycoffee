@@ -259,90 +259,103 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \begin{table}[h!]
 	\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Startseite}} \\
-		\multicolumn{2}{p{\textwidth}}{Der Einstiegspunkt der App. Von dort aus ist die Navigation zur Umkreissuche oder zum Lexikon möglich (vgl. Abb. \ref{fig:startios} und \ref{fig:startandroid}).} \\
+		\multicolumn{2}{p{\textwidth}}{Der Einstiegspunkt der App. Von dort aus ist die Navigation zur Umkreissuche oder zum Lexikon möglich (vgl. Abb. \ref{fig:startios} und \ref{fig:startandroid}).\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-startseite.png}
-		\captionof{figure}{Startseite der App unter iOS} 
+		\captionof{figure}{Startseite der App unter iOS}
 		\label{fig:startios} &
 		\centering
-		\includegraphics[width=0.5\textwidth]{Bilder/app-startseite_android.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-startseite_android.png}
 		\captionof{figure}{Startseite der App unter Android}
 		\label{fig:startandroid}
 	\end{tabular}
 \end{table}
 
 \begin{table}
-	\vskip-2.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Kartenansicht}} \\
-		\multicolumn{2}{p{\textwidth}}{Hier werden auf einer interaktiven Google Maps Karte alle sich in der Nähe befindlichen Cafés einschließlich des eigenen aktuellen Standorts angezeigt (vgl. Abb. \ref{fig:karteios} und \ref{fig:karteandroid}). Die hierfür benötigen Informationen werden über die entsprechenden Google APIs bezogen. Ein Klick auf einen Marker öffnet ein \emph{Bottom Sheet}, in welchem die wichtigsten Informationen über das ausgewählte Café wie etwa Entfernung, Bewertung, Öffnungszeiten oder Adresse angezeigt werden. Innerhalb dieses Sheets stehen Buttons zur Navigation auf die Detailseite des Cafés oder direkt zu Google Maps mit dem Café als hinterlegtem Ziel zur Verfügung. Des Weiteren erreicht man von hier aus über die Tab Navigation in Android sowie die Bottom Navigation in iOS die Listenansicht der angezeigten Cafés.} \\
+		\multicolumn{2}{p{\textwidth}}{Hier werden auf einer interaktiven Google Maps Karte alle sich in der Nähe befindlichen Cafés einschließlich des eigenen aktuellen Standorts angezeigt (vgl. Abb. \ref{fig:karteios} und \ref{fig:karteandroid}). Die hierfür benötigen Informationen werden über die entsprechenden Google APIs bezogen. Des Weiteren erreicht man von hier aus über die Tab Navigation in Android sowie die Bottom Navigation in iOS die Listenansicht der angezeigten Cafés.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-karte.png}
-		\captionof{figure}{Kartenansicht der App unter iOS} 
+		\captionof{figure}{Kartenansicht der App unter iOS}
 		\label{fig:karteios} &
-		\includegraphics[width=0.5\textwidth]{Bilder/app-karte.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-karte_android.png}
 		\captionof{figure}{Kartenansicht der App unter Android}
 		\label{fig:karteandroid}
 	\end{tabular}
 \end{table}
 
 \begin{table}
-	\vskip-3.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+		\multicolumn{2}{p{\textwidth}}{\subsection{Kartenansicht - ausgewählt}} \\
+		\multicolumn{2}{p{\textwidth}}{Ein Klick auf einen Marker öffnet ein \emph{Bottom Sheet}, in welchem die wichtigsten Informationen über das ausgewählte Café wie etwa Entfernung, Bewertung, Öffnungszeiten oder Adresse angezeigt werden. Innerhalb dieses Sheets stehen Buttons zur Navigation auf die Detailseite des Cafés oder direkt zu Google Maps mit dem Café als hinterlegtem Ziel zur Verfügung (vgl. Abb. \ref{fig:karteiosactive} und \ref{fig:karteandroidactive}).\newline} \\
+		\includegraphics[width=0.5\textwidth]{Bilder/app-karte-active.png}
+		\captionof{figure}{Kartenansicht (ausgewählt) der App unter iOS}
+		\label{fig:karteiosactive} &
+		\includegraphics[width=0.48\textwidth]{Bilder/app-karte-active_android.png}
+		\captionof{figure}{Kartenansicht (ausgewählt) der App unter Android}
+		\label{fig:karteandroidactive}
+	\end{tabular}
+\end{table}
+
+\begin{table}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Listenansicht}} \\
-		\multicolumn{2}{p{\textwidth}}{Die bereits in der Kartenansicht dargestellten Standorte der Cafés werden hier in einer übersichtlichen Liste gezeigt (vgl. Abb. \ref{fig:listeios} und \ref{fig:listeandroid}). Jeder Listeneintrag enthält die gleichen Informationen und Interaktionsmöglichkeiten wie das Bottom Sheet aus der Karte, da es sich hierbei technisch um die gleiche, eigens konstruierte React Native Komponente handelt.} \\
+		\multicolumn{2}{p{\textwidth}}{Die bereits in der Kartenansicht dargestellten Standorte der Cafés werden hier in einer übersichtlichen Liste gezeigt (vgl. Abb. \ref{fig:listeios} und \ref{fig:listeandroid}). Jeder Listeneintrag enthält die gleichen Informationen und Interaktionsmöglichkeiten wie das Bottom Sheet aus der Karte, da es sich hierbei technisch um die gleiche, eigens konstruierte React Native Komponente handelt.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-liste.png}
-		\captionof{figure}{Listenansicht der App unter iOS} 
+		\captionof{figure}{Listenansicht der App unter iOS}
 		\label{fig:listeios} &
-		\includegraphics[width=0.5\textwidth]{Bilder/app-liste_android.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-liste_android.png}
 		\captionof{figure}{Listenansicht der App unter Android}
 		\label{fig:listeandroid}
 	\end{tabular}
 \end{table}
 
 \begin{table}
-	\vskip-2.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Infos Café}} \\
-		\multicolumn{2}{p{\textwidth}}{Diese Seite zeigt die bereits im Bottom Sheet vorhandenen Informationen über das ausgewählte Café. Außerdem sind weitere Details wie Telefonnummer, Internetadresse oder auch Bilder des Cafés - soweit über die Google API bereit gestellt - verfügbar (vgl. Abb. \ref{fig:infoios} und \ref{fig:infoandroid}). Auch hier erreicht man über einen Button das Café als Zieladresse direkt in Google Maps. Darüber hinaus enthält die Tab Navigation respektive Bottom Navigation einen Link zur Bewertungsseite des Cafés.} \\
+		\multicolumn{2}{p{\textwidth}}{Diese Seite zeigt die bereits im Bottom Sheet vorhandenen Informationen über das ausgewählte Café. Außerdem sind weitere Details wie Telefonnummer, Internetadresse oder auch Bilder des Cafés - soweit über die Google API bereit gestellt - verfügbar (vgl. Abb. \ref{fig:infoios} und \ref{fig:infoandroid}). Auch hier erreicht man über einen Button das Café als Zieladresse direkt in Google Maps. Darüber hinaus enthält die Tab Navigation respektive Bottom Navigation einen Link zur Bewertungsseite des Cafés.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-info.png}
-		\captionof{figure}{Infoseite eines Cafés der App unter iOS} 
+		\captionof{figure}{Infoseite eines Cafés der App unter iOS}
 		\label{fig:infoios} &
-		\includegraphics[width=0.5\textwidth]{Bilder/app-info_android.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-info_android.png}
 		\captionof{figure}{Infoseite eines Cafés der App unter Android}
 		\label{fig:infoandroid}
 	\end{tabular}
 \end{table}
 
 \begin{table}
-	\vskip-3.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Bewertungen Café}} \\
-		\multicolumn{2}{p{\textwidth}}{Alle über die Google API verfügbaren Bewertungen des ausgewählten Cafés werden hier in einer Liste angezeigt. Dabei erhält man Infos wie den Wert der abgegebenen Bewertung, den Zeitraum, den Bewertungsext sowie den Namen des Re­zen­senten (vgl. Abb. \ref{fig:bewertungios} und \ref{fig:bewertungandroid}).} \\
+		\multicolumn{2}{p{\textwidth}}{Alle über die Google API verfügbaren Bewertungen des ausgewählten Cafés werden hier in einer Liste angezeigt. Dabei erhält man Infos wie den Wert der abgegebenen Bewertung, den Zeitraum, den Bewertungsext sowie den Namen des Re­zen­senten (vgl. Abb. \ref{fig:bewertungios} und \ref{fig:bewertungandroid}).\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-bewertungen.png}
-		\captionof{figure}{Bewertungsseite eines Cafés der App unter iOS} 
+		\captionof{figure}{Bewertungsseite eines Cafés der App unter iOS}
 		\label{fig:bewertungios} &
-		\includegraphics[width=0.5\textwidth]{Bilder/app-bewertungen_android.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-bewertungen_android.png}
 		\captionof{figure}{Bewertungsseite eines Cafés der App unter Android}
 		\label{fig:bewertungandroid}
 	\end{tabular}
 \end{table}
 
 \begin{table}
-	\vskip-2.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Lexikon}} \\
-		\multicolumn{2}{p{\textwidth}}{Die Übersichtsseite des Lexikons zeigt alle in der App hinterlegten Zubereitungsarten mit Namen und Icon (vgl. Abb \ref{fig:lexikonios} und \ref{fig:lexikonandroid}). Ein Klick auf eines dieser Elemente führt auf die zugehörige Detailseite (vgl. Kapitel \ref{subsec:detail}). Außerdem ist dies die einzige Seite, auf welcher der Bewegungssensor aktiv ist. Wird eine Schüttelgeste ausgeführt, so wird eine zufällig ausgewählte Zubereitungsart in einem Alert angezeigt. Von diesem aus kann man ebenfalls entweder direkt zur vorgeschlagenen Detailseite gelangen oder den Alert wieder entfernen.} \\
+		\multicolumn{2}{p{\textwidth}}{Die Übersichtsseite des Lexikons zeigt alle in der App hinterlegten Zubereitungsarten mit Namen und Icon (vgl. Abb \ref{fig:lexikonios} und \ref{fig:lexikonandroid}). Ein Klick auf eines dieser Elemente führt auf die zugehörige Detailseite (vgl. Kapitel \ref{subsec:detail}). Außerdem ist dies die einzige Seite, auf welcher der Bewegungssensor aktiv ist. Wird eine Schüttelgeste ausgeführt, so wird eine zufällig ausgewählte Zubereitungsart in einem Alert angezeigt. Von diesem aus kann man ebenfalls entweder direkt zur vorgeschlagenen Detailseite gelangen oder den Alert wieder entfernen.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon.png}
-		\captionof{figure}{Lexikonseite der App unter iOS} 
+		\captionof{figure}{Lexikonseite der App unter iOS}
 		\label{fig:lexikonios} &
-		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon_android.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-lexikon_android.png}
 		\captionof{figure}{Lexikonseite der App unter Android}
 		\label{fig:lexikonandroid}
 	\end{tabular}
 \end{table}
 
 \begin{table}
-	\vskip-2.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Lexikon Detailansicht}\label{subsec:detail}} \\
-		\multicolumn{2}{p{\textwidth}}{Hat man sich für eine Zubereitungsart entschieden, erscheint das Template dieser Seite gefüllt mit den passenden Informationen. Dazu gehören der Name, das Icon, eine Beschreibung des Ablaufs sowie einige Attribute wie Stärke des Getränks oder Menge des benötigten Wassers. Diese Informationen sind an die jeweils ausgewählte Zubereitungsart angepasst (vgl. Abb \ref{fig:lexikondetailios} und \ref{fig:lexikondetailandroid}).} \\
+		\multicolumn{2}{p{\textwidth}}{Hat man sich für eine Zubereitungsart entschieden, erscheint das Template dieser Seite gefüllt mit den passenden Informationen. Dazu gehören der Name, das Icon, eine Beschreibung des Ablaufs sowie einige Attribute wie Stärke des Getränks oder Menge des benötigten Wassers. Diese Informationen sind an die jeweils ausgewählte Zubereitungsart angepasst (vgl. Abb \ref{fig:lexikondetailios} und \ref{fig:lexikondetailandroid}).\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon-detail.png}
-		\captionof{figure}{Detailansicht eines Lexikoneintrags der App unter iOS} 
+		\captionof{figure}{Detailansicht eines Lexikoneintrags der App unter iOS}
 		\label{fig:lexikondetailios} &
-		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon-detail_android.png}
+		\includegraphics[width=0.48\textwidth]{Bilder/app-lexikon-detail_android.png}
 		\captionof{figure}{Detailansicht eines Lexikoneintrags der App unter Android}
 		\label{fig:lexikondetailandroid}
 	\end{tabular}
@@ -354,6 +367,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \section{Readme}
 comfycoffee ist eine Cross-Plattform App zur Anzeige lokaler Cafés und damit nachhaltigen Unterstützung der lokalen Kaffeewirtschaft.
 Das Repository ist öffentlich und unter folgendem Link erreichbar: \url{https://bitbucket.org/codemeleon/comfycoffee}.
+Das Projekt ist lizensiert unter der MIT Lizenz.
 Weitere Informationen können der offiziellen React Native Dokumentation entnommen werden.
 
 \subsection{Voraussetzungen}
@@ -374,16 +388,16 @@ Das VS Code Plugin \emph{Prettier - Code formatter} sorgt hierbei für einen sau
 Das Testing und Debugging kann über die in Android Studio und Xcode integrierten Simulatoren erfolgen.
 Eine weitere Möglichkeit ist die direkte Verbindung zu einem Smartphone/iPhone über USB.
 Wird ein derartiges Endgerät erkannt erfolgt die Kompilierung direkt auf das Gerät.
-
-Relevante Befehle in der Kommandozeile sind hierbei:
-react-native run-andoid
-react-native run-ios
-
 Hilfreiche Freatures wie JavaScript Debugging im Browser oder LiveReload können direkt im Simulator oder auf dem Endgerät aktiviert werden.
 
+Relevante Befehle in der Kommandozeile sind hierbei:\\
+react-native run-andoid\\
+react-native run-ios
 
-\subsection{Lizenz}
-Das Projekt ist lizensiert unter der MIT Lizenz.
+
+
+
+
 
 \chapter{Ausblick}
 \label{ausblick}
