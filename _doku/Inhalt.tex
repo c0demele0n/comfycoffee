@@ -47,7 +47,7 @@ Laura Wagner vertritt die primäre Zielgruppe. Sie...
 
 \begin{figure}[H]
     \centering
-		\includegraphics{Bilder/laura.eps}
+		\includegraphics[width=0.5\textwidth]{Bilder/laura.eps}
 		\caption{Primärpersona Laura Wagner}
 \end{figure}
 
@@ -67,12 +67,12 @@ Roland Reisenweber vertritt die sekundäre Zielgruppe. Er...
 
 \begin{figure}[H]
     \centering
-		\includegraphics{Bilder/roland.eps}
+		\includegraphics[width=0.5\textwidth]{Bilder/roland.eps}
 		\caption{Sekundärpersona Roland Reisenweber}
 \end{figure}
 
 \section{Anforderungsanalyse}
-In der Anforderungsanalyse haben wir die Muss-, Soll- und Kann-Anforderungen von comfycoffee definiert. Dabei war die Herausforderung, die Anforderungen exakt zu formulieren und in Pakete zu unterteilen, die klein genug waren, um sie in der im Ablaufplan definierten Zeit abzuarbeiten (vgl. Kapitel \ref{sec:ablaufplan}).
+In der Anforderungsanalyse haben wir die Muss-, Soll- und Kann-Anforderungen von comfycoffee definiert.
 
 \subsection{Muss-Anforderungen}
 \label{subsec:mussanforderungen}
@@ -108,6 +108,9 @@ Die Kann-Anforderungen ergänzen die App durch weitere Informationen und Feature
 	\item Profil des Nutzers anlegen
 \end{itemize}
 
+\underline{Learnings:}
+Dabei war die Herausforderung, die Anforderungen exakt zu formulieren und in Pakete zu unterteilen, die klein genug waren, um sie in der im Ablaufplan definierten Zeit abzuarbeiten (vgl. Kapitel \ref{sec:ablaufplan}).
+
 \section{Ablaufplan}
 \label{sec:ablaufplan}
 Anschließend wurde ein Ablaufplan ausgearbeitet und festgelegt. Dabei sollte die Designphase mit Wireframes, Flow Charts, Mockups und einem interaktiven Prototyp bis zum 22.11.2017 abgeschlossen sein. Für die Einarbeitung in das Entwicklungsframework, React Native (vgl. Kapitel \ref{sec:reactnative}), wurde eine Woche eingeplant. Bis zum 29.11.2017 sollte eine ``Hello World''-Anwendung laufen, um die Grundzüge des Frameworks zu beherrschen. Zwei Wochen, also bis zum 13.12.2017, waren für die Muss-Anforderungen, eine Woche für die Soll-Anforderungen (bis 20.12.2017) geplant. Die Kann-Anforderungen sollten im Januar 2018 abgeschlossen sein. Das folgende Diagramm veranschaulicht den Ablauf.
@@ -118,6 +121,7 @@ Anschließend wurde ein Ablaufplan ausgearbeitet und festgelegt. Dabei sollte di
 		\caption{Ablaufplan der Konzeption und Entwicklung von comfycoffee}
 \end{figure}
 
+\underline{Learnings:}
 Die Aufwandsschätzung zu Beginn gestaltete sich als schwierig, da keine Erfahrung mit React Native und der Cross-Plattform-Entwicklung bzw. allgemein der App-Entwicklung vorhanden war.
 
 \section{Flow Chart}
@@ -148,10 +152,6 @@ Anhand der Mockups und des Flow Charts wurde in Axure ein interaktiver Prototyp 
 		\includegraphics[width=0.5\textwidth]{Bilder/detail.png}
 		\caption{Ansicht der Detailseite eines Kaffees im interaktiven Prototyp von comfycoffee}
 \end{figure}
-
-
-
-
 
 
 \chapter{Entwicklung}
@@ -453,9 +453,9 @@ Auch nach der Entwicklung ist noch viel zu tun. Regelmäßiges Testen erhöht di
 Die Konzeption und Umsetzung einer Cross-Plattform-App war für uns Neuland, ebenso wie das Ausarbeiten eines Marketingkonzepts (vgl. Kapitel \ref{sec:marketing}). Im Folgenden sind unsere gewonnenen Erkentnisse und ein Fazit zum Entwicklungsframework React Native sowie der Cross-Plattform-Entwicklung im Vergleich zur nativen Entwicklung aufgeführt.
 
 \section{Lessons Learned}
-Comfycoffee war die erste Cross-Plattform App, die wir entwickelt haben. Auch mit dem Framework React Native haben wir unsere ersten Schritte gemacht (vgl. \ref{sec:reactnative}). Dabei haben wir den Umgang mit APIs vertieft. Das Umsetzen von nativem Design in Android und iOS entsprechend den jeweiligen Design Guidelines birgt einige Herausforderungen. So haben Android und iOS teilweise die gleiche Bezeichnung für verschiedene Elemente, oder verschiedene Elemente mit dem gleichen Namen. Auch das Ansprechen von Hardwareschnittstellen (GPS, Bewegungssensor) war neu. Zu verstehen, wie diese funktionieren und benutzt werden können bedeutet oft viel lesen und, je nach Aussagekraft der Dokumentationen, noch mehr ausprobieren.
+Comfycoffee war die erste Cross-Plattform App, die wir entwickelt haben. Auch mit dem Framework React Native haben wir unsere ersten Schritte gemacht (vgl. Kapitel \ref{sec:reactnative}). Dabei haben wir den Umgang mit APIs vertieft. Das Umsetzen von nativem Design in Android und iOS entsprechend den jeweiligen Design Guidelines birgt einige Herausforderungen. So haben Android und iOS teilweise die gleiche Bezeichnung für verschiedene Elemente, oder verschiedene Elemente mit dem gleichen Namen. Auch das Ansprechen von Hardwareschnittstellen (GPS, Bewegungssensor) war neu. Zu verstehen, wie diese funktionieren und benutzt werden können bedeutet oft viel lesen und, je nach Aussagekraft der Dokumentationen, noch mehr ausprobieren.
 
-Herausforderungen waren auch gegeben bei der Benutzung eines weniger etablierten Frameworks wie React Native (vgl \ref{sec:reactnative}).
+Herausforderungen waren auch gegeben bei der Benutzung eines weniger etablierten Frameworks wie React Native (vgl. Kapitel \ref{sec:reactnative}).
 
 Neu war außerdem die technische Konzeption mit der Implementierung der zuvor ausgearbeiteten, technischen Anforderungen. Die technische Konzeption steht der Produktkonzeption gegenüber, bei der Zielgruppen, Design und Testkontzept ausgearbeitet und Marktanalysen durchgeführt werden. Den teil der Produktkonzeption wurde schon in dem Modul Mobile Usability behandelt. Mit comfycoffee die Verbindung zwischen Produkt- und technischer Konzeption und Umsetzung herzustellen war eine spannende Herausforderung.
 
