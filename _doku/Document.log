@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.9)  30 JAN 2018 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.9)  30 JAN 2018 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1558,7 +1558,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `Deckblatt.aux'.
 
 
-(./Deckblatt.tex <Bilder/logo.jpg, id=212, 602.25pt x 244.915pt>
+(./Deckblatt.tex <Bilder/logo.jpg, id=208, 602.25pt x 244.915pt>
 File: Bilder/logo.jpg Graphic file (type jpg)
 
 <use Bilder/logo.jpg>
@@ -1625,9 +1625,9 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 45.
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./Document.toc
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 36.
 
 [2
 
@@ -1710,7 +1710,7 @@ Package epstopdf Info: Source file: <Bilder/laura.eps>
 -to.pdf Bilder/laura.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
- <Bilder/laura-eps-converted-to.pdf, id=294, 384.43625pt x 474.77374pt>
+ <Bilder/laura-eps-converted-to.pdf, id=291, 384.43625pt x 474.77374pt>
 File: Bilder/laura-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bilder/laura-eps-converted-to.pdf>
@@ -1718,13 +1718,13 @@ Package pdftex.def Info: Bilder/laura-eps-converted-to.pdf used on input line 2
 9.
 (pdftex.def)             Requested size: 220.50887pt x 272.33353pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 45.
  [6 <./Bilder/laura-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Bilder/roland.eps>
 (epstopdf)                    date: 2018-01-12 14:02:12
@@ -1734,226 +1734,208 @@ Package epstopdf Info: Source file: <Bilder/roland.eps>
 (epstopdf)                    size: 385126 bytes
 (epstopdf)             Command: <repstopdf --outfile=Bilder/roland-eps-converte
 d-to.pdf Bilder/roland.eps>
-(epstopdf)             \includegraphics on input line 49.
+(epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
- <Bilder/roland-eps-converted-to.pdf, id=314, 384.43625pt x 474.77374pt>
+ <Bilder/roland-eps-converted-to.pdf, id=312, 384.43625pt x 474.77374pt>
 File: Bilder/roland-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bilder/roland-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/roland-eps-converted-to.pdf used on input line 
-49.
+50.
 (pdftex.def)             Requested size: 220.50887pt x 272.33353pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 62.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 62.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 69.
  [7 <./Bilder/roland-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 97.
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 96.
- [8] <Bilder/ablaufplan.png, id=342, 1705.37125pt x 215.80624pt>
+(babel)             in language  on input line 100.
+[8] <Bilder/ablaufplan.png, id=340, 1705.37125pt x 215.80624pt>
 File: Bilder/ablaufplan.png Graphic file (type png)
 
 <use Bilder/ablaufplan.png>
-Package pdftex.def Info: Bilder/ablaufplan.png used on input line 99.
+Package pdftex.def Info: Bilder/ablaufplan.png used on input line 103.
 (pdftex.def)             Requested size: 441.01773pt x 55.80864pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 116.
  [9 <./Bilder/ablaufplan.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
 <Bilder/flowchart.png, id=350, 820.86674pt x 494.44725pt>
 File: Bilder/flowchart.png Graphic file (type png)
 
 <use Bilder/flowchart.png>
-Package pdftex.def Info: Bilder/flowchart.png used on input line 115.
+Package pdftex.def Info: Bilder/flowchart.png used on input line 120.
 (pdftex.def)             Requested size: 441.01773pt x 265.64705pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 125.
+ [10 <./Bilder/flowchart.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 123.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 126.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 127.
 
-<Bilder/detail.png, id=351, 486.81876pt x 782.925pt>
+<Bilder/wireframes.png, id=356, 1594.95876pt x 948.54375pt>
+File: Bilder/wireframes.png Graphic file (type png)
+
+<use Bilder/wireframes.png>
+Package pdftex.def Info: Bilder/wireframes.png used on input line 132.
+(pdftex.def)             Requested size: 441.01773pt x 262.27599pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 137.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 137.
+ [11 <./Bilder/wireframes.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 138.
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+<Bilder/detail.png, id=364, 486.81876pt x 782.925pt>
 File: Bilder/detail.png Graphic file (type png)
  <use Bilder/detail.png>
-Package pdftex.def Info: Bilder/detail.png used on input line 131.
+Package pdftex.def Info: Bilder/detail.png used on input line 143.
 (pdftex.def)             Requested size: 220.50887pt x 354.63062pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 148.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 149.
 
-[10 <./Bilder/flowchart.png>]
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
- [11 <./Bilder/detail.png>]
+(babel)             in language  on input line 153.
+ [12 <./Bilder/detail.png>]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 161.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 161.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 180.
-[12
+(babel)             in language  on input line 185.
+[13
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 183.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 192.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 192.
- [13]
-Overfull \hbox (8.05817pt too wide) in paragraph at lines 192--193
-[]\T1/lmr/m/n/12 react-native-vector-icons: ei-ne Samm-lung the-ma-tisch ge-ord
--ne-ter Icon-Bibliotheken,
+(babel)             in language  on input line 196.
+
+Overfull \hbox (4.49098pt too wide) in paragraph at lines 202--203
+[]\T1/lmr/bx/n/12 react-native-permissions\T1/lmr/m/n/12 : Bie-tet ei-ne Schnit
+t-stel-le zur Ab-fra-ge von un-ter-schied-
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 208.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 213.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 205.
 [14]
+Overfull \hbox (6.30838pt too wide) in paragraph at lines 212--213
+[]\T1/lmr/bx/n/12 react-native-stars\T1/lmr/m/n/12 : Ei-ne Al-ter-na-ti-ve zu d
+em ver-wen-de-ten react-native-star-rating
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 221.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 221.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 226.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 226.
+[15]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 226.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 226.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 245.
- [15]
+(babel)             in language  on input line 249.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 246.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 246.
+(babel)             in language  on input line 254.
  [16]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 259.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 259.
+ [17]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 261.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 253.
- <Bilder/app-startseite.png, id=384, 593.21625pt x 1045.9075pt>
+(babel)             in language  on input line 261.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+ <Bilder/app-startseite.png, id=396, 593.21625pt x 1045.9075pt>
 File: Bilder/app-startseite.png Graphic file (type png)
 
 <use Bilder/app-startseite.png>
-Package pdftex.def Info: Bilder/app-startseite.png used on input line 255.
-(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 256.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 256--256
-[][][]|\T1/lmr/m/n/12 Start-sei-te der App un-ter
- []
-
-<Bilder/app-startseite_android.png, id=385, 246.9225pt x 486.01575pt>
-File: Bilder/app-startseite_android.png Graphic file (type png)
-
-<use Bilder/app-startseite_android.png>
-Package pdftex.def Info: Bilder/app-startseite_android.png used on input line 2
-58.
-(pdftex.def)             Requested size: 220.50887pt x 434.02101pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 259.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 259--259
-[][][]|\T1/lmr/m/n/12 Start-sei-te der App un-ter
- []
-
-
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 252--261
-[] [] 
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
-<Bilder/app-karte.png, id=386, 593.21625pt x 1045.9075pt>
-File: Bilder/app-karte.png Graphic file (type png)
-
-<use Bilder/app-karte.png>
-Package pdftex.def Info: Bilder/app-karte.png used on input line 267.
-(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 268.
-See the caption package documentation for explanation.
-
-File: Bilder/app-karte.png Graphic file (type png)
-<use Bilder/app-karte.png>
-Package pdftex.def Info: Bilder/app-karte.png used on input line 269.
+Package pdftex.def Info: Bilder/app-startseite.png used on input line 269.
 (pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
 
 
@@ -1962,173 +1944,142 @@ Package caption Warning: The caption type was already set to `table'
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 264--272
+Underfull \hbox (badness 1502) in paragraph at lines 270--270
+[][][]|\T1/lmr/m/n/12 Start-sei-te der App un-ter
+ []
+
+<Bilder/app-startseite_android.png, id=397, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-startseite_android.png Graphic file (type png)
+
+<use Bilder/app-startseite_android.png>
+Package pdftex.def Info: Bilder/app-startseite_android.png used on input line 2
+73.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 274.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 274--274
+[][][]|\T1/lmr/m/n/12 Start-sei-te der App un-ter
+ []
+
+
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 266--277
 [] [] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 276.
-<Bilder/app-liste.png, id=387, 593.21625pt x 1045.9075pt>
+(babel)             in language  on input line 281.
+<Bilder/app-karte.png, id=400, 593.21625pt x 1045.9075pt>
+File: Bilder/app-karte.png Graphic file (type png)
+
+<use Bilder/app-karte.png>
+Package pdftex.def Info: Bilder/app-karte.png used on input line 283.
+(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 284.
+See the caption package documentation for explanation.
+
+<Bilder/app-karte_android.png, id=401, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-karte_android.png Graphic file (type png)
+
+<use Bilder/app-karte_android.png>
+Package pdftex.def Info: Bilder/app-karte_android.png used on input line 286.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 287.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 280--290
+[] [] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 294.
+<Bilder/app-karte-active.png, id=404, 593.21625pt x 1045.9075pt>
+File: Bilder/app-karte-active.png Graphic file (type png)
+
+<use Bilder/app-karte-active.png>
+Package pdftex.def Info: Bilder/app-karte-active.png used on input line 296.
+(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 297.
+See the caption package documentation for explanation.
+
+<Bilder/app-karte-active_android.png, id=405, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-karte-active_android.png Graphic file (type png)
+
+<use Bilder/app-karte-active_android.png>
+Package pdftex.def Info: Bilder/app-karte-active_android.png used on input line
+ 299.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 300.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 293--303
+[] [] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 307.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 307.
+<Bilder/app-liste.png, id=408, 593.21625pt x 1045.9075pt>
 File: Bilder/app-liste.png Graphic file (type png)
 
 <use Bilder/app-liste.png>
-Package pdftex.def Info: Bilder/app-liste.png used on input line 278.
+Package pdftex.def Info: Bilder/app-liste.png used on input line 309.
 (pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
 
 
 Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 279.
+(caption)                 on input line 310.
 See the caption package documentation for explanation.
 
-<Bilder/app-liste_android.png, id=388, 407.5225pt x 799.98875pt>
+<Bilder/app-liste_android.png, id=409, 1130.2225pt x 2060.69875pt>
 File: Bilder/app-liste_android.png Graphic file (type png)
 
 <use Bilder/app-liste_android.png>
-Package pdftex.def Info: Bilder/app-liste_android.png used on input line 280.
-(pdftex.def)             Requested size: 220.50887pt x 432.86638pt.
+Package pdftex.def Info: Bilder/app-liste_android.png used on input line 312.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
 
 
 Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 281.
+(caption)                 on input line 313.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 275--283
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 306--316
 [] [] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 320.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 287.
-<Bilder/app-info.png, id=389, 593.21625pt x 1045.9075pt>
+(babel)             in language  on input line 320.
+<Bilder/app-info.png, id=412, 593.21625pt x 1045.9075pt>
 File: Bilder/app-info.png Graphic file (type png)
 
 <use Bilder/app-info.png>
-Package pdftex.def Info: Bilder/app-info.png used on input line 289.
-(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 290.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 290--290
-[][][]|\T1/lmr/m/n/12 In-fo-sei-te ei-nes Cafés der
- []
-
-<Bilder/app-info_android.png, id=390, 407.5225pt x 799.98875pt>
-File: Bilder/app-info_android.png Graphic file (type png)
-
-<use Bilder/app-info_android.png>
-Package pdftex.def Info: Bilder/app-info_android.png used on input line 291.
-(pdftex.def)             Requested size: 220.50887pt x 432.86638pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 292.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 292--292
-[][][]|\T1/lmr/m/n/12 In-fo-sei-te ei-nes Cafés der
- []
-
-
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 286--294
-[] [] 
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 298.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 298.
-<Bilder/app-bewertungen.png, id=391, 593.21625pt x 1045.9075pt>
-File: Bilder/app-bewertungen.png Graphic file (type png)
-
-<use Bilder/app-bewertungen.png>
-Package pdftex.def Info: Bilder/app-bewertungen.png used on input line 300.
-(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 301.
-See the caption package documentation for explanation.
-
-<Bilder/app-bewertungen_android.png, id=392, 407.5225pt x 800.9925pt>
-File: Bilder/app-bewertungen_android.png Graphic file (type png)
-
-<use Bilder/app-bewertungen_android.png>
-Package pdftex.def Info: Bilder/app-bewertungen_android.png used on input line 
-302.
-(pdftex.def)             Requested size: 220.50887pt x 433.4095pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 303.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
-[][][]|\T1/lmr/m/n/12 Be-wer-tungs-sei-te ei-nes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
-\T1/lmr/m/n/12 Cafés der App un-ter
- []
-
-
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 297--305
-[] [] 
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 309.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 309.
-<Bilder/app-lexikon.png, id=393, 593.21625pt x 1045.9075pt>
-File: Bilder/app-lexikon.png Graphic file (type png)
-
-<use Bilder/app-lexikon.png>
-Package pdftex.def Info: Bilder/app-lexikon.png used on input line 311.
-(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 312.
-See the caption package documentation for explanation.
-
-<Bilder/app-lexikon_android.png, id=394, 407.5225pt x 799.98875pt>
-File: Bilder/app-lexikon_android.png Graphic file (type png)
-
-<use Bilder/app-lexikon_android.png>
-Package pdftex.def Info: Bilder/app-lexikon_android.png used on input line 313.
-
-(pdftex.def)             Requested size: 220.50887pt x 432.86638pt.
-
-
-Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 314.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 308--316
-[] [] 
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
-<Bilder/app-lexikon-detail.png, id=395, 593.21625pt x 1045.9075pt>
-File: Bilder/app-lexikon-detail.png Graphic file (type png)
-
-<use Bilder/app-lexikon-detail.png>
-Package pdftex.def Info: Bilder/app-lexikon-detail.png used on input line 322.
+Package pdftex.def Info: Bilder/app-info.png used on input line 322.
 (pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
 
 
@@ -2137,148 +2088,264 @@ Package caption Warning: The caption type was already set to `table'
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 323--323
-[][][]|\T1/lmr/m/n/12 De-tail-an-sicht ei-nes Le-xi-
+Underfull \hbox (badness 2269) in paragraph at lines 323--323
+[][][]|\T1/lmr/m/n/12 In-fo-sei-te ei-nes Cafés der
  []
 
-<Bilder/app-lexikon-detail_android.png, id=396, 407.5225pt x 800.9925pt>
-File: Bilder/app-lexikon-detail_android.png Graphic file (type png)
+<Bilder/app-info_android.png, id=413, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-info_android.png Graphic file (type png)
 
-<use Bilder/app-lexikon-detail_android.png>
-Package pdftex.def Info: Bilder/app-lexikon-detail_android.png used on input li
-ne 324.
-(pdftex.def)             Requested size: 220.50887pt x 433.4095pt.
+<use Bilder/app-info_android.png>
+Package pdftex.def Info: Bilder/app-info_android.png used on input line 325.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
 
 
 Package caption Warning: The caption type was already set to `table'
-(caption)                 on input line 325.
+(caption)                 on input line 326.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 325--325
-[][][]|\T1/lmr/m/n/12 De-tail-an-sicht ei-nes Le-xi-
- []
-
-
-Overfull \hbox (18.30954pt too wide) in paragraph at lines 319--327
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 319--329
 [] [] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
+(babel)             in language  on input line 333.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
-[17 <./Bilder/app-startseite.png> <./Bilder/app-startseite_android.png (PNG cop
-y)>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
- [18 <./Bilder/app-karte.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
- [19 <./Bilder/app-liste.png> <./Bilder/app-liste_android.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
- [20 <./Bilder/app-info.png> <./Bilder/app-info_android.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
-[21 <./Bilder/app-bewertungen.png> <./Bilder/app-bewertungen_android.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
+(babel)             in language  on input line 333.
+<Bilder/app-bewertungen.png, id=416, 593.21625pt x 1045.9075pt>
+File: Bilder/app-bewertungen.png Graphic file (type png)
 
-[22 <./Bilder/app-lexikon.png> <./Bilder/app-lexikon_android.png>]
+<use Bilder/app-bewertungen.png>
+Package pdftex.def Info: Bilder/app-bewertungen.png used on input line 335.
+(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 336.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+[][][]|\T1/lmr/m/n/12 Be-wer-tungs-sei-te ei-nes
+ []
+
+<Bilder/app-bewertungen_android.png, id=417, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-bewertungen_android.png Graphic file (type png)
+
+<use Bilder/app-bewertungen_android.png>
+Package pdftex.def Info: Bilder/app-bewertungen_android.png used on input line 
+338.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 339.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[][][]|\T1/lmr/m/n/12 Be-wer-tungs-sei-te ei-nes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+\T1/lmr/m/n/12 Cafés der App un-ter
+ []
+
+
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 332--342
+[] [] 
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 330.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 330.
- [23 <./Bilder/app-lexikon-detail.png> <./Bilder/app-lexikon-detail_android.png
+(babel)             in language  on input line 346.
+<Bilder/app-lexikon.png, id=421, 593.21625pt x 1045.9075pt>
+File: Bilder/app-lexikon.png Graphic file (type png)
+
+<use Bilder/app-lexikon.png>
+Package pdftex.def Info: Bilder/app-lexikon.png used on input line 348.
+(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 349.
+See the caption package documentation for explanation.
+
+<Bilder/app-lexikon_android.png, id=422, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-lexikon_android.png Graphic file (type png)
+
+<use Bilder/app-lexikon_android.png>
+Package pdftex.def Info: Bilder/app-lexikon_android.png used on input line 351.
+
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 352.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 345--355
+[] [] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 359.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 359.
+<Bilder/app-lexikon-detail.png, id=425, 593.21625pt x 1045.9075pt>
+File: Bilder/app-lexikon-detail.png Graphic file (type png)
+
+<use Bilder/app-lexikon-detail.png>
+Package pdftex.def Info: Bilder/app-lexikon-detail.png used on input line 361.
+(pdftex.def)             Requested size: 220.50887pt x 388.78311pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 362.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 362--362
+[][][]|\T1/lmr/m/n/12 De-tail-an-sicht ei-nes Le-xi-
+ []
+
+<Bilder/app-lexikon-detail_android.png, id=426, 1130.2225pt x 2060.69875pt>
+File: Bilder/app-lexikon-detail_android.png Graphic file (type png)
+
+<use Bilder/app-lexikon-detail_android.png>
+Package pdftex.def Info: Bilder/app-lexikon-detail_android.png used on input li
+ne 364.
+(pdftex.def)             Requested size: 211.68661pt x 385.93985pt.
+
+
+Package caption Warning: The caption type was already set to `table'
+(caption)                 on input line 365.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 365--365
+[][][]|\T1/lmr/m/n/12 De-tail-an-sicht ei-nes Le-xi-
+ []
+
+
+Overfull \hbox (18.30954pt too wide) in paragraph at lines 358--368
+[] [] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+[18 <./Bilder/app-startseite.png> <./Bilder/app-startseite_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+
+[19 <./Bilder/app-karte.png> <./Bilder/app-karte_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+ [20 <./Bilder/app-karte-active.png> <./Bilder/app-karte-active_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+ [21 <./Bilder/app-liste.png> <./Bilder/app-liste_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+ [22 <./Bilder/app-info.png> <./Bilder/app-info_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+ [23 <./Bilder/app-bewertungen.png> <./Bilder/app-bewertungen_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+ [24 <./Bilder/app-lexikon.png> <./Bilder/app-lexikon_android.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 371.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 371.
+ [25 <./Bilder/app-lexikon-detail.png> <./Bilder/app-lexikon-detail_android.png
 >]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 353.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 353.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 365.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 365.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 374.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 374.
- [24]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 374.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 374.
-
-[25]
+(babel)             in language  on input line 409.
+ [26]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 415.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 415.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 390.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 394.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 394.
-[26
+(babel)             in language  on input line 428.
+[27
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 397.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 397.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 438.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 438.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 443.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 443.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 412.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 412.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 448.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 415.
- [27])
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 56.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 448.
  [28]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 453.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 453.
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+ [29]
 \openout2 = `Inhalt/Zusammenfassung.aux'.
 
  (./Inhalt/Zusammenfassung.tex
@@ -2299,7 +2366,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
-[29
+[30
 
 
 
@@ -2313,76 +2380,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 57.
- [30] (./Document.bbl
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 49.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 2310) in paragraph at lines 64--76
-[]\T1/lmr/m/n/12 Bundesministerium für Ge-sund-heit.  (2017).  \T1/lmr/m/it/12 
-E-Health-Gesetz.  \T1/lmr/m/n/12 Zu-griff am
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 64--76
-\T1/lmr/m/n/12 29.01.2018 auf [][]$\T1/lmtt/m/n/12 https :// www [] .bundesgesu
-ndheitsministerium [] .de / service /
- []
-
-./Document.bbl:217: Misplaced alignment tab character &.
-<argument> {Trustworthy Health &
-                                 Wellness}.
-l.217   Wellness}.}
-                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Underfull \hbox (badness 2564) in paragraph at lines 234--247
-[]\T1/lmr/m/n/12 Tropf, T. M.  (2017a).  \T1/lmr/m/it/12 Fast je-der Zwei-te nu
-tzt Gesundheits-Apps.  \T1/lmr/m/n/12 Zu-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--272
-\T1/lmtt/m/n/12 org / Presse / Presseinformation / Markt [] -fuer [] -Digital [
-] -Health [] -mit [] -grossem []
- []
-
-
-Underfull \hbox (badness 7221) in paragraph at lines 284--297
-\T1/lmr/m/n/12 am 29.01.2018 auf [][]$\T1/lmtt/m/n/12 http :// www [] .digitale
-stadt [] .org / bitkom / org / Presse /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--297
-\T1/lmtt/m/n/12 Presseinformation / Aerzte [] -sind [] -offen [] -fuer [] -die 
-[] -digitale [] -Zukunft [] -der []
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 328.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 328.
-[31
-
-
-])
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 66.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 66.
- [32]
+ [31]
 \openout2 = `Erklaerung.aux'.
 
  (./Erklaerung.tex
@@ -2396,7 +2394,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 66.
- [33
+ [32
+
 
 
 ]
@@ -2407,17 +2406,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `Document.out' has not changed.
-(rerunfilecheck)             Checksum: 99EA68E2B637E1DA27EE7B3EABC019C0;3004.
+(rerunfilecheck)             Checksum: 6E186E2B87E192D8EAB6EA9EAA75E627;3022.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 23447 strings out of 492995
- 428338 string characters out of 6132705
- 598155 words of memory out of 5000000
- 26346 multiletter control sequences out of 15000+600000
- 64065 words of font info for 49 fonts, out of 8000000 for 9000
+ 23426 strings out of 492995
+ 428555 string characters out of 6132705
+ 600236 words of memory out of 5000000
+ 26338 multiletter control sequences out of 15000+600000
+ 67063 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,15n,100p,8863b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,15n,100p,8863b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist
@@ -2427,10 +2426,10 @@ texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Document.pdf (33 pages, 5120998 bytes).
+Output written on Document.pdf (32 pages, 12196646 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 497 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
- 516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 576 PDF objects out of 1000 (max. 8388607)
+ 477 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 528 words of extra memory for PDF output out of 10000 (max. 10000000)
 

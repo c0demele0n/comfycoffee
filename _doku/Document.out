@@ -13,39 +13,38 @@
 \BOOKMARK [1][]{section.16}{Ablaufplan}{chapter.5}% 13
 \BOOKMARK [1][]{section.18}{Flow Chart}{chapter.5}% 14
 \BOOKMARK [1][]{section.20}{Wireframes}{chapter.5}% 15
-\BOOKMARK [1][]{section.21}{Mockups}{chapter.5}% 16
-\BOOKMARK [1][]{section.22}{Prototyp}{chapter.5}% 17
-\BOOKMARK [0][]{chapter.24}{Entwicklung}{}% 18
-\BOOKMARK [1][]{section.25}{React Native}{chapter.24}% 19
-\BOOKMARK [1][]{section.26}{Setup}{chapter.24}% 20
-\BOOKMARK [1][]{section.27}{Module}{chapter.24}% 21
-\BOOKMARK [1][]{section.28}{Arbeitsaufteilung}{chapter.24}% 22
-\BOOKMARK [2][]{subsection.29}{Gemeinsam}{section.28}% 23
-\BOOKMARK [2][]{subsection.30}{Katharina}{section.28}% 24
-\BOOKMARK [2][]{subsection.31}{Thomas}{section.28}% 25
-\BOOKMARK [1][]{section.32}{Vorstellung der App}{chapter.24}% 26
-\BOOKMARK [2][]{subsection.34}{Startseite}{section.32}% 27
-\BOOKMARK [2][]{subsection.36}{Kartenansicht}{section.32}% 28
-\BOOKMARK [2][]{subsection.38}{Listenansicht}{section.32}% 29
-\BOOKMARK [2][]{subsection.40}{Infos Caf\351}{section.32}% 30
-\BOOKMARK [2][]{subsection.42}{Bewertungen Caf\351}{section.32}% 31
-\BOOKMARK [2][]{subsection.44}{Lexikon}{section.32}% 32
-\BOOKMARK [2][]{subsection.46}{Lexikon Detailansicht}{section.32}% 33
-\BOOKMARK [1][]{section.47}{Readme}{chapter.24}% 34
-\BOOKMARK [2][]{subsection.48}{Voraussetzungen}{section.47}% 35
-\BOOKMARK [2][]{subsection.49}{Testing und Debugging}{section.47}% 36
-\BOOKMARK [2][]{subsection.50}{Lizenz}{section.47}% 37
-\BOOKMARK [0][]{chapter.51}{Ausblick}{}% 38
-\BOOKMARK [1][]{section.52}{Testkonzept}{chapter.51}% 39
-\BOOKMARK [1][]{section.53}{Marketing}{chapter.51}% 40
-\BOOKMARK [2][]{subsection.54}{Produktpolitik}{section.53}% 41
-\BOOKMARK [2][]{subsection.55}{Preispolitik}{section.53}% 42
-\BOOKMARK [2][]{subsection.56}{Distributionspolitik}{section.53}% 43
-\BOOKMARK [2][]{subsection.57}{Kommunikationspolitik}{section.53}% 44
-\BOOKMARK [2][]{subsection.58}{Retention Marketing}{section.53}% 45
-\BOOKMARK [0][]{chapter.59}{Fazit}{}% 46
-\BOOKMARK [1][]{section.60}{Lessons Learned}{chapter.59}% 47
-\BOOKMARK [1][]{section.61}{React Native}{chapter.59}% 48
-\BOOKMARK [1][]{section.62}{Cross-Plattform vs. Nativ}{chapter.59}% 49
-\BOOKMARK [0][]{chapter*.63}{Literaturverzeichnis}{}% 50
-\BOOKMARK [0][]{chapter*.64}{Eidesstattliche Erkl\344rung}{}% 51
+\BOOKMARK [1][]{section.22}{MockUps}{chapter.5}% 16
+\BOOKMARK [1][]{section.24}{Prototyp}{chapter.5}% 17
+\BOOKMARK [0][]{chapter.25}{Entwicklung}{}% 18
+\BOOKMARK [1][]{section.26}{React Native}{chapter.25}% 19
+\BOOKMARK [1][]{section.27}{Setup}{chapter.25}% 20
+\BOOKMARK [1][]{section.28}{Module}{chapter.25}% 21
+\BOOKMARK [1][]{section.29}{Arbeitsaufteilung}{chapter.25}% 22
+\BOOKMARK [2][]{subsection.30}{Gemeinsame Aufgaben}{section.29}% 23
+\BOOKMARK [2][]{subsection.31}{Aufgaben von Katharina Garrecht}{section.29}% 24
+\BOOKMARK [2][]{subsection.32}{Aufgaben von Thomas Wedler}{section.29}% 25
+\BOOKMARK [1][]{section.33}{Vorstellung der App}{chapter.25}% 26
+\BOOKMARK [2][]{subsection.35}{Startseite}{section.33}% 27
+\BOOKMARK [2][]{subsection.37}{Kartenansicht}{section.33}% 28
+\BOOKMARK [2][]{subsection.39}{Kartenansicht - ausgew\344hlt}{section.33}% 29
+\BOOKMARK [2][]{subsection.41}{Listenansicht}{section.33}% 30
+\BOOKMARK [2][]{subsection.43}{Infos Caf\351}{section.33}% 31
+\BOOKMARK [2][]{subsection.45}{Bewertungen Caf\351}{section.33}% 32
+\BOOKMARK [2][]{subsection.47}{Lexikon}{section.33}% 33
+\BOOKMARK [2][]{subsection.49}{Lexikon Detailansicht}{section.33}% 34
+\BOOKMARK [1][]{section.50}{Readme}{chapter.25}% 35
+\BOOKMARK [2][]{subsection.51}{Voraussetzungen}{section.50}% 36
+\BOOKMARK [2][]{subsection.52}{Testing und Debugging}{section.50}% 37
+\BOOKMARK [0][]{chapter.53}{Ausblick}{}% 38
+\BOOKMARK [1][]{section.54}{Testkonzept}{chapter.53}% 39
+\BOOKMARK [1][]{section.55}{Marketing}{chapter.53}% 40
+\BOOKMARK [2][]{subsection.56}{Produktpolitik}{section.55}% 41
+\BOOKMARK [2][]{subsection.57}{Preispolitik}{section.55}% 42
+\BOOKMARK [2][]{subsection.58}{Distributionspolitik}{section.55}% 43
+\BOOKMARK [2][]{subsection.59}{Kommunikationspolitik}{section.55}% 44
+\BOOKMARK [2][]{subsection.60}{Retention Marketing}{section.55}% 45
+\BOOKMARK [0][]{chapter.61}{Fazit}{}% 46
+\BOOKMARK [1][]{section.62}{Lessons Learned}{chapter.61}% 47
+\BOOKMARK [1][]{section.63}{React Native}{chapter.61}% 48
+\BOOKMARK [1][]{section.64}{Cross-Plattform vs. Nativ}{chapter.61}% 49
+\BOOKMARK [0][]{chapter*.65}{Eidesstattliche Erkl\344rung}{}% 50

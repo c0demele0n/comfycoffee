@@ -13,40 +13,39 @@
 \contentsline {subsection}{\numberline {2.3.3}Kann-Anforderungen}{8}{subsection.15}
 \contentsline {section}{\numberline {2.4}Ablaufplan}{9}{section.16}
 \contentsline {section}{\numberline {2.5}Flow Chart}{9}{section.18}
-\contentsline {section}{\numberline {2.6}Wireframes}{10}{section.20}
-\contentsline {section}{\numberline {2.7}Mockups}{10}{section.21}
-\contentsline {section}{\numberline {2.8}Prototyp}{11}{section.22}
-\contentsline {chapter}{\numberline {3}Entwicklung}{12}{chapter.24}
-\contentsline {section}{\numberline {3.1}React Native}{12}{section.25}
-\contentsline {section}{\numberline {3.2}Setup}{12}{section.26}
-\contentsline {section}{\numberline {3.3}Module}{13}{section.27}
-\contentsline {section}{\numberline {3.4}Arbeitsaufteilung}{14}{section.28}
-\contentsline {subsection}{\numberline {3.4.1}Gemeinsam}{15}{subsection.29}
-\contentsline {subsection}{\numberline {3.4.2}Katharina}{15}{subsection.30}
-\contentsline {subsection}{\numberline {3.4.3}Thomas}{16}{subsection.31}
-\contentsline {section}{\numberline {3.5}Vorstellung der App}{17}{section.32}
-\contentsline {subsection}{\numberline {3.5.1}Startseite}{17}{subsection.34}
-\contentsline {subsection}{\numberline {3.5.2}Kartenansicht}{18}{subsection.36}
-\contentsline {subsection}{\numberline {3.5.3}Listenansicht}{19}{subsection.38}
-\contentsline {subsection}{\numberline {3.5.4}Infos Caf\IeC {\'e}}{20}{subsection.40}
-\contentsline {subsection}{\numberline {3.5.5}Bewertungen Caf\IeC {\'e}}{21}{subsection.42}
-\contentsline {subsection}{\numberline {3.5.6}Lexikon}{22}{subsection.44}
-\contentsline {subsection}{\numberline {3.5.7}Lexikon Detailansicht}{23}{subsection.46}
-\contentsline {section}{\numberline {3.6}Readme}{24}{section.47}
-\contentsline {subsection}{\numberline {3.6.1}Voraussetzungen}{24}{subsection.48}
-\contentsline {subsection}{\numberline {3.6.2}Testing und Debugging}{24}{subsection.49}
-\contentsline {subsection}{\numberline {3.6.3}Lizenz}{25}{subsection.50}
-\contentsline {chapter}{\numberline {4}Ausblick}{26}{chapter.51}
-\contentsline {section}{\numberline {4.1}Testkonzept}{26}{section.52}
-\contentsline {section}{\numberline {4.2}Marketing}{27}{section.53}
-\contentsline {subsection}{\numberline {4.2.1}Produktpolitik}{27}{subsection.54}
-\contentsline {subsection}{\numberline {4.2.2}Preispolitik}{27}{subsection.55}
-\contentsline {subsection}{\numberline {4.2.3}Distributionspolitik}{27}{subsection.56}
-\contentsline {subsection}{\numberline {4.2.4}Kommunikationspolitik}{27}{subsection.57}
-\contentsline {subsection}{\numberline {4.2.5}Retention Marketing}{28}{subsection.58}
-\contentsline {chapter}{\numberline {5}Fazit}{29}{chapter.59}
-\contentsline {section}{\numberline {5.1}Lessons Learned}{29}{section.60}
-\contentsline {section}{\numberline {5.2}React Native}{29}{section.61}
-\contentsline {section}{\numberline {5.3}Cross-Plattform vs. Nativ}{30}{section.62}
-\contentsline {chapter}{Literaturverzeichnis}{31}{chapter*.63}
-\contentsline {chapter}{\nonumberline Eidesstattliche Erkl\IeC {\"a}rung}{33}{chapter*.64}
+\contentsline {section}{\numberline {2.6}Wireframes}{11}{section.20}
+\contentsline {section}{\numberline {2.7}MockUps}{12}{section.22}
+\contentsline {section}{\numberline {2.8}Prototyp}{12}{section.24}
+\contentsline {chapter}{\numberline {3}Entwicklung}{13}{chapter.25}
+\contentsline {section}{\numberline {3.1}React Native}{13}{section.26}
+\contentsline {section}{\numberline {3.2}Setup}{13}{section.27}
+\contentsline {section}{\numberline {3.3}Module}{14}{section.28}
+\contentsline {section}{\numberline {3.4}Arbeitsaufteilung}{15}{section.29}
+\contentsline {subsection}{\numberline {3.4.1}Gemeinsame Aufgaben}{16}{subsection.30}
+\contentsline {subsection}{\numberline {3.4.2}Aufgaben von Katharina Garrecht}{16}{subsection.31}
+\contentsline {subsection}{\numberline {3.4.3}Aufgaben von Thomas Wedler}{17}{subsection.32}
+\contentsline {section}{\numberline {3.5}Vorstellung der App}{18}{section.33}
+\contentsline {subsection}{\numberline {3.5.1}Startseite}{18}{subsection.35}
+\contentsline {subsection}{\numberline {3.5.2}Kartenansicht}{19}{subsection.37}
+\contentsline {subsection}{\numberline {3.5.3}Kartenansicht - ausgew\IeC {\"a}hlt}{20}{subsection.39}
+\contentsline {subsection}{\numberline {3.5.4}Listenansicht}{21}{subsection.41}
+\contentsline {subsection}{\numberline {3.5.5}Infos Caf\IeC {\'e}}{22}{subsection.43}
+\contentsline {subsection}{\numberline {3.5.6}Bewertungen Caf\IeC {\'e}}{23}{subsection.45}
+\contentsline {subsection}{\numberline {3.5.7}Lexikon}{24}{subsection.47}
+\contentsline {subsection}{\numberline {3.5.8}Lexikon Detailansicht}{25}{subsection.49}
+\contentsline {section}{\numberline {3.6}Readme}{26}{section.50}
+\contentsline {subsection}{\numberline {3.6.1}Voraussetzungen}{26}{subsection.51}
+\contentsline {subsection}{\numberline {3.6.2}Testing und Debugging}{26}{subsection.52}
+\contentsline {chapter}{\numberline {4}Ausblick}{27}{chapter.53}
+\contentsline {section}{\numberline {4.1}Testkonzept}{27}{section.54}
+\contentsline {section}{\numberline {4.2}Marketing}{28}{section.55}
+\contentsline {subsection}{\numberline {4.2.1}Produktpolitik}{28}{subsection.56}
+\contentsline {subsection}{\numberline {4.2.2}Preispolitik}{28}{subsection.57}
+\contentsline {subsection}{\numberline {4.2.3}Distributionspolitik}{28}{subsection.58}
+\contentsline {subsection}{\numberline {4.2.4}Kommunikationspolitik}{29}{subsection.59}
+\contentsline {subsection}{\numberline {4.2.5}Retention Marketing}{29}{subsection.60}
+\contentsline {chapter}{\numberline {5}Fazit}{30}{chapter.61}
+\contentsline {section}{\numberline {5.1}Lessons Learned}{30}{section.62}
+\contentsline {section}{\numberline {5.2}React Native}{30}{section.63}
+\contentsline {section}{\numberline {5.3}Cross-Plattform vs. Nativ}{31}{section.64}
+\contentsline {chapter}{\nonumberline Eidesstattliche Erkl\IeC {\"a}rung}{32}{chapter*.65}

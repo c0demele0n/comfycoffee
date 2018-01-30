@@ -16,7 +16,7 @@ Bei der Ausarbeitung der Personas wurde eine Vertreterin der primären und ein V
 Laura Wagner vertritt die primäre Zielgruppe (vgl. Abb. \ref{fig:laura}). Sie...
 \begin{itemize}
 	\item ...ist 25 Jahre alt
-	\item ...ledig
+	\item ...ist ledig
 	\item ...studiert Sozialpädagogik
 	\item ...ist extrovertiert und spontan
 	\item ...geht gerne mit Freunden im kleinen Café um die Ecke was trinken, will aber auch andere Cafés entdecken
@@ -35,7 +35,7 @@ Laura Wagner vertritt die primäre Zielgruppe (vgl. Abb. \ref{fig:laura}). Sie..
 Roland Reisenweber vertritt die sekundäre Zielgruppe (vgl. Abb. \ref{fig:roland}). Er...
 \begin{itemize}
 	\item ...ist 42 Jahre alt
-	\item ...verheiratet
+	\item ...ist verheiratet
 	\item ...arbeitet als Journalist bei Frankfurter Allgemeine
 	\item ...ist extrovertiert und offen für Neues
 	\item ...arbeitet gerne an öffentlichen Orten
@@ -54,6 +54,10 @@ Roland Reisenweber vertritt die sekundäre Zielgruppe (vgl. Abb. \ref{fig:roland
 
 \section{Anforderungsanalyse}
 In der Anforderungsanalyse haben wir die Muss-, Soll- und Kann-Anforderungen von comfycoffee definiert.
+
+\underline{Learnings:}
+Dabei war die Herausforderung, die Anforderungen exakt zu formulieren und in Pakete zu unterteilen, die klein genug waren, um sie in der im Ablaufplan definierten Zeit abzuarbeiten (vgl. Kapitel \ref{sec:ablaufplan}).
+
 
 \subsection{Muss-Anforderungen}
 \label{subsec:mussanforderungen}
@@ -89,12 +93,10 @@ Die Kann-Anforderungen ergänzen die App durch weitere Informationen und Feature
 	\item Profil des Nutzers anlegen
 \end{itemize}
 
-\underline{Learnings:}
-Dabei war die Herausforderung, die Anforderungen exakt zu formulieren und in Pakete zu unterteilen, die klein genug waren, um sie in der im Ablaufplan definierten Zeit abzuarbeiten (vgl. Kapitel \ref{sec:ablaufplan}).
 
 \section{Ablaufplan}
 \label{sec:ablaufplan}
-Anschließend wurde ein Ablaufplan (vgl. Abb. \ref{fig:ablaufplan}) ausgearbeitet und festgelegt. Dabei sollte die Designphase mit Wireframes, Flow Charts, MockUps und einem interaktiven Prototyp bis zum 22.11.2017 abgeschlossen sein. Für die Einarbeitung in das Entwicklungsframework, React Native (vgl. Kapitel \ref{sec:reactnative}), wurde eine Woche eingeplant. Bis zum 29.11.2017 sollte eine ``Hello World''-Anwendung laufen, um die Grundzüge des Frameworks zu beherrschen. Zwei Wochen, also bis zum 13.12.2017, waren für die Muss-Anforderungen, eine Woche für die Soll-Anforderungen (bis 20.12.2017) geplant. Die Kann-Anforderungen sollten im Januar 2018 abgeschlossen sein. Das folgende Diagramm veranschaulicht den Ablauf.
+Anschließend wurde ein Ablaufplan (vgl. Abb. \ref{fig:ablaufplan}) ausgearbeitet und festgelegt. Dabei sollte die Designphase mit Wireframes, Flow Charts, MockUps und einem interaktiven Prototyp bis zum 22.11.2017 abgeschlossen sein. Für die Einarbeitung in das Entwicklungsframework, React Native (vgl. Kapitel \ref{sec:reactnative}), wurde eine Woche eingeplant. Bis zum 29.11.2017 sollte eine ``Hello World''-Anwendung laufen, um die Grundzüge des Frameworks zu beherrschen. Zwei Wochen, also bis zum 13.12.2017, waren für die Muss-Anforderungen, eine Woche für die Soll-Anforderungen (bis 20.12.2017) geplant. Die Kann-Anforderungen sollten im Januar 2018 abgeschlossen sein. Das folgende Diagramm veranschaulicht den Ablauf.\newline
 
 \begin{figure}[h!]
     \centering
@@ -111,7 +113,7 @@ Das Flow Chart stellt die Navigation durch die App und die verschiedenen Views d
 
 In der Karte befindet sich eine Bottom Navigation Bar, mit der von der Karte zur Listenansicht und zurück gewechselt werden kann. Klickt der Nutzer in der Karte auf einen Marker oder in der Liste auf einen Eintrag, so wird er auf die Detailseite des jeweiligen Café geleitet. Dort erhält er Informationen wie Adresse, Öffnungszeiten und Bewertungen des Cafés. Über einen Button wird die Navigation zu dem Café in Google Maps geöffnet. Das Navigationskonzept wurde in der Entwicklung abgeändert, um den Design-Guidelines von Android und iOS zu entsprechen. Aus der Bottom Navigation Bar wurde in Android eine Tab Bar. Weiterhin wird auf der Detailseite eine Tab bzw. Bottom Navigation Bar angezeigt, um von der Seite des Cafés zu den Bewertungen zu wechseln.
 
-Das Lexikon beinhaltet verschiedene Kaffeesorten. Beim Auswählen einer Kaffeesorte wird der Nutzer auf eine Unterseite geleitet, die Details zu der jeweiligen Kaffeesorte enthält. Schüttelt der Nutzer das Smartphone, während er sich auf der Übersichtsseite des Lexikons befindet, wird zufällig eine Kaffeesorte ausgewählt und der Nutzer hat die Möglichkeit, sich zu der genannten Detailseite navigieren zu lassen.
+Das Lexikon beinhaltet verschiedene Kaffeesorten. Beim Auswählen einer Kaffeesorte wird der Nutzer auf eine Unterseite geleitet, die Details zu der jeweiligen Kaffeesorte enthält. Schüttelt der Nutzer das Smartphone, während er sich auf der Übersichtsseite des Lexikons befindet, wird zufällig eine Kaffeesorte ausgewählt und der Nutzer hat die Möglichkeit, sich zu der genannten Detailseite navigieren zu lassen.\newline
 
 \begin{figure}[h!]
     \centering
@@ -119,6 +121,8 @@ Das Lexikon beinhaltet verschiedene Kaffeesorten. Beim Auswählen einer Kaffeeso
 		\caption{Erster Entwurf des Flow Charts von comfycoffee}
 		\label{fig:flowchart}
 \end{figure}
+
+\newpage
 
 \section{Wireframes}
 Nachdem die Anzahl und Anforderungen an die Views feststanden, wurden diese auf Papier in Form von Wireframes visualisiert. Dabei wurden die Elemente pro View bestimmt und deren Position auf den einzelnen Seiten festgelegt (vgl. Abb. \ref{fig:wireframes}).
@@ -132,17 +136,19 @@ Nachdem die Anzahl und Anforderungen an die Views feststanden, wurden diese auf 
 
 \newpage
 \section{MockUps}
-Aus den Wireframes wurden MockUps mit dem MockUp-Tool Axure konfiguriert. Zu jeder View wurde ein MockUp erstellt. Im Gegensatz zu den Wireframes sind hier schon Farben, Bilder und Texte beispielhaft enthalten.
-
-\section{Prototyp}
-Anhand der MockUps und des Flow Charts wurde in Axure ein interaktiver Prototyp erstellt (vgl. Abb. \ref{fig:prototyp}). Er dient zum Durchklicken durch die App und um einen ersten Eindruck in Sachen Usability zu gewinnen.
+Aus den Wireframes wurden MockUps mit dem MockUp-Tool Axure konfiguriert. Zu jeder View wurde ein MockUp erstellt. Im Gegensatz zu den Wireframes sind hier schon Farben, Bilder und Texte beispielhaft enthalten (vgl. Abb. \ref{fig:mockup}).\newline
 
 \begin{figure}[h!]
     \centering
 		\includegraphics[width=0.5\textwidth]{Bilder/detail.png}
-		\caption{Ansicht der Detailseite eines Kaffees im interaktiven Prototyp von comfycoffee}
-		\label{fig:prototyp}
+		\caption{Ansicht der Detailseite eines Kaffees als MockUp}
+		\label{fig:mockup}
 \end{figure}
+
+\section{Prototyp}
+Anhand der MockUps und des Flow Charts wurde in Axure ein interaktiver Prototyp erstellt. Er dient zum Durchklicken durch die App und um einen ersten Eindruck in Sachen Usability zu gewinnen. Der Prototyp ist online verfügbar unter\newline \url{https://jzd0d2.axshare.com}.
+
+
 
 \chapter{Entwicklung}
 \label{entwicklung}
@@ -217,7 +223,7 @@ Die Aufteilung der anstehenden Aufgaben sahen wir als notwendig an, um die gepla
 Unumgänglich war allerdings eine gemeinsame Code-Basis, in die zusätzliche Funktionalitäten unabhängig voneinander integriert werden konnten.
 Hierzu legten wir durch \emph{Pair Programming} zusammen eine geeignete Grundlage.
 
-\subsection{Gemeinsam}
+\subsection{Gemeinsame Aufgaben}
 Das Fundament besteht aus dem Grundgerüst der App sowie der Navigation durch diese.
 Dabei besteht das Navigationskonzept aus einer übergeordneten \emph{Stack Navigation} sowie mehreren kontextabhängigen, verschachtelten \emph{Tab/Bottom Navigations}.
 Eine dem Flow Chart entsprechende Seitenstruktur ermöglicht es, Seiteninhalte isoliert zu bearbeiten.
@@ -230,7 +236,7 @@ Die Tabs und Bottom Navigation, so wie in unseren MockUps skizziert, ließ sich 
 Eine weitere Recherche ergab, dass der Aufbau der Navigation in React Native eine andere Lösung für diesen Fall vorgab und wir die Implementierung entsprechend anpassen mussten.
 Darüber hinaus stießen wir mit dem React Native Modul für die Google Maps Karte (react-native-maps) bereits auf ein undokumentiertes Modul aus der Community, welchem noch Weitere folgen sollten.
 
-\subsection{Katharina}
+\subsection{Aufgaben von Katharina Garrecht}
 Die Umsetzung der Inhalte des Lexikons und der Lexikon-Detailansicht sowie die Integration des Bewegungssensors übernahm Katharina Garrecht.
 Hierbei implementierte sie die im Prototypen definierten Elemente sowohl für die Übersichtsseite als auch für das Template der Kaffee-Detailseite.
 Die Detailseiten werden dabei mit in einer JSON Datei hinterlegten Inhalten gespeist.
@@ -240,7 +246,7 @@ Auf der Übersichtsseite selbst ist der Bewegungssensor aktiv, welcher bei Erken
 Die Integration des Bewegungssensors in die bestehende Navigation brachte einige Stolpersteine mit sich, die nur durch lange Recherchen und Umwege überwunden werden konnten.
 Auch die Einarbeitung in native UI Komponenten der jeweiligen Betriebssysteme war für die Umsetzung dieser Funktionalitäten notwendig.
 
-\subsection{Thomas}
+\subsection{Aufgaben von Thomas Wedler}
 Die Darstellung der Listenansicht aller nahen Cafés sowie die Detailansicht einzelner Cafés fiel in den Aufgabenbereich von Thomas Wedler.
 Ebenso Teil dieses Bereichs war die Implementierung der Geolocation zur Ermittlung des aktuellen Standorts.
 Über diese Geokoordinaten werden bei Bedarf die \emph{Google Places API} und auch die \emph{Google Maps API} angesprochen.
@@ -271,7 +277,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.0cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Kartenansicht}} \\
 		\multicolumn{2}{p{\textwidth}}{Hier werden auf einer interaktiven Google Maps Karte alle sich in der Nähe befindlichen Cafés einschließlich des eigenen aktuellen Standorts angezeigt (vgl. Abb. \ref{fig:karteios} und \ref{fig:karteandroid}). Die hierfür benötigen Informationen werden über die entsprechenden Google APIs bezogen. Des Weiteren erreicht man von hier aus über die Tab Navigation in Android sowie die Bottom Navigation in iOS die Listenansicht der angezeigten Cafés.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-karte.png}
@@ -284,7 +290,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.0cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Kartenansicht - ausgewählt}} \\
 		\multicolumn{2}{p{\textwidth}}{Ein Klick auf einen Marker öffnet ein \emph{Bottom Sheet}, in welchem die wichtigsten Informationen über das ausgewählte Café wie etwa Entfernung, Bewertung, Öffnungszeiten oder Adresse angezeigt werden. Innerhalb dieses Sheets stehen Buttons zur Navigation auf die Detailseite des Cafés oder direkt zu Google Maps mit dem Café als hinterlegtem Ziel zur Verfügung (vgl. Abb. \ref{fig:karteiosactive} und \ref{fig:karteandroidactive}).\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-karte-active.png}
@@ -297,7 +303,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.0cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Listenansicht}} \\
 		\multicolumn{2}{p{\textwidth}}{Die bereits in der Kartenansicht dargestellten Standorte der Cafés werden hier in einer übersichtlichen Liste gezeigt (vgl. Abb. \ref{fig:listeios} und \ref{fig:listeandroid}). Jeder Listeneintrag enthält die gleichen Informationen und Interaktionsmöglichkeiten wie das Bottom Sheet aus der Karte, da es sich hierbei technisch um die gleiche, eigens konstruierte React Native Komponente handelt.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-liste.png}
@@ -310,7 +316,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-3.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Infos Café}} \\
 		\multicolumn{2}{p{\textwidth}}{Diese Seite zeigt die bereits im Bottom Sheet vorhandenen Informationen über das ausgewählte Café. Außerdem sind weitere Details wie Telefonnummer, Internetadresse oder auch Bilder des Cafés - soweit über die Google API bereit gestellt - verfügbar (vgl. Abb. \ref{fig:infoios} und \ref{fig:infoandroid}). Auch hier erreicht man über einen Button das Café als Zieladresse direkt in Google Maps. Darüber hinaus enthält die Tab Navigation respektive Bottom Navigation einen Link zur Bewertungsseite des Cafés.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-info.png}
@@ -323,7 +329,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-4.0cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Bewertungen Café}} \\
 		\multicolumn{2}{p{\textwidth}}{Alle über die Google API verfügbaren Bewertungen des ausgewählten Cafés werden hier in einer Liste angezeigt. Dabei erhält man Infos wie den Wert der abgegebenen Bewertung, den Zeitraum, den Bewertungsext sowie den Namen des Re­zen­senten (vgl. Abb. \ref{fig:bewertungios} und \ref{fig:bewertungandroid}).\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-bewertungen.png}
@@ -336,7 +342,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-3.0cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Lexikon}} \\
 		\multicolumn{2}{p{\textwidth}}{Die Übersichtsseite des Lexikons zeigt alle in der App hinterlegten Zubereitungsarten mit Namen und Icon (vgl. Abb \ref{fig:lexikonios} und \ref{fig:lexikonandroid}). Ein Klick auf eines dieser Elemente führt auf die zugehörige Detailseite (vgl. Kapitel \ref{subsec:detail}). Außerdem ist dies die einzige Seite, auf welcher der Bewegungssensor aktiv ist. Wird eine Schüttelgeste ausgeführt, so wird eine zufällig ausgewählte Zubereitungsart in einem Alert angezeigt. Von diesem aus kann man ebenfalls entweder direkt zur vorgeschlagenen Detailseite gelangen oder den Alert wieder entfernen.\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon.png}
@@ -349,7 +355,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 \end{table}
 
 \begin{table}
-	\vskip-4.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+	\vskip-3.5cm\hskip-0.2cm\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
 		\multicolumn{2}{p{\textwidth}}{\subsection{Lexikon Detailansicht}\label{subsec:detail}} \\
 		\multicolumn{2}{p{\textwidth}}{Hat man sich für eine Zubereitungsart entschieden, erscheint das Template dieser Seite gefüllt mit den passenden Informationen. Dazu gehören der Name, das Icon, eine Beschreibung des Ablaufs sowie einige Attribute wie Stärke des Getränks oder Menge des benötigten Wassers. Diese Informationen sind an die jeweils ausgewählte Zubereitungsart angepasst (vgl. Abb \ref{fig:lexikondetailios} und \ref{fig:lexikondetailandroid}).\newline} \\
 		\includegraphics[width=0.5\textwidth]{Bilder/app-lexikon-detail.png}
@@ -368,6 +374,7 @@ Im Folgenden wir die App mit ihren Views vorgestellt.
 comfycoffee ist eine Cross-Plattform App zur Anzeige lokaler Cafés und damit nachhaltigen Unterstützung der lokalen Kaffeewirtschaft.
 Das Repository ist öffentlich und unter folgendem Link erreichbar: \url{https://bitbucket.org/codemeleon/comfycoffee}.
 Das Projekt ist lizensiert unter der MIT Lizenz.
+
 Weitere Informationen können der offiziellen React Native Dokumentation entnommen werden.
 
 \subsection{Voraussetzungen}
@@ -391,8 +398,8 @@ Wird ein derartiges Endgerät erkannt erfolgt die Kompilierung direkt auf das Ge
 Hilfreiche Freatures wie JavaScript Debugging im Browser oder LiveReload können direkt im Simulator oder auf dem Endgerät aktiviert werden.
 
 Relevante Befehle in der Kommandozeile sind hierbei:\\
-react-native run-andoid\\
-react-native run-ios
+\emph{react-native run-andoid}\\
+\emph{react-native run-ios}
 
 
 
@@ -415,9 +422,15 @@ Das Interview wird als halb-strukturiertes Interview durchgeführt. Offene Frage
 
 Beim A/B-Test wird ein Bestandteil der App in zwei unterschiedlichen Ausführungen getestet. Die Versuchspersonen werden in zwei Gruppen aufgeteilt, eine Gruppe erhält die App mit dem Bestandteil in der Version A, die andere die gleiche App, die sich nur darin unterscheidet, dass Bestandteil A durch B ausgetauscht wird. Im Fall von comfycoffee wäre zu testen, in welcher Form die Schüttelfunktion besser bei der Zielgruppe ankommt. Ursprünglich weist die Schüttelfunktion den Nutzer auf eine zufällige Kaffeesorte hin (vgl. Kapitel \ref{subsec:mussanforderungen}). Eine weitere Idee ist, über die Schüttelfunktion zufällig auszuwürfeln, wer von zwei oder mehreren Nutzern den Kaffee bezahlt. Präzise geschlossene Fragen sollen darüber Auskunft geben, welche Funktion von der Zielgruppe besser angenommen wird.
 
+\underline{Learnings:}
+Auch nach der Entwicklung ist noch viel zu tun. Regelmäßiges Testen erhöht die Usability der App und bringt den Entwickler auf den Boden der Tatsachen zurück.
+
 \section{Marketing}
 \label{sec:marketing}
-Beim Marketing wurden die Bereiche \emph{Produktpolitik}, \emph{Preispolitik}, \emph{Distributionspolitik}, \emph{Kommunikationspolitik} und \emph{Retention Marketing} ausgearbeitet. Anhand von Analysetools, wie beispielsweise \emph{Google Analytics}, werden Statistiken zu Appnutzung erfasst, anhand derer die App ausgewertet und weiter verbessert werden kann.
+Beim Marketing wurden die Bereiche \emph{Produktpolitik}, \emph{Preispolitik}, \emph{Distributionspolitik}, \emph{Kommunikationspolitik} und \emph{Retention Marketing} ausgearbeitet. Anhand von Analysetools, wie beispielsweise \emph{Google Analytics}, können Statistiken zur App-Nutzung erfasst werden, anhand derer die App ausgewertet und weiter verbessert werden kann.
+
+\underline{Learnings:}
+Marketing ist ein eigenes Themengebiet mit vielen Facetten, die es zu meistern gilt, um eine App wirkungsvoll unter die Zielgruppe zu bringen. Hier wird viel Einarbeitung und Ausdauer verlangt, um erfolgreich zu sein.
 
 \subsection{Produktpolitik}
 comfycoffee wird als Cross-Plattform App für Android und iOS entwickelt. Eine zusätzliche Web-App für Desktopnutzer ist denkbar.
@@ -443,6 +456,3 @@ comfycoffee soll die Nutzer motivieren, die App regelmäßig zu nutzen. Hierfür
 Die Nutzer können durch den Besuch ihres Lieblingscafés Punkte erhalten, anhand derer sie in einer Rangliste nach oben steigen können. Die Top 10 der Besucher des jeweiligen Cafés werden in der App aufgelistet. Alternativ können die Nutzer Punkte erlangen, indem sie möglichst viele verschiedene Cafés besuchen. Durch diese Art der Gamification sollen die Nutzer Spaß an der App haben und diese durch den Ehrgeiz der Punktegewinnung möglichst oft nutzen.
 
 Innerhalb der App kann auf bestimmte seltene Kaffeesorten aufmerksam gemacht werden, z. B. wenn sich der Nutzer gerade in der Nähe eines Cafés befindet, welches diese Sorte anbietet. Aktuelle Kaffee-Trends können zeitlich begrenzt in der App angesehen werden. Durch den Besuch eines Cafés können weitere Einträge im Lexikon freigeschaltet werden. Eine zeitliche Limitierung dieser Einträge fordert den Nutzer dazu auf, comfycoffee häufig zu nutzen.
-
-\underline{Learnings:}
-Auch nach der Entwicklung ist noch viel zu tun. Regelmäßiges Testen erhöht die Usability der App und bringt den Entwickler auf den Boden der Tatsachen zurück. Auch Marketing ist ein eigenes Themengebiet mit vielen Facetten, die es zu meistern gilt, um eine App wirkungsvoll unter die Zielgruppe zu bringen. Hier wird viel Einarbeitung und Ausdauer verlangt, um erfolgreich zu sein.
